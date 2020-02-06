@@ -20,7 +20,7 @@ Ready!
 
 1. Drop a component to form (Tool Palette TDevRocks)
 
-2. Select the permission that you what to request Android Permission in yout projetct mobile
+2. Select the permission that you want to request to Android in your project mobile.
 
 3. Run your app in Android.
 
@@ -28,15 +28,17 @@ Ready!
 
 1. Drop a component to form (Tool Palette TDevRocks)
 
-2. Type above code:
-  MobilePermisions1.[CATEGOGY].[Permission] := True;
-  MobilePermisions1.Apply;
-
+2. Type the following code:
+'''  
+  MobilePermissions1.[CATEGORY].[Permission] := True;
+  MobilePermissions1.Apply;
+'''
   E.g.:
-
-  MobilePermisions1.Dangerous.CAMERA := True;
-  MobilePermisions1.Apply;
-
+'''
+  MobilePermissions1.Dangerous.CAMERA := True;
+  MobilePermissions1.Standard.AccessNetworkState := True;
+  MobilePermissions1.Apply;
+'''
 3. Run your app in Android.
 
 
