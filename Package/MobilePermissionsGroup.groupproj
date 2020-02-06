@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{6C4955E3-C0C2-4A82-AEEB-6F7EFE627E3B}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="MobilePermissions.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Demos\Tests\TestPermission.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="MobilePermissions">
+        <MSBuild Projects="MobilePermissions.dproj"/>
+    </Target>
+    <Target Name="MobilePermissions:Clean">
+        <MSBuild Projects="MobilePermissions.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="MobilePermissions:Make">
+        <MSBuild Projects="MobilePermissions.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="TestPermission">
+        <MSBuild Projects="..\Demos\Tests\TestPermission.dproj"/>
+    </Target>
+    <Target Name="TestPermission:Clean">
+        <MSBuild Projects="..\Demos\Tests\TestPermission.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="TestPermission:Make">
+        <MSBuild Projects="..\Demos\Tests\TestPermission.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="MobilePermissions;TestPermission"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="MobilePermissions:Clean;TestPermission:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="MobilePermissions:Make;TestPermission:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

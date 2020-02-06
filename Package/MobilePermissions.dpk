@@ -1,0 +1,64 @@
+package MobilePermissions;
+
+{$R *.res}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO OFF}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES ON}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DEFINE DEBUG}
+{$ENDIF IMPLICITBUILDING}
+{$IMPLICITBUILD ON}
+
+requires
+  {$IFDEF MSWINDOWS}
+  designide,
+  {$ENDIF}
+  fmx;
+
+contains
+  MobilePermissions.Component in '..\Component\MobilePermissions.Component.pas',
+  MobilePermissions.Component.Register in '..\Component\MobilePermissions.Component.Register.pas',
+  MobilePermissions.Component.Editor in '..\Component\MobilePermissions.Component.Editor.pas',
+  MobilePermissions.Component.Editor.Help in '..\Component\MobilePermissions.Component.Editor.Help.pas' {frmMobilePermissionsHelp},
+  MobilePermissions.Model.Signature in '..\Source\MobilePermissions.Model.Signature.pas',
+  MobilePermissions.Model.Standard in '..\Source\MobilePermissions.Model.Standard.pas',
+  MobilePermissions.Model.Dangerous in '..\Source\MobilePermissions.Model.Dangerous.pas',
+  OTA.TargetConfiguration in '..\Source\OTA\OTA.TargetConfiguration.pas',
+  OTA.TargetConfiguration.Constants in '..\Source\OTA\OTA.TargetConfiguration.Constants.pas',
+  MobilePermissions.UsesPermissions.Interfaces in '..\Source\MobilePermissions.UsesPermissions.Interfaces.pas',
+  MobilePermissions.UsesPermissions.Factory in '..\Source\MobilePermissions.UsesPermissions.Factory.pas',
+  MobilePermissions.UsesPermissions.OTA.Constants in '..\Source\MobilePermissions.UsesPermissions.OTA.Constants.pas',
+  MobilePermissions.UsesPermissions.OTA.Base in '..\Source\MobilePermissions.UsesPermissions.OTA.Base.pas',
+  MobilePermissions.UsesPermissions.OTA.Signature in '..\Source\MobilePermissions.UsesPermissions.OTA.Signature.pas',
+  MobilePermissions.UsesPermissions.OTA.Standard in '..\Source\MobilePermissions.UsesPermissions.OTA.Standard.pas',
+  MobilePermissions.UsesPermissions.OTA.Dangerous in '..\Source\MobilePermissions.UsesPermissions.OTA.Dangerous.pas',
+  MobilePermissions.UsesPermissions.FMX.Base in '..\Source\MobilePermissions.UsesPermissions.FMX.Base.pas',
+  MobilePermissions.UsesPermissions.FMX.Dangerous in '..\Source\MobilePermissions.UsesPermissions.FMX.Dangerous.pas',
+  MobilePermissions.UsesPermissions.FMX.Signature in '..\Source\MobilePermissions.UsesPermissions.FMX.Signature.pas',
+  MobilePermissions.UsesPermissions.FMX.Standard in '..\Source\MobilePermissions.UsesPermissions.FMX.Standard.pas',
+  MobilePermissions.JNI.Os in '..\Source\MobilePermissions.JNI.Os.pas',
+  MobilePermissions.JNI.Os.Base in '..\Source\MobilePermissions.JNI.Os.Base.pas',
+  MobilePermissions.Permissions.Interfaces in '..\Source\MobilePermissions.Permissions.Interfaces.pas',
+  MobilePermissions.Permissions.Android in '..\Source\MobilePermissions.Permissions.Android.pas',
+  MobilePermissions.Permissions.Base in '..\Source\MobilePermissions.Permissions.Base.pas',
+  MobilePermissions.Permissions.Factory in '..\Source\MobilePermissions.Permissions.Factory.pas';
+
+end.

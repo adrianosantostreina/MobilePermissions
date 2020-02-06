@@ -1,0 +1,226 @@
+object FrmMain: TFrmMain
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 570
+  ClientWidth = 380
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 3
+  object ToolBar1: TToolBar
+    Size.Width = 380.000000000000000000
+    Size.Height = 48.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    object btnApply: TSpeedButton
+      Align = Right
+      Position.X = 332.000000000000000000
+      Size.Width = 48.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'refreshtoolbutton'
+      OnClick = btnApplyClick
+    end
+    object Button1: TButton
+      Position.X = 4.000000000000000000
+      Position.Y = 2.000000000000000000
+      Size.Width = 189.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'S'#243' c'#226'mera'
+      OnClick = Button1Click
+    end
+  end
+  object ListBox1: TListBox
+    Align = Client
+    Size.Width = 380.000000000000000000
+    Size.Height = 522.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    DisableFocusEffect = True
+    DefaultItemStyles.ItemStyle = ''
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    Viewport.Width = 380.000000000000000000
+    Viewport.Height = 522.000000000000000000
+    object ListBoxItem1: TListBoxItem
+      TabOrder = 0
+      Text = 'All permissions'
+      object Layout3D1: TLayout3D
+        Height = 4.000000000000000000
+        Width = 5.000000000000000000
+      end
+      object Switch1: TSwitch
+        Align = Right
+        IsChecked = False
+        Margins.Right = 8.000000000000000000
+        Position.X = 328.000000000000000000
+        Position.Y = 9.000000000000000000
+        Size.Width = 44.000000000000000000
+        Size.Height = 26.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        OnSwitch = Switch1Switch
+      end
+    end
+    object ListBoxItem2: TListBoxItem
+      Position.Y = 44.000000000000000000
+      TabOrder = 1
+      Text = 'Camera'
+      object Switch2: TSwitch
+        Align = Right
+        IsChecked = False
+        Margins.Right = 8.000000000000000000
+        Position.X = 328.000000000000000000
+        Position.Y = 9.000000000000000000
+        Size.Width = 44.000000000000000000
+        Size.Height = 26.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        OnSwitch = Switch2Switch
+      end
+    end
+    object ListBoxItem3: TListBoxItem
+      Position.Y = 88.000000000000000000
+      TabOrder = 2
+      Text = 'Call phone'
+      object Switch3: TSwitch
+        Align = Right
+        IsChecked = False
+        Margins.Right = 8.000000000000000000
+        Position.X = 328.000000000000000000
+        Position.Y = 9.000000000000000000
+        Size.Width = 44.000000000000000000
+        Size.Height = 26.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        OnSwitch = Switch3Switch
+      end
+    end
+    object ListBoxItem4: TListBoxItem
+      Position.Y = 132.000000000000000000
+      TabOrder = 3
+      Text = 'Get accounts'
+      object Switch4: TSwitch
+        Align = Right
+        IsChecked = False
+        Margins.Right = 8.000000000000000000
+        Position.X = 328.000000000000000000
+        Position.Y = 9.000000000000000000
+        Size.Width = 44.000000000000000000
+        Size.Height = 26.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        OnSwitch = Switch4Switch
+      end
+    end
+    object ListBoxItem5: TListBoxItem
+      Position.Y = 176.000000000000000000
+      TabOrder = 4
+      Text = 'Read contacts'
+      object Switch5: TSwitch
+        Align = Right
+        IsChecked = False
+        Margins.Right = 8.000000000000000000
+        Position.X = 328.000000000000000000
+        Position.Y = 9.000000000000000000
+        Size.Width = 44.000000000000000000
+        Size.Height = 26.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        OnSwitch = Switch5Switch
+      end
+    end
+    object ListBoxItem6: TListBoxItem
+      Position.Y = 220.000000000000000000
+      TabOrder = 9
+      Text = 'Record audio'
+      object Switch6: TSwitch
+        Align = Right
+        IsChecked = False
+        Margins.Right = 8.000000000000000000
+        Position.X = 328.000000000000000000
+        Position.Y = 9.000000000000000000
+        Size.Width = 44.000000000000000000
+        Size.Height = 26.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        OnSwitch = Switch6Switch
+      end
+    end
+    object ListBoxItem7: TListBoxItem
+      Position.Y = 264.000000000000000000
+      TabOrder = 8
+      Text = 'Read calendar'
+      object Switch7: TSwitch
+        Align = Right
+        IsChecked = False
+        Margins.Right = 8.000000000000000000
+        Position.X = 328.000000000000000000
+        Position.Y = 9.000000000000000000
+        Size.Width = 44.000000000000000000
+        Size.Height = 26.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        OnSwitch = Switch7Switch
+      end
+    end
+    object ListBoxItem8: TListBoxItem
+      Position.Y = 308.000000000000000000
+      TabOrder = 7
+      Text = 'Write calendar'
+      object Switch8: TSwitch
+        Align = Right
+        IsChecked = False
+        Margins.Right = 8.000000000000000000
+        Position.X = 328.000000000000000000
+        Position.Y = 9.000000000000000000
+        Size.Width = 44.000000000000000000
+        Size.Height = 26.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        OnSwitch = Switch8Switch
+      end
+    end
+    object ListBoxItem9: TListBoxItem
+      Position.Y = 352.000000000000000000
+      TabOrder = 6
+      Text = 'Read External Storage'
+      object Switch9: TSwitch
+        Align = Right
+        IsChecked = False
+        Margins.Right = 8.000000000000000000
+        Position.X = 328.000000000000000000
+        Position.Y = 9.000000000000000000
+        Size.Width = 44.000000000000000000
+        Size.Height = 26.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        OnSwitch = Switch9Switch
+      end
+    end
+    object ListBoxItem10: TListBoxItem
+      Position.Y = 396.000000000000000000
+      TabOrder = 5
+      Text = 'Write External Storage'
+      object Switch10: TSwitch
+        Align = Right
+        IsChecked = False
+        Margins.Right = 8.000000000000000000
+        Position.X = 328.000000000000000000
+        Position.Y = 9.000000000000000000
+        Size.Width = 44.000000000000000000
+        Size.Height = 26.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        OnSwitch = Switch10Switch
+      end
+    end
+  end
+  object MobilePermissions1: TMobilePermissions
+    Left = 144
+    Top = 128
+  end
+end
