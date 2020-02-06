@@ -3,7 +3,7 @@ Github referente ao componente Mobile Permissions
 
 # How to install
 
-1. Open Delphi in mode Administrator
+1. Open Delphi in Administrator mode.
 
 2. Open MobilePermissions package file
     ($Path)\Package\MobilePermissions.dpk
