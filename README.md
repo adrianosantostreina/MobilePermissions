@@ -29,16 +29,24 @@ Ready!
 1. Drop a component to form (Tool Palette TDevRocks)
 
 2. Type the following code:
-'''  
+
+'''delphi
+
   MobilePermissions1.[CATEGORY].[Permission] := True;
   MobilePermissions1.Apply;
+
 '''
+
   E.g.:
-'''
+
+'''delphi
+
   MobilePermissions1.Dangerous.CAMERA := True;
   MobilePermissions1.Standard.AccessNetworkState := True;
   MobilePermissions1.Apply;
+
 '''
+
 3. Run your app in Android.
 
 
