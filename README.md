@@ -30,22 +30,27 @@ Ready!
 
 2. Type the following code:
 
-'''delphi
+```delphi
 
+procecure TForm1.OnCreate(Sender: TObject);
+begin
   MobilePermissions1.[CATEGORY].[Permission] := True;
   MobilePermissions1.Apply;
+end;
 
-'''
+```
 
   E.g.:
 
-'''delphi
+```delphi
 
+procedure TForm1.Button1Click(Sender: TObject);
+begin
   MobilePermissions1.Dangerous.CAMERA := True;
   MobilePermissions1.Standard.AccessNetworkState := True;
   MobilePermissions1.Apply;
-
-'''
+end;
+```
 
 3. Run your app in Android.
 
