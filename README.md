@@ -1,5 +1,5 @@
 # MobilePermissions
-Github referente ao componente Mobile Permissions
+This is a component to turn more easy the request permission in Android 8.x or later
 
 # How to install
 
