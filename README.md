@@ -16,6 +16,19 @@ This is a component to turn more easy the request permission in Android 8.x or l
 
 Ready!
 
+# How to Uninstall
+
+1. Open Delphi in Administrator mode.
+
+2. Open MobilePermissions package file
+    ($Path)\Package\MobilePermissions.dpk
+
+5. Right click in MobilePermissions.bpl in Project Manager and select Uninstall
+
+Ready!
+
+
+
 # How to use (Mode 1)
 
 1. Drop a component to form (Tool Palette TDevRocks)
