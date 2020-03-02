@@ -64,7 +64,8 @@ begin
   begin
     {$IFDEF ANDROID}
     VVersionOSStr := JStringToString(TJBuild_VERSION.JavaClass.RELEASE);
-    VVersionOSStr := LeftStr(VVersionOSStr, Pos('.', VVersionOSStr)-1);
+    if Pos('.', VVersionOSStr) > 0 then
+      VVersionOSStr := Copy(VVersionOSStr, Pos('.', VVersionOSStr)-1);
 
     FAndroidVersion := StrToInt(VVersionOSStr);
     {$ENDIF}
