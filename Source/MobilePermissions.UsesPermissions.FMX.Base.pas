@@ -63,11 +63,14 @@ begin
   if FAndroidVersion = 0 then
   begin
     {$IFDEF ANDROID}
+    (*
     VVersionOSStr := JStringToString(TJBuild_VERSION.JavaClass.RELEASE);
     if Pos('.', VVersionOSStr) > 0 then
       VVersionOSStr := Copy(VVersionOSStr, Pos('.', VVersionOSStr)-1);
 
     FAndroidVersion := StrToInt(VVersionOSStr);
+    *)
+    FAndroidVersion := TOSVersion.Major;
     {$ENDIF}
   end;
   result := FAndroidVersion;
