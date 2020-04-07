@@ -11,6 +11,7 @@ uses
   Androidapi.JNI.Os,
   Androidapi.JNI.JavaTypes,
   {$ENDIF}
+  System.Character,
   System.SysUtils,
   System.StrUtils,
   MobilePermissions.Permissions.Interfaces;
@@ -45,17 +46,25 @@ end;
 procedure TMobilePermissionsAndroid.SetAndroidVersion;
 {$IFDEF ANDROID}
 var
-  VVersionOSStr: String;
+  VersionOSStr : String;
+  MajorVersion : string;
+  i            : Integer;
 {$ENDIF}
 begin
   if FAndroidVersion = 0 then
   begin
     {$IFDEF ANDROID}
-    VVersionOSStr := JStringToString(TJBuild_VERSION.JavaClass.RELEASE);
-    if Pos('.', VVersionOSStr) > 0 then
-      VVersionOSStr := Copy(VVersionOSStr, Pos('.', VVersionOSStr)-1);
+    VersionOSStr := JStringToString(TJBuild_VERSION.JavaClass.RELEASE);
 
-    FAndroidVersion := StrToInt(VVersionOSStr);
+    for i := 0 to Pred(VersionOSStr.Length) do
+    begin
+      if not (VersionOSStr[i].IsNumber) then
+        Break;
+
+      MajorVersion := MajorVersion + VersionOSStr[i];
+    end;
+
+    FAndroidVersion := StrToInt(MajorVersion);
     {$ENDIF}
   end;
 end;
