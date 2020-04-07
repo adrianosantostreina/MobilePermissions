@@ -21,11 +21,8 @@ uses
 type TUsesPermissionsFMXBase = class abstract(TInterfacedObject)
   private
     FPermissions : TList<String>;
-    FAndroidVersion: Integer;
-    function getAndroidVersion: Integer;
 
   protected
-    property AndroidVersion: Integer read getAndroidVersion;
 
     procedure AddPermission(APermission: JavaString; const Value: Boolean);
     function  HasPermission(APermission: JavaString): Boolean;
@@ -52,21 +49,6 @@ destructor TUsesPermissionsFMXBase.Destroy;
 begin
   FPermissions.Free;
   inherited;
-end;
-
-function TUsesPermissionsFMXBase.getAndroidVersion: Integer;
-{$IFDEF ANDROID}
-var
-  VVersionOSStr: String;
-{$ENDIF}
-begin
-  if FAndroidVersion = 0 then
-  begin
-    {$IFDEF ANDROID}
-      FAndroidVersion := TOSVersion.Major;
-    {$ENDIF}
-  end;
-  result := FAndroidVersion;
 end;
 
 function TUsesPermissionsFMXBase.HasPermission(APermission: JavaString): Boolean;
