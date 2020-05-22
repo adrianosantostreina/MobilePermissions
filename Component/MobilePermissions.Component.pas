@@ -19,13 +19,18 @@ type
     FDangerous   : TModelDangerousPermissions;
     FSignature   : TModelSignaturePermissions;
 
+    FOnApply : TNotifyEvent;
+
     function getUsesPermissions: TArray<String>;
+    procedure SetOnApply(const Value: TNotifyEvent);
   public
     constructor Create(AOwner: TComponent); override;
     destructor Destroy; override;
 
     procedure Apply;
   published
+    property OnApply: TNotifyEvent read FOnApply write SetOnApply;
+
     property Standard : TModelStandardPermissions  read FStandard;
     property Dangerous: TModelDangerousPermissions read FDangerous;
     property Signature: TModelSignaturePermissions read FSignature;
@@ -74,6 +79,12 @@ begin
   result := Concat(standardPermissions,
                    dangerousPermissions,
                    signaturePermissions);
+end;
+
+procedure TMobilePermissions.SetOnApply(const Value: TNotifyEvent);
+begin
+  FOnApply := Value;
+  FPermissions.OnRequest(FOnApply);
 end;
 
 end.

@@ -49,6 +49,7 @@ type
     procedure Switch1Switch(Sender: TObject);
     procedure btnApplyClick(Sender: TObject);
     procedure Button1Click(Sender: TObject);
+    procedure MobilePermissions1Apply(Sender: TObject);
   private
     { Private declarations }
   public
@@ -74,6 +75,12 @@ begin
   MobilePermissions1.Dangerous.WriteExternalStorage := True;
 
   MobilePermissions1.Apply;
+end;
+
+procedure TFrmMain.MobilePermissions1Apply(Sender: TObject);
+begin
+  // After Apply
+  ShowMessage('After Apply Permissions');
 end;
 
 procedure TFrmMain.Switch10Switch(Sender: TObject);

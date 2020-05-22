@@ -12,21 +12,24 @@ uses
   Androidapi.JNI.JavaTypes,
   {$ENDIF}
   System.Character,
+  System.Classes,
   System.SysUtils,
   System.StrUtils,
+  MobilePermissions.Permissions.Base,
   MobilePermissions.Permissions.Interfaces;
 
-type TMobilePermissionsAndroid = class(TInterfacedObject, IMobilePermissions)
+type TMobilePermissionsAndroid = class(TMobilePermissionsBase, IMobilePermissions)
   private
-    FAndroidVersion: Integer;
+    FAndroidVersion : Integer;
+
     procedure SetAndroidVersion;
 
+    procedure RequestPermissionsResultProc(const APermissions: TArray<string>; const AGrantResults: TArray<TPermissionStatus>);
   public
-    function Request(Permissions: System.TArray<System.string>): IMobilePermissions;
+    function Request(Permissions: TArray<string>): IMobilePermissions; override;
 
     constructor create;
     destructor  Destroy; override;
-    class function New: IMobilePermissions;
 end;
 
 implementation
@@ -69,19 +72,20 @@ begin
   end;
 end;
 
-class function TMobilePermissionsAndroid.New: IMobilePermissions;
-begin
-  result := Self.Create;
-end;
-
-function TMobilePermissionsAndroid.Request(Permissions: System.TArray<System.string>): IMobilePermissions;
+function TMobilePermissionsAndroid.Request(Permissions: TArray<string>): IMobilePermissions;
 begin
   result := Self;
   SetAndroidVersion;
   {$IF CompilerVersion >= 33.0}
   if (FAndroidVersion > 6) then
-    PermissionsService.RequestPermissions(Permissions, nil, nil);
+    PermissionsService.RequestPermissions(Permissions, RequestPermissionsResultProc, nil);
   {$ENDIF}
+end;
+
+procedure TMobilePermissionsAndroid.RequestPermissionsResultProc(const APermissions: TArray<string>; const AGrantResults: TArray<TPermissionStatus>);
+begin
+  if Assigned(FOnRequest) then
+    FOnRequest(nil);
 end;
 
 end.

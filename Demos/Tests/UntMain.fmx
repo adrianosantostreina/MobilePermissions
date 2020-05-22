@@ -220,6 +220,7 @@ object FrmMain: TFrmMain
     end
   end
   object MobilePermissions1: TMobilePermissions
+    OnApply = MobilePermissions1Apply
     Left = 144
     Top = 128
   end
