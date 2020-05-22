@@ -2,12 +2,18 @@ unit MobilePermissions.Permissions.Base;
 
 interface
 
-uses MobilePermissions.Permissions.Interfaces;
+uses
+  MobilePermissions.Permissions.Interfaces,
+  System.Classes;
 
 type TMobilePermissionsBase = class(TInterfacedObject, IMobilePermissions)
 
+  protected
+    FOnRequest: TNotifyEvent;
+
   public
-    function Request(Permissions: System.TArray<System.string>): IMobilePermissions;
+    function Request(Permissions: TArray<string>): IMobilePermissions; virtual;
+    function OnRequest(Value: TNotifyEvent): IMobilePermissions;
 
     class function New: IMobilePermissions;
 end;
@@ -21,7 +27,13 @@ begin
   result := Self.Create;
 end;
 
-function TMobilePermissionsBase.Request(Permissions: System.TArray<System.string>): IMobilePermissions;
+function TMobilePermissionsBase.OnRequest(Value: TNotifyEvent): IMobilePermissions;
+begin
+  result     := Self;
+  FOnRequest := Value;
+end;
+
+function TMobilePermissionsBase.Request(Permissions: TArray<string>): IMobilePermissions;
 begin
   result := Self;
 end;

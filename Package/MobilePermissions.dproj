@@ -6,7 +6,7 @@
         <FrameworkType>FMX</FrameworkType>
         <Base>True</Base>
         <Config Condition="'$(Config)'==''">Debug</Config>
-        <Platform Condition="'$(Platform)'==''">Win32</Platform>
+        <Platform Condition="'$(Platform)'==''">Android</Platform>
         <TargetedPlatforms>32785</TargetedPlatforms>
         <AppType>Package</AppType>
     </PropertyGroup>
@@ -192,7 +192,6 @@
         <DelphiCompile Include="$(MainSource)">
             <MainSource>MainSource</MainSource>
         </DelphiCompile>
-        <DCCReference Include="designide.dcp"/>
         <DCCReference Include="fmx.dcp"/>
         <DCCReference Include="..\Component\MobilePermissions.Component.pas"/>
         <DCCReference Include="..\Component\MobilePermissions.Component.Register.pas"/>
