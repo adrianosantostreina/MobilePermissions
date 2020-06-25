@@ -16,6 +16,8 @@ Este é um componente para tornar mais fácil a solicitação de permissões no 
 
 P.s. Se Install não estiver sendo mostrado no menu popup selecione o Target Windows 32-bit no Project Manager e clique novamente com o botão direito.
 
+![alt text](https://github.com/adrianosantostreina/MobilePermissions/blob/master/screenshots/install-package.png)
+
 Pronto!
 
 # Como instalar usando o Get It Package Manager?
@@ -28,9 +30,15 @@ Pronto!
 
 4. Quando encontrar o componente passe o mouse sobre ele e clique em Install
 
+![alt text](https://github.com/adrianosantostreina/MobilePermissions/blob/master/screenshots/install-getit1.png)
+
 5. Aceite os termos clicando em Agree all
 
+![alt text](https://github.com/adrianosantostreina/MobilePermissions/blob/master/screenshots/install-getit2.png)
+
 6. Aguarde o processo de instalação
+
+![alt text](https://github.com/adrianosantostreina/MobilePermissions/blob/master/screenshots/install-getit3.png)
 
 Pronto!
 
@@ -58,6 +66,8 @@ Pronto!
 5. Confirme
 
 6. Aguarde o processo de desinstalação
+
+![alt text](https://github.com/adrianosantostreina/MobilePermissions/blob/master/screenshots/uninstall2.png)
 
 Pronto!
 
