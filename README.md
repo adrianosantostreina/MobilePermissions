@@ -3,7 +3,7 @@ This is a component to turn more easy the request permission in Android 8.x or l
 
 # How to install
 
-1. Open Delphi in Administrator mode.
+1. Open Delphi. Open in administrator mode if necessary.
 
 2. Open MobilePermissions package file
     ($Path)\Package\MobilePermissions.dpk
@@ -14,6 +14,24 @@ This is a component to turn more easy the request permission in Android 8.x or l
 
 5. Right click in MobilePermissions.bpl in Project Manager and select Install
 
+P.s. If the Install menu does not showing in context menu then select Windows 32-bit in Project Manager and click right button again.
+
+Ready!
+
+# How to install using Get It Package Manager
+
+1. Open Delphi. Open in administrator mode if necessary.
+
+2. Open Tools > Get It Packager Manager.
+
+3. Type MobilePermissions in the search box.
+
+4. When you find the component click over it his and click in Install Button.
+
+5. Accept terms and contract clicking in Agree all and Next;
+
+6. Wait the installion process.
+
 Ready!
 
 # How to Uninstall
@@ -23,7 +41,23 @@ Ready!
 2. Open MobilePermissions package file
     ($Path)\Package\MobilePermissions.dpk
 
-5. Right click in MobilePermissions.bpl in Project Manager and select Uninstall
+3. Right click in MobilePermissions.bpl in Project Manager and select Uninstall
+
+Ready!
+
+# How to Uninstall using Get It Package Manager
+
+1. Open Delphi. Open in administrator mode if necessary.
+
+2. Open Tools > Get It Packager Manager.
+
+3. Type MobilePermissions in the search box.
+
+4. When you find the component click over it his and click in Uninstall Button.
+
+5. Confirm;
+
+6. Wait the uninstallion process.
 
 Ready!
 
