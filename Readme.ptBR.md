@@ -81,7 +81,7 @@ Pronto!
 
 3. Execute seu aplicativo no Android
 
-# Como usar (Modo 2)
+# Como usar (Modo 2)?
 
 1. Arraste uma instância do componente para o form (Paleta TDevRocks)
 
