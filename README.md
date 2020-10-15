@@ -117,30 +117,29 @@ end;
 # Addicional Notes about bug fixes and tips
 
 Error:
-"" is not a integer value.
+"" is not a integer value.<br><br>
+
+If you still receive this error after install the new version, follow next steps:<br><br>
 
 
-If you still receive this error after install the new version, follow next steps:
+a. Access Project > Options > Building > Delphi Compiler<br>
+b. Modify the Target to Android32 and/or Android64<br>
+c. Add this folders path into Search Path field like bellow:<br><br>
 
+\MobilePermissions\source<br>
+\MobilePermissions\component<br><br>
 
-a. Access Project > Options > Building > Delphi Compiler
-b. Modify the Target to Android32 and/or Android64
-c. Add this folders path into Search Path field like bellow:
+E.g.<br>
+C:\Componentes\MobilePermissions\source<br>
+C:\Componentes\MobilePermissions\component<br><br>
 
-\MobilePermissions\source
-\MobilePermissions\component
+Recompile and redistrbuilt your project and e voilà<br><br>
 
-E.g.
-C:\Componentes\MobilePermissions\source
-C:\Componentes\MobilePermissions\component
-
-Recompile and redistrbuilt your project and e voilà
-
-Tests executed in:
-Android 7.0 (This version dosen't need this component, but can you use without problem)
-Android 8.x
-Android 9.x
-Android 10
+Tests executed in:<br>
+Android 7.0 (This version dosen't need this component, but can you use without problem)<br>
+Android 8.x<br>
+Android 9.x<br>
+Android 10<br>
 
 
 
