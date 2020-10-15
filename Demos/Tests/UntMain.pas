@@ -70,8 +70,8 @@ end;
 
 procedure TFrmMain.Button1Click(Sender: TObject);
 begin
-  MobilePermissions1.Dangerous.Camera := True;
-  MobilePermissions1.Dangerous.ReadExternalStorage := True;
+  MobilePermissions1.Dangerous.Camera               := True;
+  MobilePermissions1.Dangerous.ReadExternalStorage  := True;
   MobilePermissions1.Dangerous.WriteExternalStorage := True;
 
   MobilePermissions1.Apply;

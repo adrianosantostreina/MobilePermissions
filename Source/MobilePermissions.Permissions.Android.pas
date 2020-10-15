@@ -10,6 +10,7 @@ uses
   Androidapi.Helpers,
   Androidapi.JNI.Os,
   Androidapi.JNI.JavaTypes,
+  FMX.Dialogs,
   {$ENDIF}
   System.Character,
   System.Classes,
@@ -51,7 +52,7 @@ procedure TMobilePermissionsAndroid.SetAndroidVersion;
 var
   VersionOSStr : String;
   MajorVersion : string;
-  i            : Integer;
+  I            : Integer;
 {$ENDIF}
 begin
   if FAndroidVersion = 0 then
@@ -59,14 +60,13 @@ begin
     {$IFDEF ANDROID}
     VersionOSStr := JStringToString(TJBuild_VERSION.JavaClass.RELEASE);
 
-    for i := 0 to Pred(VersionOSStr.Length) do
+    for I := 1 to VersionOSStr.Length do
     begin
-      if not (VersionOSStr[i].IsNumber) then
-        Break;
+      if Copy(VersionOSStr, I, 1) = '.' then
+        break;
 
-      MajorVersion := MajorVersion + VersionOSStr[i];
+      MajorVersion := MajorVersion + Copy(VersionOSStr, I, 1);
     end;
-
     FAndroidVersion := StrToInt(MajorVersion);
     {$ENDIF}
   end;

@@ -1,0 +1,3348 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<namespace name="MobilePermissions.JNI.Os" platform="Android">
+  <interface name="JavaString" alias="Androidapi.JNI.JavaTypes.JString" GUID="{8579B374-1E68-4729-AE3C-C8DA0A6D6F9F}" ancestor="JObject" file="Androidapi.JNI.JavaTypes.pas" line="1586">
+    <attributes>
+      <attribute name="JavaSignatureAttribute" />
+    </attributes>
+    <function name="charAt" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.JavaTypes.pas" line="1588">
+      <parameters>
+        <parameter name="index" type="Integer" />
+        <retval type="Char" />
+      </parameters>
+    </function>
+    <function name="codePointAt" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.JavaTypes.pas" line="1589">
+      <parameters>
+        <parameter name="index" type="Integer" />
+        <retval type="Integer" />
+      </parameters>
+    </function>
+    <function name="codePointBefore" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.JavaTypes.pas" line="1590">
+      <parameters>
+        <parameter name="index" type="Integer" />
+        <retval type="Integer" />
+      </parameters>
+    </function>
+    <function name="codePointCount" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.JavaTypes.pas" line="1591">
+      <parameters>
+        <parameter name="beginIndex" type="Integer" />
+        <parameter name="endIndex" type="Integer" />
+        <retval type="Integer" />
+      </parameters>
+    </function>
+    <function name="compareTo" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.JavaTypes.pas" line="1592">
+      <parameters>
+        <parameter name="anotherString" type="JString" />
+        <retval type="Integer" />
+      </parameters>
+    </function>
+    <function name="compareToIgnoreCase" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.JavaTypes.pas" line="1593">
+      <parameters>
+        <parameter name="str" type="JString" />
+        <retval type="Integer" />
+      </parameters>
+    </function>
+    <function name="concat" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.JavaTypes.pas" line="1594">
+      <parameters>
+        <parameter name="str" type="JString" />
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="contains" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.JavaTypes.pas" line="1595">
+      <parameters>
+        <parameter name="s" type="JCharSequence" />
+        <retval type="Boolean" />
+      </parameters>
+    </function>
+    <function name="contentEquals" visibility="public" procflags="abstract overload virtual" callconv="cdecl" file="Androidapi.JNI.JavaTypes.pas" line="1596">
+      <parameters>
+        <parameter name="sb" type="JStringBuffer" />
+        <retval type="Boolean" />
+      </parameters>
+    </function>
+    <function name="contentEquals" visibility="public" procflags="abstract overload virtual" callconv="cdecl" file="Androidapi.JNI.JavaTypes.pas" line="1597">
+      <parameters>
+        <parameter name="cs" type="JCharSequence" />
+        <retval type="Boolean" />
+      </parameters>
+    </function>
+    <function name="endsWith" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.JavaTypes.pas" line="1598">
+      <parameters>
+        <parameter name="suffix" type="JString" />
+        <retval type="Boolean" />
+      </parameters>
+    </function>
+    <function name="equals" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.JavaTypes.pas" line="1599">
+      <parameters>
+        <parameter name="anObject" type="JObject" />
+        <retval type="Boolean" />
+      </parameters>
+    </function>
+    <function name="equalsIgnoreCase" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.JavaTypes.pas" line="1600">
+      <parameters>
+        <parameter name="anotherString" type="JString" />
+        <retval type="Boolean" />
+      </parameters>
+    </function>
+    <procedure name="getBytes" visibility="public" procflags="abstract overload virtual" callconv="cdecl" file="Androidapi.JNI.JavaTypes.pas" line="1601">
+      <parameters>
+        <parameter name="srcBegin" type="Integer" />
+        <parameter name="srcEnd" type="Integer" />
+        <parameter name="dst" type="TJavaArray&lt;System.Byte&gt;" />
+        <parameter name="dstBegin" type="Integer" />
+      </parameters>
+    </procedure>
+    <function name="getBytes" visibility="public" procflags="abstract overload virtual" callconv="cdecl" file="Androidapi.JNI.JavaTypes.pas" line="1602">
+      <parameters>
+        <parameter name="charsetName" type="JString" />
+        <retval type="TJavaArray&lt;System.Byte&gt;" />
+      </parameters>
+    </function>
+    <function name="getBytes" visibility="public" procflags="abstract overload virtual" callconv="cdecl" file="Androidapi.JNI.JavaTypes.pas" line="1603">
+      <parameters>
+        <parameter name="charset" type="JCharset" />
+        <retval type="TJavaArray&lt;System.Byte&gt;" />
+      </parameters>
+    </function>
+    <function name="getBytes" visibility="public" procflags="abstract overload virtual" callconv="cdecl" file="Androidapi.JNI.JavaTypes.pas" line="1604">
+      <parameters>
+        <retval type="TJavaArray&lt;System.Byte&gt;" />
+      </parameters>
+    </function>
+    <procedure name="getChars" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.JavaTypes.pas" line="1605">
+      <parameters>
+        <parameter name="srcBegin" type="Integer" />
+        <parameter name="srcEnd" type="Integer" />
+        <parameter name="dst" type="TJavaArray&lt;System.Char&gt;" />
+        <parameter name="dstBegin" type="Integer" />
+      </parameters>
+    </procedure>
+    <function name="hashCode" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.JavaTypes.pas" line="1606">
+      <parameters>
+        <retval type="Integer" />
+      </parameters>
+    </function>
+    <function name="indexOf" visibility="public" procflags="abstract overload virtual" callconv="cdecl" file="Androidapi.JNI.JavaTypes.pas" line="1607">
+      <parameters>
+        <parameter name="ch" type="Integer" />
+        <retval type="Integer" />
+      </parameters>
+    </function>
+    <function name="indexOf" visibility="public" procflags="abstract overload virtual" callconv="cdecl" file="Androidapi.JNI.JavaTypes.pas" line="1608">
+      <parameters>
+        <parameter name="ch" type="Integer" />
+        <parameter name="fromIndex" type="Integer" />
+        <retval type="Integer" />
+      </parameters>
+    </function>
+    <function name="indexOf" visibility="public" procflags="abstract overload virtual" callconv="cdecl" file="Androidapi.JNI.JavaTypes.pas" line="1609">
+      <parameters>
+        <parameter name="str" type="JString" />
+        <retval type="Integer" />
+      </parameters>
+    </function>
+    <function name="indexOf" visibility="public" procflags="abstract overload virtual" callconv="cdecl" file="Androidapi.JNI.JavaTypes.pas" line="1610">
+      <parameters>
+        <parameter name="str" type="JString" />
+        <parameter name="fromIndex" type="Integer" />
+        <retval type="Integer" />
+      </parameters>
+    </function>
+    <function name="intern" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.JavaTypes.pas" line="1611">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="isEmpty" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.JavaTypes.pas" line="1612">
+      <parameters>
+        <retval type="Boolean" />
+      </parameters>
+    </function>
+    <function name="lastIndexOf" visibility="public" procflags="abstract overload virtual" callconv="cdecl" file="Androidapi.JNI.JavaTypes.pas" line="1613">
+      <parameters>
+        <parameter name="ch" type="Integer" />
+        <retval type="Integer" />
+      </parameters>
+    </function>
+    <function name="lastIndexOf" visibility="public" procflags="abstract overload virtual" callconv="cdecl" file="Androidapi.JNI.JavaTypes.pas" line="1614">
+      <parameters>
+        <parameter name="ch" type="Integer" />
+        <parameter name="fromIndex" type="Integer" />
+        <retval type="Integer" />
+      </parameters>
+    </function>
+    <function name="lastIndexOf" visibility="public" procflags="abstract overload virtual" callconv="cdecl" file="Androidapi.JNI.JavaTypes.pas" line="1615">
+      <parameters>
+        <parameter name="str" type="JString" />
+        <retval type="Integer" />
+      </parameters>
+    </function>
+    <function name="lastIndexOf" visibility="public" procflags="abstract overload virtual" callconv="cdecl" file="Androidapi.JNI.JavaTypes.pas" line="1616">
+      <parameters>
+        <parameter name="str" type="JString" />
+        <parameter name="fromIndex" type="Integer" />
+        <retval type="Integer" />
+      </parameters>
+    </function>
+    <function name="length" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.JavaTypes.pas" line="1617">
+      <parameters>
+        <retval type="Integer" />
+      </parameters>
+    </function>
+    <function name="matches" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.JavaTypes.pas" line="1618">
+      <parameters>
+        <parameter name="regex" type="JString" />
+        <retval type="Boolean" />
+      </parameters>
+    </function>
+    <function name="offsetByCodePoints" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.JavaTypes.pas" line="1619">
+      <parameters>
+        <parameter name="index" type="Integer" />
+        <parameter name="codePointOffset" type="Integer" />
+        <retval type="Integer" />
+      </parameters>
+    </function>
+    <function name="regionMatches" visibility="public" procflags="abstract overload virtual" callconv="cdecl" file="Androidapi.JNI.JavaTypes.pas" line="1620">
+      <parameters>
+        <parameter name="toffset" type="Integer" />
+        <parameter name="other" type="JString" />
+        <parameter name="ooffset" type="Integer" />
+        <parameter name="len" type="Integer" />
+        <retval type="Boolean" />
+      </parameters>
+    </function>
+    <function name="regionMatches" visibility="public" procflags="abstract overload virtual" callconv="cdecl" file="Androidapi.JNI.JavaTypes.pas" line="1621">
+      <parameters>
+        <parameter name="ignoreCase" type="Boolean" />
+        <parameter name="toffset" type="Integer" />
+        <parameter name="other" type="JString" />
+        <parameter name="ooffset" type="Integer" />
+        <parameter name="len" type="Integer" />
+        <retval type="Boolean" />
+      </parameters>
+    </function>
+    <function name="replace" visibility="public" procflags="abstract overload virtual" callconv="cdecl" file="Androidapi.JNI.JavaTypes.pas" line="1622">
+      <parameters>
+        <parameter name="oldChar" type="Char" />
+        <parameter name="newChar" type="Char" />
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="replace" visibility="public" procflags="abstract overload virtual" callconv="cdecl" file="Androidapi.JNI.JavaTypes.pas" line="1623">
+      <parameters>
+        <parameter name="target" type="JCharSequence" />
+        <parameter name="replacement" type="JCharSequence" />
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="replaceAll" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.JavaTypes.pas" line="1624">
+      <parameters>
+        <parameter name="regex" type="JString" />
+        <parameter name="replacement" type="JString" />
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="replaceFirst" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.JavaTypes.pas" line="1625">
+      <parameters>
+        <parameter name="regex" type="JString" />
+        <parameter name="replacement" type="JString" />
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="split" visibility="public" procflags="abstract overload virtual" callconv="cdecl" file="Androidapi.JNI.JavaTypes.pas" line="1626">
+      <parameters>
+        <parameter name="regex" type="JString" />
+        <parameter name="limit" type="Integer" />
+        <retval type="TJavaObjectArray&lt;Androidapi.JNI.JavaTypes.JString&gt;" />
+      </parameters>
+    </function>
+    <function name="split" visibility="public" procflags="abstract overload virtual" callconv="cdecl" file="Androidapi.JNI.JavaTypes.pas" line="1627">
+      <parameters>
+        <parameter name="regex" type="JString" />
+        <retval type="TJavaObjectArray&lt;Androidapi.JNI.JavaTypes.JString&gt;" />
+      </parameters>
+    </function>
+    <function name="startsWith" visibility="public" procflags="abstract overload virtual" callconv="cdecl" file="Androidapi.JNI.JavaTypes.pas" line="1628">
+      <parameters>
+        <parameter name="prefix" type="JString" />
+        <parameter name="toffset" type="Integer" />
+        <retval type="Boolean" />
+      </parameters>
+    </function>
+    <function name="startsWith" visibility="public" procflags="abstract overload virtual" callconv="cdecl" file="Androidapi.JNI.JavaTypes.pas" line="1629">
+      <parameters>
+        <parameter name="prefix" type="JString" />
+        <retval type="Boolean" />
+      </parameters>
+    </function>
+    <function name="subSequence" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.JavaTypes.pas" line="1630">
+      <parameters>
+        <parameter name="beginIndex" type="Integer" />
+        <parameter name="endIndex" type="Integer" />
+        <retval type="JCharSequence">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="substring" visibility="public" procflags="abstract overload virtual" callconv="cdecl" file="Androidapi.JNI.JavaTypes.pas" line="1631">
+      <parameters>
+        <parameter name="beginIndex" type="Integer" />
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="substring" visibility="public" procflags="abstract overload virtual" callconv="cdecl" file="Androidapi.JNI.JavaTypes.pas" line="1632">
+      <parameters>
+        <parameter name="beginIndex" type="Integer" />
+        <parameter name="endIndex" type="Integer" />
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="toCharArray" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.JavaTypes.pas" line="1633">
+      <parameters>
+        <retval type="TJavaArray&lt;System.Char&gt;" />
+      </parameters>
+    </function>
+    <function name="toLowerCase" visibility="public" procflags="abstract overload virtual" callconv="cdecl" file="Androidapi.JNI.JavaTypes.pas" line="1634">
+      <parameters>
+        <parameter name="locale" type="JLocale" />
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="toLowerCase" visibility="public" procflags="abstract overload virtual" callconv="cdecl" file="Androidapi.JNI.JavaTypes.pas" line="1635">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="toString" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.JavaTypes.pas" line="1636">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="toUpperCase" visibility="public" procflags="abstract overload virtual" callconv="cdecl" file="Androidapi.JNI.JavaTypes.pas" line="1637">
+      <parameters>
+        <parameter name="locale" type="JLocale" />
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="toUpperCase" visibility="public" procflags="abstract overload virtual" callconv="cdecl" file="Androidapi.JNI.JavaTypes.pas" line="1638">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="trim" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.JavaTypes.pas" line="1639">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+  </interface>
+  <interface name="JavaManifest" alias="Androidapi.JNI.Os.JManifest_permissionClass" GUID="{7138C56B-F5A7-4319-8D1D-0035C5F4E01A}" ancestor="JObjectClass" file="Androidapi.JNI.Os.pas" line="79">
+    <function name="_GetACCESS_CHECKIN_PROPERTIES" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="81">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetACCESS_COARSE_LOCATION" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="82">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetACCESS_FINE_LOCATION" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="83">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetACCESS_LOCATION_EXTRA_COMMANDS" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="84">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetACCESS_NETWORK_STATE" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="85">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetACCESS_NOTIFICATION_POLICY" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="86">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetACCESS_WIFI_STATE" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="87">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetACCOUNT_MANAGER" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="88">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetADD_VOICEMAIL" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="89">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetANSWER_PHONE_CALLS" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="90">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetBATTERY_STATS" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="91">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetBIND_ACCESSIBILITY_SERVICE" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="92">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetBIND_APPWIDGET" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="93">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetBIND_AUTOFILL_SERVICE" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="94">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetBIND_CARRIER_MESSAGING_SERVICE" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="95">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetBIND_CARRIER_SERVICES" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="96">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetBIND_CHOOSER_TARGET_SERVICE" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="97">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetBIND_CONDITION_PROVIDER_SERVICE" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="98">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetBIND_DEVICE_ADMIN" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="99">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetBIND_DREAM_SERVICE" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="100">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetBIND_INCALL_SERVICE" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="101">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetBIND_INPUT_METHOD" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="102">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetBIND_MIDI_DEVICE_SERVICE" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="103">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetBIND_NFC_SERVICE" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="104">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetBIND_NOTIFICATION_LISTENER_SERVICE" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="105">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetBIND_PRINT_SERVICE" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="106">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetBIND_QUICK_SETTINGS_TILE" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="107">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetBIND_REMOTEVIEWS" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="108">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetBIND_SCREENING_SERVICE" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="109">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetBIND_TELECOM_CONNECTION_SERVICE" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="110">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetBIND_TEXT_SERVICE" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="111">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetBIND_TV_INPUT" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="112">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetBIND_VISUAL_VOICEMAIL_SERVICE" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="113">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetBIND_VOICE_INTERACTION" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="114">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetBIND_VPN_SERVICE" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="115">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetBIND_VR_LISTENER_SERVICE" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="116">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetBIND_WALLPAPER" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="117">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetBLUETOOTH" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="118">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetBLUETOOTH_ADMIN" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="119">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetBLUETOOTH_PRIVILEGED" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="120">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetBODY_SENSORS" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="121">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetBROADCAST_PACKAGE_REMOVED" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="122">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetBROADCAST_SMS" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="123">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetBROADCAST_STICKY" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="124">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetBROADCAST_WAP_PUSH" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="125">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetCALL_PHONE" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="126">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetCALL_PRIVILEGED" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="127">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetCAMERA" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="128">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetCAPTURE_AUDIO_OUTPUT" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="129">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetCAPTURE_SECURE_VIDEO_OUTPUT" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="130">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetCAPTURE_VIDEO_OUTPUT" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="131">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetCHANGE_COMPONENT_ENABLED_STATE" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="132">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetCHANGE_CONFIGURATION" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="133">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetCHANGE_NETWORK_STATE" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="134">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetCHANGE_WIFI_MULTICAST_STATE" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="135">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetCHANGE_WIFI_STATE" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="136">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetCLEAR_APP_CACHE" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="137">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetCONTROL_LOCATION_UPDATES" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="138">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetDELETE_CACHE_FILES" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="139">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetDELETE_PACKAGES" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="140">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetDIAGNOSTIC" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="141">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetDISABLE_KEYGUARD" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="142">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetDUMP" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="143">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetEXPAND_STATUS_BAR" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="144">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetFACTORY_TEST" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="145">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetGET_ACCOUNTS" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="146">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetGET_ACCOUNTS_PRIVILEGED" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="147">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetGET_PACKAGE_SIZE" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="148">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetGET_TASKS" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="149">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetGLOBAL_SEARCH" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="150">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetINSTALL_LOCATION_PROVIDER" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="151">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetINSTALL_PACKAGES" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="152">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetINSTALL_SHORTCUT" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="153">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetINSTANT_APP_FOREGROUND_SERVICE" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="154">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetINTERNET" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="155">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetKILL_BACKGROUND_PROCESSES" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="156">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetLOCATION_HARDWARE" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="157">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetMANAGE_DOCUMENTS" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="158">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetMANAGE_OWN_CALLS" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="159">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetMASTER_CLEAR" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="160">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetMEDIA_CONTENT_CONTROL" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="161">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetMODIFY_AUDIO_SETTINGS" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="162">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetMODIFY_PHONE_STATE" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="163">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetMOUNT_FORMAT_FILESYSTEMS" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="164">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetMOUNT_UNMOUNT_FILESYSTEMS" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="165">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetNFC" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="166">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetPACKAGE_USAGE_STATS" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="167">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetPERSISTENT_ACTIVITY" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="168">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetPROCESS_OUTGOING_CALLS" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="169">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetREAD_CALENDAR" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="170">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetREAD_CALL_LOG" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="171">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetREAD_CONTACTS" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="172">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetREAD_EXTERNAL_STORAGE" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="173">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetREAD_FRAME_BUFFER" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="174">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetREAD_INPUT_STATE" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="175">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetREAD_LOGS" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="176">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetREAD_PHONE_NUMBERS" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="177">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetREAD_PHONE_STATE" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="178">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetREAD_SMS" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="179">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetREAD_SYNC_SETTINGS" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="180">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetREAD_SYNC_STATS" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="181">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetREAD_VOICEMAIL" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="182">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetREBOOT" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="183">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetRECEIVE_BOOT_COMPLETED" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="184">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetRECEIVE_MMS" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="185">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetRECEIVE_SMS" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="186">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetRECEIVE_WAP_PUSH" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="187">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetRECORD_AUDIO" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="188">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetREORDER_TASKS" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="189">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetREQUEST_COMPANION_RUN_IN_BACKGROUND" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="190">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetREQUEST_COMPANION_USE_DATA_IN_BACKGROUND" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="191">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetREQUEST_DELETE_PACKAGES" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="192">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetREQUEST_IGNORE_BATTERY_OPTIMIZATIONS" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="193">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetREQUEST_INSTALL_PACKAGES" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="194">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetRESTART_PACKAGES" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="195">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetSEND_RESPOND_VIA_MESSAGE" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="196">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetSEND_SMS" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="197">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetSET_ALARM" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="198">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetSET_ALWAYS_FINISH" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="199">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetSET_ANIMATION_SCALE" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="200">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetSET_DEBUG_APP" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="201">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetSET_PREFERRED_APPLICATIONS" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="202">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetSET_PROCESS_LIMIT" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="203">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetSET_TIME" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="204">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetSET_TIME_ZONE" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="205">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetSET_WALLPAPER" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="206">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetSET_WALLPAPER_HINTS" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="207">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetSIGNAL_PERSISTENT_PROCESSES" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="208">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetSTATUS_BAR" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="209">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetSYSTEM_ALERT_WINDOW" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="210">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetTRANSMIT_IR" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="211">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetUNINSTALL_SHORTCUT" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="212">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetUPDATE_DEVICE_STATS" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="213">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetUSE_FINGERPRINT" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="214">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetUSE_SIP" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="215">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetVIBRATE" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="216">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetWAKE_LOCK" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="217">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetWRITE_APN_SETTINGS" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="218">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetWRITE_CALENDAR" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="219">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetWRITE_CALL_LOG" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="220">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetWRITE_CONTACTS" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="221">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetWRITE_EXTERNAL_STORAGE" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="222">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetWRITE_GSERVICES" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="223">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetWRITE_SECURE_SETTINGS" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="224">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetWRITE_SETTINGS" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="225">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetWRITE_SYNC_SETTINGS" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="226">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="_GetWRITE_VOICEMAIL" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="227">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="init" visibility="public" procflags="abstract virtual" callconv="cdecl" file="Androidapi.JNI.Os.pas" line="228">
+      <parameters>
+        <retval type="JManifest_permission">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <property name="ACCESS_CHECKIN_PROPERTIES" visibility="public" read="_GetACCESS_CHECKIN_PROPERTIES" type="JString" file="Androidapi.JNI.Os.pas" line="229">
+    </property>
+    <property name="ACCESS_COARSE_LOCATION" visibility="public" read="_GetACCESS_COARSE_LOCATION" type="JString" file="Androidapi.JNI.Os.pas" line="230">
+    </property>
+    <property name="ACCESS_FINE_LOCATION" visibility="public" read="_GetACCESS_FINE_LOCATION" type="JString" file="Androidapi.JNI.Os.pas" line="231">
+    </property>
+    <property name="ACCESS_LOCATION_EXTRA_COMMANDS" visibility="public" read="_GetACCESS_LOCATION_EXTRA_COMMANDS" type="JString" file="Androidapi.JNI.Os.pas" line="232">
+    </property>
+    <property name="ACCESS_NETWORK_STATE" visibility="public" read="_GetACCESS_NETWORK_STATE" type="JString" file="Androidapi.JNI.Os.pas" line="233">
+    </property>
+    <property name="ACCESS_NOTIFICATION_POLICY" visibility="public" read="_GetACCESS_NOTIFICATION_POLICY" type="JString" file="Androidapi.JNI.Os.pas" line="234">
+    </property>
+    <property name="ACCESS_WIFI_STATE" visibility="public" read="_GetACCESS_WIFI_STATE" type="JString" file="Androidapi.JNI.Os.pas" line="235">
+    </property>
+    <property name="ACCOUNT_MANAGER" visibility="public" read="_GetACCOUNT_MANAGER" type="JString" file="Androidapi.JNI.Os.pas" line="236">
+    </property>
+    <property name="ADD_VOICEMAIL" visibility="public" read="_GetADD_VOICEMAIL" type="JString" file="Androidapi.JNI.Os.pas" line="237">
+    </property>
+    <property name="ANSWER_PHONE_CALLS" visibility="public" read="_GetANSWER_PHONE_CALLS" type="JString" file="Androidapi.JNI.Os.pas" line="238">
+    </property>
+    <property name="BATTERY_STATS" visibility="public" read="_GetBATTERY_STATS" type="JString" file="Androidapi.JNI.Os.pas" line="239">
+    </property>
+    <property name="BIND_ACCESSIBILITY_SERVICE" visibility="public" read="_GetBIND_ACCESSIBILITY_SERVICE" type="JString" file="Androidapi.JNI.Os.pas" line="240">
+    </property>
+    <property name="BIND_APPWIDGET" visibility="public" read="_GetBIND_APPWIDGET" type="JString" file="Androidapi.JNI.Os.pas" line="241">
+    </property>
+    <property name="BIND_AUTOFILL_SERVICE" visibility="public" read="_GetBIND_AUTOFILL_SERVICE" type="JString" file="Androidapi.JNI.Os.pas" line="242">
+    </property>
+    <property name="BIND_CARRIER_MESSAGING_SERVICE" visibility="public" read="_GetBIND_CARRIER_MESSAGING_SERVICE" type="JString" file="Androidapi.JNI.Os.pas" line="243">
+    </property>
+    <property name="BIND_CARRIER_SERVICES" visibility="public" read="_GetBIND_CARRIER_SERVICES" type="JString" file="Androidapi.JNI.Os.pas" line="244">
+    </property>
+    <property name="BIND_CHOOSER_TARGET_SERVICE" visibility="public" read="_GetBIND_CHOOSER_TARGET_SERVICE" type="JString" file="Androidapi.JNI.Os.pas" line="245">
+    </property>
+    <property name="BIND_CONDITION_PROVIDER_SERVICE" visibility="public" read="_GetBIND_CONDITION_PROVIDER_SERVICE" type="JString" file="Androidapi.JNI.Os.pas" line="246">
+    </property>
+    <property name="BIND_DEVICE_ADMIN" visibility="public" read="_GetBIND_DEVICE_ADMIN" type="JString" file="Androidapi.JNI.Os.pas" line="247">
+    </property>
+    <property name="BIND_DREAM_SERVICE" visibility="public" read="_GetBIND_DREAM_SERVICE" type="JString" file="Androidapi.JNI.Os.pas" line="248">
+    </property>
+    <property name="BIND_INCALL_SERVICE" visibility="public" read="_GetBIND_INCALL_SERVICE" type="JString" file="Androidapi.JNI.Os.pas" line="249">
+    </property>
+    <property name="BIND_INPUT_METHOD" visibility="public" read="_GetBIND_INPUT_METHOD" type="JString" file="Androidapi.JNI.Os.pas" line="250">
+    </property>
+    <property name="BIND_MIDI_DEVICE_SERVICE" visibility="public" read="_GetBIND_MIDI_DEVICE_SERVICE" type="JString" file="Androidapi.JNI.Os.pas" line="251">
+    </property>
+    <property name="BIND_NFC_SERVICE" visibility="public" read="_GetBIND_NFC_SERVICE" type="JString" file="Androidapi.JNI.Os.pas" line="252">
+    </property>
+    <property name="BIND_NOTIFICATION_LISTENER_SERVICE" visibility="public" read="_GetBIND_NOTIFICATION_LISTENER_SERVICE" type="JString" file="Androidapi.JNI.Os.pas" line="253">
+    </property>
+    <property name="BIND_PRINT_SERVICE" visibility="public" read="_GetBIND_PRINT_SERVICE" type="JString" file="Androidapi.JNI.Os.pas" line="254">
+    </property>
+    <property name="BIND_QUICK_SETTINGS_TILE" visibility="public" read="_GetBIND_QUICK_SETTINGS_TILE" type="JString" file="Androidapi.JNI.Os.pas" line="255">
+    </property>
+    <property name="BIND_REMOTEVIEWS" visibility="public" read="_GetBIND_REMOTEVIEWS" type="JString" file="Androidapi.JNI.Os.pas" line="256">
+    </property>
+    <property name="BIND_SCREENING_SERVICE" visibility="public" read="_GetBIND_SCREENING_SERVICE" type="JString" file="Androidapi.JNI.Os.pas" line="257">
+    </property>
+    <property name="BIND_TELECOM_CONNECTION_SERVICE" visibility="public" read="_GetBIND_TELECOM_CONNECTION_SERVICE" type="JString" file="Androidapi.JNI.Os.pas" line="258">
+    </property>
+    <property name="BIND_TEXT_SERVICE" visibility="public" read="_GetBIND_TEXT_SERVICE" type="JString" file="Androidapi.JNI.Os.pas" line="259">
+    </property>
+    <property name="BIND_TV_INPUT" visibility="public" read="_GetBIND_TV_INPUT" type="JString" file="Androidapi.JNI.Os.pas" line="260">
+    </property>
+    <property name="BIND_VISUAL_VOICEMAIL_SERVICE" visibility="public" read="_GetBIND_VISUAL_VOICEMAIL_SERVICE" type="JString" file="Androidapi.JNI.Os.pas" line="261">
+    </property>
+    <property name="BIND_VOICE_INTERACTION" visibility="public" read="_GetBIND_VOICE_INTERACTION" type="JString" file="Androidapi.JNI.Os.pas" line="262">
+    </property>
+    <property name="BIND_VPN_SERVICE" visibility="public" read="_GetBIND_VPN_SERVICE" type="JString" file="Androidapi.JNI.Os.pas" line="263">
+    </property>
+    <property name="BIND_VR_LISTENER_SERVICE" visibility="public" read="_GetBIND_VR_LISTENER_SERVICE" type="JString" file="Androidapi.JNI.Os.pas" line="264">
+    </property>
+    <property name="BIND_WALLPAPER" visibility="public" read="_GetBIND_WALLPAPER" type="JString" file="Androidapi.JNI.Os.pas" line="265">
+    </property>
+    <property name="BLUETOOTH" visibility="public" read="_GetBLUETOOTH" type="JString" file="Androidapi.JNI.Os.pas" line="266">
+    </property>
+    <property name="BLUETOOTH_ADMIN" visibility="public" read="_GetBLUETOOTH_ADMIN" type="JString" file="Androidapi.JNI.Os.pas" line="267">
+    </property>
+    <property name="BLUETOOTH_PRIVILEGED" visibility="public" read="_GetBLUETOOTH_PRIVILEGED" type="JString" file="Androidapi.JNI.Os.pas" line="268">
+    </property>
+    <property name="BODY_SENSORS" visibility="public" read="_GetBODY_SENSORS" type="JString" file="Androidapi.JNI.Os.pas" line="269">
+    </property>
+    <property name="BROADCAST_PACKAGE_REMOVED" visibility="public" read="_GetBROADCAST_PACKAGE_REMOVED" type="JString" file="Androidapi.JNI.Os.pas" line="270">
+    </property>
+    <property name="BROADCAST_SMS" visibility="public" read="_GetBROADCAST_SMS" type="JString" file="Androidapi.JNI.Os.pas" line="271">
+    </property>
+    <property name="BROADCAST_STICKY" visibility="public" read="_GetBROADCAST_STICKY" type="JString" file="Androidapi.JNI.Os.pas" line="272">
+    </property>
+    <property name="BROADCAST_WAP_PUSH" visibility="public" read="_GetBROADCAST_WAP_PUSH" type="JString" file="Androidapi.JNI.Os.pas" line="273">
+    </property>
+    <property name="CALL_PHONE" visibility="public" read="_GetCALL_PHONE" type="JString" file="Androidapi.JNI.Os.pas" line="274">
+    </property>
+    <property name="CALL_PRIVILEGED" visibility="public" read="_GetCALL_PRIVILEGED" type="JString" file="Androidapi.JNI.Os.pas" line="275">
+    </property>
+    <property name="CAMERA" visibility="public" read="_GetCAMERA" type="JString" file="Androidapi.JNI.Os.pas" line="276">
+    </property>
+    <property name="CAPTURE_AUDIO_OUTPUT" visibility="public" read="_GetCAPTURE_AUDIO_OUTPUT" type="JString" file="Androidapi.JNI.Os.pas" line="277">
+    </property>
+    <property name="CAPTURE_SECURE_VIDEO_OUTPUT" visibility="public" read="_GetCAPTURE_SECURE_VIDEO_OUTPUT" type="JString" file="Androidapi.JNI.Os.pas" line="278">
+    </property>
+    <property name="CAPTURE_VIDEO_OUTPUT" visibility="public" read="_GetCAPTURE_VIDEO_OUTPUT" type="JString" file="Androidapi.JNI.Os.pas" line="279">
+    </property>
+    <property name="CHANGE_COMPONENT_ENABLED_STATE" visibility="public" read="_GetCHANGE_COMPONENT_ENABLED_STATE" type="JString" file="Androidapi.JNI.Os.pas" line="280">
+    </property>
+    <property name="CHANGE_CONFIGURATION" visibility="public" read="_GetCHANGE_CONFIGURATION" type="JString" file="Androidapi.JNI.Os.pas" line="281">
+    </property>
+    <property name="CHANGE_NETWORK_STATE" visibility="public" read="_GetCHANGE_NETWORK_STATE" type="JString" file="Androidapi.JNI.Os.pas" line="282">
+    </property>
+    <property name="CHANGE_WIFI_MULTICAST_STATE" visibility="public" read="_GetCHANGE_WIFI_MULTICAST_STATE" type="JString" file="Androidapi.JNI.Os.pas" line="283">
+    </property>
+    <property name="CHANGE_WIFI_STATE" visibility="public" read="_GetCHANGE_WIFI_STATE" type="JString" file="Androidapi.JNI.Os.pas" line="284">
+    </property>
+    <property name="CLEAR_APP_CACHE" visibility="public" read="_GetCLEAR_APP_CACHE" type="JString" file="Androidapi.JNI.Os.pas" line="285">
+    </property>
+    <property name="CONTROL_LOCATION_UPDATES" visibility="public" read="_GetCONTROL_LOCATION_UPDATES" type="JString" file="Androidapi.JNI.Os.pas" line="286">
+    </property>
+    <property name="DELETE_CACHE_FILES" visibility="public" read="_GetDELETE_CACHE_FILES" type="JString" file="Androidapi.JNI.Os.pas" line="287">
+    </property>
+    <property name="DELETE_PACKAGES" visibility="public" read="_GetDELETE_PACKAGES" type="JString" file="Androidapi.JNI.Os.pas" line="288">
+    </property>
+    <property name="DIAGNOSTIC" visibility="public" read="_GetDIAGNOSTIC" type="JString" file="Androidapi.JNI.Os.pas" line="289">
+    </property>
+    <property name="DISABLE_KEYGUARD" visibility="public" read="_GetDISABLE_KEYGUARD" type="JString" file="Androidapi.JNI.Os.pas" line="290">
+    </property>
+    <property name="DUMP" visibility="public" read="_GetDUMP" type="JString" file="Androidapi.JNI.Os.pas" line="291">
+    </property>
+    <property name="EXPAND_STATUS_BAR" visibility="public" read="_GetEXPAND_STATUS_BAR" type="JString" file="Androidapi.JNI.Os.pas" line="292">
+    </property>
+    <property name="FACTORY_TEST" visibility="public" read="_GetFACTORY_TEST" type="JString" file="Androidapi.JNI.Os.pas" line="293">
+    </property>
+    <property name="GET_ACCOUNTS" visibility="public" read="_GetGET_ACCOUNTS" type="JString" file="Androidapi.JNI.Os.pas" line="294">
+    </property>
+    <property name="GET_ACCOUNTS_PRIVILEGED" visibility="public" read="_GetGET_ACCOUNTS_PRIVILEGED" type="JString" file="Androidapi.JNI.Os.pas" line="295">
+    </property>
+    <property name="GET_PACKAGE_SIZE" visibility="public" read="_GetGET_PACKAGE_SIZE" type="JString" file="Androidapi.JNI.Os.pas" line="296">
+    </property>
+    <property name="GET_TASKS" visibility="public" read="_GetGET_TASKS" type="JString" file="Androidapi.JNI.Os.pas" line="297">
+    </property>
+    <property name="GLOBAL_SEARCH" visibility="public" read="_GetGLOBAL_SEARCH" type="JString" file="Androidapi.JNI.Os.pas" line="298">
+    </property>
+    <property name="INSTALL_LOCATION_PROVIDER" visibility="public" read="_GetINSTALL_LOCATION_PROVIDER" type="JString" file="Androidapi.JNI.Os.pas" line="299">
+    </property>
+    <property name="INSTALL_PACKAGES" visibility="public" read="_GetINSTALL_PACKAGES" type="JString" file="Androidapi.JNI.Os.pas" line="300">
+    </property>
+    <property name="INSTALL_SHORTCUT" visibility="public" read="_GetINSTALL_SHORTCUT" type="JString" file="Androidapi.JNI.Os.pas" line="301">
+    </property>
+    <property name="INSTANT_APP_FOREGROUND_SERVICE" visibility="public" read="_GetINSTANT_APP_FOREGROUND_SERVICE" type="JString" file="Androidapi.JNI.Os.pas" line="302">
+    </property>
+    <property name="INTERNET" visibility="public" read="_GetINTERNET" type="JString" file="Androidapi.JNI.Os.pas" line="303">
+    </property>
+    <property name="KILL_BACKGROUND_PROCESSES" visibility="public" read="_GetKILL_BACKGROUND_PROCESSES" type="JString" file="Androidapi.JNI.Os.pas" line="304">
+    </property>
+    <property name="LOCATION_HARDWARE" visibility="public" read="_GetLOCATION_HARDWARE" type="JString" file="Androidapi.JNI.Os.pas" line="305">
+    </property>
+    <property name="MANAGE_DOCUMENTS" visibility="public" read="_GetMANAGE_DOCUMENTS" type="JString" file="Androidapi.JNI.Os.pas" line="306">
+    </property>
+    <property name="MANAGE_OWN_CALLS" visibility="public" read="_GetMANAGE_OWN_CALLS" type="JString" file="Androidapi.JNI.Os.pas" line="307">
+    </property>
+    <property name="MASTER_CLEAR" visibility="public" read="_GetMASTER_CLEAR" type="JString" file="Androidapi.JNI.Os.pas" line="308">
+    </property>
+    <property name="MEDIA_CONTENT_CONTROL" visibility="public" read="_GetMEDIA_CONTENT_CONTROL" type="JString" file="Androidapi.JNI.Os.pas" line="309">
+    </property>
+    <property name="MODIFY_AUDIO_SETTINGS" visibility="public" read="_GetMODIFY_AUDIO_SETTINGS" type="JString" file="Androidapi.JNI.Os.pas" line="310">
+    </property>
+    <property name="MODIFY_PHONE_STATE" visibility="public" read="_GetMODIFY_PHONE_STATE" type="JString" file="Androidapi.JNI.Os.pas" line="311">
+    </property>
+    <property name="MOUNT_FORMAT_FILESYSTEMS" visibility="public" read="_GetMOUNT_FORMAT_FILESYSTEMS" type="JString" file="Androidapi.JNI.Os.pas" line="312">
+    </property>
+    <property name="MOUNT_UNMOUNT_FILESYSTEMS" visibility="public" read="_GetMOUNT_UNMOUNT_FILESYSTEMS" type="JString" file="Androidapi.JNI.Os.pas" line="313">
+    </property>
+    <property name="NFC" visibility="public" read="_GetNFC" type="JString" file="Androidapi.JNI.Os.pas" line="314">
+    </property>
+    <property name="PACKAGE_USAGE_STATS" visibility="public" read="_GetPACKAGE_USAGE_STATS" type="JString" file="Androidapi.JNI.Os.pas" line="315">
+    </property>
+    <property name="PERSISTENT_ACTIVITY" visibility="public" read="_GetPERSISTENT_ACTIVITY" type="JString" file="Androidapi.JNI.Os.pas" line="316">
+    </property>
+    <property name="PROCESS_OUTGOING_CALLS" visibility="public" read="_GetPROCESS_OUTGOING_CALLS" type="JString" file="Androidapi.JNI.Os.pas" line="317">
+    </property>
+    <property name="READ_CALENDAR" visibility="public" read="_GetREAD_CALENDAR" type="JString" file="Androidapi.JNI.Os.pas" line="318">
+    </property>
+    <property name="READ_CALL_LOG" visibility="public" read="_GetREAD_CALL_LOG" type="JString" file="Androidapi.JNI.Os.pas" line="319">
+    </property>
+    <property name="READ_CONTACTS" visibility="public" read="_GetREAD_CONTACTS" type="JString" file="Androidapi.JNI.Os.pas" line="320">
+    </property>
+    <property name="READ_EXTERNAL_STORAGE" visibility="public" read="_GetREAD_EXTERNAL_STORAGE" type="JString" file="Androidapi.JNI.Os.pas" line="321">
+    </property>
+    <property name="READ_FRAME_BUFFER" visibility="public" read="_GetREAD_FRAME_BUFFER" type="JString" file="Androidapi.JNI.Os.pas" line="322">
+    </property>
+    <property name="READ_INPUT_STATE" visibility="public" read="_GetREAD_INPUT_STATE" type="JString" file="Androidapi.JNI.Os.pas" line="323">
+    </property>
+    <property name="READ_LOGS" visibility="public" read="_GetREAD_LOGS" type="JString" file="Androidapi.JNI.Os.pas" line="324">
+    </property>
+    <property name="READ_PHONE_NUMBERS" visibility="public" read="_GetREAD_PHONE_NUMBERS" type="JString" file="Androidapi.JNI.Os.pas" line="325">
+    </property>
+    <property name="READ_PHONE_STATE" visibility="public" read="_GetREAD_PHONE_STATE" type="JString" file="Androidapi.JNI.Os.pas" line="326">
+    </property>
+    <property name="READ_SMS" visibility="public" read="_GetREAD_SMS" type="JString" file="Androidapi.JNI.Os.pas" line="327">
+    </property>
+    <property name="READ_SYNC_SETTINGS" visibility="public" read="_GetREAD_SYNC_SETTINGS" type="JString" file="Androidapi.JNI.Os.pas" line="328">
+    </property>
+    <property name="READ_SYNC_STATS" visibility="public" read="_GetREAD_SYNC_STATS" type="JString" file="Androidapi.JNI.Os.pas" line="329">
+    </property>
+    <property name="READ_VOICEMAIL" visibility="public" read="_GetREAD_VOICEMAIL" type="JString" file="Androidapi.JNI.Os.pas" line="330">
+    </property>
+    <property name="REBOOT" visibility="public" read="_GetREBOOT" type="JString" file="Androidapi.JNI.Os.pas" line="331">
+    </property>
+    <property name="RECEIVE_BOOT_COMPLETED" visibility="public" read="_GetRECEIVE_BOOT_COMPLETED" type="JString" file="Androidapi.JNI.Os.pas" line="332">
+    </property>
+    <property name="RECEIVE_MMS" visibility="public" read="_GetRECEIVE_MMS" type="JString" file="Androidapi.JNI.Os.pas" line="333">
+    </property>
+    <property name="RECEIVE_SMS" visibility="public" read="_GetRECEIVE_SMS" type="JString" file="Androidapi.JNI.Os.pas" line="334">
+    </property>
+    <property name="RECEIVE_WAP_PUSH" visibility="public" read="_GetRECEIVE_WAP_PUSH" type="JString" file="Androidapi.JNI.Os.pas" line="335">
+    </property>
+    <property name="RECORD_AUDIO" visibility="public" read="_GetRECORD_AUDIO" type="JString" file="Androidapi.JNI.Os.pas" line="336">
+    </property>
+    <property name="REORDER_TASKS" visibility="public" read="_GetREORDER_TASKS" type="JString" file="Androidapi.JNI.Os.pas" line="337">
+    </property>
+    <property name="REQUEST_COMPANION_RUN_IN_BACKGROUND" visibility="public" read="_GetREQUEST_COMPANION_RUN_IN_BACKGROUND" type="JString" file="Androidapi.JNI.Os.pas" line="338">
+    </property>
+    <property name="REQUEST_COMPANION_USE_DATA_IN_BACKGROUND" visibility="public" read="_GetREQUEST_COMPANION_USE_DATA_IN_BACKGROUND" type="JString" file="Androidapi.JNI.Os.pas" line="339">
+    </property>
+    <property name="REQUEST_DELETE_PACKAGES" visibility="public" read="_GetREQUEST_DELETE_PACKAGES" type="JString" file="Androidapi.JNI.Os.pas" line="340">
+    </property>
+    <property name="REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" visibility="public" read="_GetREQUEST_IGNORE_BATTERY_OPTIMIZATIONS" type="JString" file="Androidapi.JNI.Os.pas" line="341">
+    </property>
+    <property name="REQUEST_INSTALL_PACKAGES" visibility="public" read="_GetREQUEST_INSTALL_PACKAGES" type="JString" file="Androidapi.JNI.Os.pas" line="342">
+    </property>
+    <property name="RESTART_PACKAGES" visibility="public" read="_GetRESTART_PACKAGES" type="JString" file="Androidapi.JNI.Os.pas" line="343">
+    </property>
+    <property name="SEND_RESPOND_VIA_MESSAGE" visibility="public" read="_GetSEND_RESPOND_VIA_MESSAGE" type="JString" file="Androidapi.JNI.Os.pas" line="344">
+    </property>
+    <property name="SEND_SMS" visibility="public" read="_GetSEND_SMS" type="JString" file="Androidapi.JNI.Os.pas" line="345">
+    </property>
+    <property name="SET_ALARM" visibility="public" read="_GetSET_ALARM" type="JString" file="Androidapi.JNI.Os.pas" line="346">
+    </property>
+    <property name="SET_ALWAYS_FINISH" visibility="public" read="_GetSET_ALWAYS_FINISH" type="JString" file="Androidapi.JNI.Os.pas" line="347">
+    </property>
+    <property name="SET_ANIMATION_SCALE" visibility="public" read="_GetSET_ANIMATION_SCALE" type="JString" file="Androidapi.JNI.Os.pas" line="348">
+    </property>
+    <property name="SET_DEBUG_APP" visibility="public" read="_GetSET_DEBUG_APP" type="JString" file="Androidapi.JNI.Os.pas" line="349">
+    </property>
+    <property name="SET_PREFERRED_APPLICATIONS" visibility="public" read="_GetSET_PREFERRED_APPLICATIONS" type="JString" file="Androidapi.JNI.Os.pas" line="350">
+    </property>
+    <property name="SET_PROCESS_LIMIT" visibility="public" read="_GetSET_PROCESS_LIMIT" type="JString" file="Androidapi.JNI.Os.pas" line="351">
+    </property>
+    <property name="SET_TIME" visibility="public" read="_GetSET_TIME" type="JString" file="Androidapi.JNI.Os.pas" line="352">
+    </property>
+    <property name="SET_TIME_ZONE" visibility="public" read="_GetSET_TIME_ZONE" type="JString" file="Androidapi.JNI.Os.pas" line="353">
+    </property>
+    <property name="SET_WALLPAPER" visibility="public" read="_GetSET_WALLPAPER" type="JString" file="Androidapi.JNI.Os.pas" line="354">
+    </property>
+    <property name="SET_WALLPAPER_HINTS" visibility="public" read="_GetSET_WALLPAPER_HINTS" type="JString" file="Androidapi.JNI.Os.pas" line="355">
+    </property>
+    <property name="SIGNAL_PERSISTENT_PROCESSES" visibility="public" read="_GetSIGNAL_PERSISTENT_PROCESSES" type="JString" file="Androidapi.JNI.Os.pas" line="356">
+    </property>
+    <property name="STATUS_BAR" visibility="public" read="_GetSTATUS_BAR" type="JString" file="Androidapi.JNI.Os.pas" line="357">
+    </property>
+    <property name="SYSTEM_ALERT_WINDOW" visibility="public" read="_GetSYSTEM_ALERT_WINDOW" type="JString" file="Androidapi.JNI.Os.pas" line="358">
+    </property>
+    <property name="TRANSMIT_IR" visibility="public" read="_GetTRANSMIT_IR" type="JString" file="Androidapi.JNI.Os.pas" line="359">
+    </property>
+    <property name="UNINSTALL_SHORTCUT" visibility="public" read="_GetUNINSTALL_SHORTCUT" type="JString" file="Androidapi.JNI.Os.pas" line="360">
+    </property>
+    <property name="UPDATE_DEVICE_STATS" visibility="public" read="_GetUPDATE_DEVICE_STATS" type="JString" file="Androidapi.JNI.Os.pas" line="361">
+    </property>
+    <property name="USE_FINGERPRINT" visibility="public" read="_GetUSE_FINGERPRINT" type="JString" file="Androidapi.JNI.Os.pas" line="362">
+    </property>
+    <property name="USE_SIP" visibility="public" read="_GetUSE_SIP" type="JString" file="Androidapi.JNI.Os.pas" line="363">
+    </property>
+    <property name="VIBRATE" visibility="public" read="_GetVIBRATE" type="JString" file="Androidapi.JNI.Os.pas" line="364">
+    </property>
+    <property name="WAKE_LOCK" visibility="public" read="_GetWAKE_LOCK" type="JString" file="Androidapi.JNI.Os.pas" line="365">
+    </property>
+    <property name="WRITE_APN_SETTINGS" visibility="public" read="_GetWRITE_APN_SETTINGS" type="JString" file="Androidapi.JNI.Os.pas" line="366">
+    </property>
+    <property name="WRITE_CALENDAR" visibility="public" read="_GetWRITE_CALENDAR" type="JString" file="Androidapi.JNI.Os.pas" line="367">
+    </property>
+    <property name="WRITE_CALL_LOG" visibility="public" read="_GetWRITE_CALL_LOG" type="JString" file="Androidapi.JNI.Os.pas" line="368">
+    </property>
+    <property name="WRITE_CONTACTS" visibility="public" read="_GetWRITE_CONTACTS" type="JString" file="Androidapi.JNI.Os.pas" line="369">
+    </property>
+    <property name="WRITE_EXTERNAL_STORAGE" visibility="public" read="_GetWRITE_EXTERNAL_STORAGE" type="JString" file="Androidapi.JNI.Os.pas" line="370">
+    </property>
+    <property name="WRITE_GSERVICES" visibility="public" read="_GetWRITE_GSERVICES" type="JString" file="Androidapi.JNI.Os.pas" line="371">
+    </property>
+    <property name="WRITE_SECURE_SETTINGS" visibility="public" read="_GetWRITE_SECURE_SETTINGS" type="JString" file="Androidapi.JNI.Os.pas" line="372">
+    </property>
+    <property name="WRITE_SETTINGS" visibility="public" read="_GetWRITE_SETTINGS" type="JString" file="Androidapi.JNI.Os.pas" line="373">
+    </property>
+    <property name="WRITE_SYNC_SETTINGS" visibility="public" read="_GetWRITE_SYNC_SETTINGS" type="JString" file="Androidapi.JNI.Os.pas" line="374">
+    </property>
+    <property name="WRITE_VOICEMAIL" visibility="public" read="_GetWRITE_VOICEMAIL" type="JString" file="Androidapi.JNI.Os.pas" line="375">
+    </property>
+  </interface>
+  <interface name="IMobilePermissionsManifest" GUID="{52D4404F-8920-4AC2-9709-D57FA7B01F66}" ancestor="IInterface" file="MobilePermissions.JNI.Os.pas" line="18">
+    <function name="ACCESS_CHECKIN_PROPERTIES" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="20">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="ACCESS_COARSE_LOCATION" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="21">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="ACCESS_FINE_LOCATION" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="22">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="ACCESS_LOCATION_EXTRA_COMMANDS" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="23">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="ACCESS_NETWORK_STATE" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="24">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="ACCESS_NOTIFICATION_POLICY" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="25">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="ACCESS_WIFI_STATE" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="26">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="ACCOUNT_MANAGER" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="27">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="ADD_VOICEMAIL" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="28">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="ANSWER_PHONE_CALLS" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="29">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="BATTERY_STATS" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="30">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="BIND_ACCESSIBILITY_SERVICE" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="31">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="BIND_APPWIDGET" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="32">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="BIND_AUTOFILL_SERVICE" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="33">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="BIND_CARRIER_MESSAGING_SERVICE" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="34">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="BIND_CARRIER_SERVICES" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="35">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="BIND_CHOOSER_TARGET_SERVICE" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="36">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="BIND_CONDITION_PROVIDER_SERVICE" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="37">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="BIND_DEVICE_ADMIN" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="38">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="BIND_DREAM_SERVICE" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="39">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="BIND_INCALL_SERVICE" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="40">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="BIND_INPUT_METHOD" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="41">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="BIND_MIDI_DEVICE_SERVICE" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="42">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="BIND_NFC_SERVICE" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="43">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="BIND_NOTIFICATION_LISTENER_SERVICE" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="44">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="BIND_PRINT_SERVICE" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="45">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="BIND_QUICK_SETTINGS_TILE" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="46">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="BIND_REMOTEVIEWS" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="47">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="BIND_SCREENING_SERVICE" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="48">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="BIND_TELECOM_CONNECTION_SERVICE" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="49">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="BIND_TEXT_SERVICE" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="50">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="BIND_TV_INPUT" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="51">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="BIND_VISUAL_VOICEMAIL_SERVICE" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="52">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="BIND_VOICE_INTERACTION" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="53">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="BIND_VPN_SERVICE" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="54">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="BIND_VR_LISTENER_SERVICE" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="55">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="BIND_WALLPAPER" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="56">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="BLUETOOTH" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="57">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="BLUETOOTH_ADMIN" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="58">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="BLUETOOTH_PRIVILEGED" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="59">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="BODY_SENSORS" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="60">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="BROADCAST_PACKAGE_REMOVED" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="61">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="BROADCAST_SMS" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="62">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="BROADCAST_STICKY" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="63">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="BROADCAST_WAP_PUSH" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="64">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="CALL_PHONE" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="65">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="CALL_PRIVILEGED" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="66">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="CAMERA" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="67">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="CAPTURE_AUDIO_OUTPUT" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="68">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="CAPTURE_SECURE_VIDEO_OUTPUT" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="69">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="CAPTURE_VIDEO_OUTPUT" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="70">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="CHANGE_COMPONENT_ENABLED_STATE" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="71">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="CHANGE_CONFIGURATION" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="72">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="CHANGE_NETWORK_STATE" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="73">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="CHANGE_WIFI_MULTICAST_STATE" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="74">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="CHANGE_WIFI_STATE" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="75">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="CLEAR_APP_CACHE" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="76">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="CONTROL_LOCATION_UPDATES" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="77">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="DELETE_CACHE_FILES" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="78">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="DELETE_PACKAGES" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="79">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="DIAGNOSTIC" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="80">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="DISABLE_KEYGUARD" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="81">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="DUMP" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="82">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="EXPAND_STATUS_BAR" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="83">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="FACTORY_TEST" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="84">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="GET_ACCOUNTS" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="85">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="GET_ACCOUNTS_PRIVILEGED" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="86">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="GET_PACKAGE_SIZE" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="87">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="GET_TASKS" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="88">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="GLOBAL_SEARCH" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="89">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="INSTALL_LOCATION_PROVIDER" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="90">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="INSTALL_PACKAGES" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="91">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="INSTALL_SHORTCUT" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="92">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="INSTANT_APP_FOREGROUND_SERVICE" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="93">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="INTERNET" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="94">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="KILL_BACKGROUND_PROCESSES" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="95">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="LOCATION_HARDWARE" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="96">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="MANAGE_DOCUMENTS" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="97">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="MANAGE_OWN_CALLS" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="98">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="MASTER_CLEAR" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="99">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="MEDIA_CONTENT_CONTROL" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="100">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="MODIFY_AUDIO_SETTINGS" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="101">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="MODIFY_PHONE_STATE" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="102">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="MOUNT_FORMAT_FILESYSTEMS" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="103">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="MOUNT_UNMOUNT_FILESYSTEMS" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="104">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="NFC" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="105">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="PACKAGE_USAGE_STATS" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="106">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="PERSISTENT_ACTIVITY" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="107">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="PROCESS_OUTGOING_CALLS" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="108">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="READ_CALENDAR" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="109">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="READ_CALL_LOG" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="110">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="READ_CONTACTS" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="111">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="READ_EXTERNAL_STORAGE" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="112">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="READ_FRAME_BUFFER" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="113">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="READ_INPUT_STATE" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="114">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="READ_LOGS" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="115">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="READ_PHONE_NUMBERS" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="116">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="READ_PHONE_STATE" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="117">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="READ_SMS" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="118">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="READ_SYNC_SETTINGS" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="119">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="READ_SYNC_STATS" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="120">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="READ_VOICEMAIL" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="121">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="REBOOT" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="122">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="RECEIVE_BOOT_COMPLETED" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="123">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="RECEIVE_MMS" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="124">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="RECEIVE_SMS" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="125">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="RECEIVE_WAP_PUSH" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="126">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="RECORD_AUDIO" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="127">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="REORDER_TASKS" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="128">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="REQUEST_COMPANION_RUN_IN_BACKGROUND" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="129">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="REQUEST_COMPANION_USE_DATA_IN_BACKGROUND" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="130">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="REQUEST_DELETE_PACKAGES" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="131">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="132">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="REQUEST_INSTALL_PACKAGES" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="133">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="RESTART_PACKAGES" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="134">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="SEND_RESPOND_VIA_MESSAGE" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="135">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="SEND_SMS" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="136">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="SET_ALARM" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="137">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="SET_ALWAYS_FINISH" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="138">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="SET_ANIMATION_SCALE" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="139">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="SET_DEBUG_APP" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="140">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="SET_PREFERRED_APPLICATIONS" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="141">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="SET_PROCESS_LIMIT" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="142">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="SET_TIME" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="143">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="SET_TIME_ZONE" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="144">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="SET_WALLPAPER" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="145">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="SET_WALLPAPER_HINTS" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="146">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="SIGNAL_PERSISTENT_PROCESSES" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="147">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="STATUS_BAR" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="148">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="SYSTEM_ALERT_WINDOW" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="149">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="TRANSMIT_IR" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="150">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="UNINSTALL_SHORTCUT" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="151">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="UPDATE_DEVICE_STATS" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="152">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="USE_FINGERPRINT" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="153">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="USE_SIP" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="154">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="VIBRATE" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="155">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="WAKE_LOCK" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="156">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="WRITE_APN_SETTINGS" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="157">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="WRITE_CALENDAR" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="158">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="WRITE_CALL_LOG" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="159">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="WRITE_CONTACTS" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="160">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="WRITE_EXTERNAL_STORAGE" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="161">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="WRITE_GSERVICES" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="162">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="WRITE_SECURE_SETTINGS" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="163">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="WRITE_SETTINGS" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="164">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="WRITE_SYNC_SETTINGS" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="165">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+    <function name="WRITE_VOICEMAIL" visibility="public" procflags="abstract virtual" file="MobilePermissions.JNI.Os.pas" line="166">
+      <parameters>
+        <retval type="JString">
+          <attributes>
+            <attribute name="JavaSignatureAttribute" />
+          </attributes>
+        </retval>
+      </parameters>
+    </function>
+  </interface>
+</namespace>

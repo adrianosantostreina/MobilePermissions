@@ -1,0 +1,1444 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<namespace name="MobilePermissions.JNI.Os.Base" platform="Android">
+  <class name="TMobilePermissionsManifest" file="MobilePermissions.JNI.Os.Base.pas" line="9">
+    <ancestor name="TInterfacedObject" namespace="System">
+      <interfaces>
+        <implements name="IInterface" />
+      </interfaces>
+      <methodref name="GetRefCount" visibility="private" procflags="inline">
+      </methodref>
+      <methodref name="__MarkDestroying" visibility="protected" procflags="static inline">
+      </methodref>
+      <methodref name="QueryInterface" visibility="protected">
+      </methodref>
+      <methodref name="_AddRef" visibility="protected">
+      </methodref>
+      <methodref name="_Release" visibility="protected">
+      </methodref>
+      <methodref name="AfterConstruction" visibility="public" procflags="override">
+      </methodref>
+      <methodref name="BeforeDestruction" visibility="public" procflags="override">
+      </methodref>
+      <methodref name="NewInstance" visibility="public" procflags="class override">
+      </methodref>
+      <propertyref name="RefCount" visibility="public">
+      </propertyref>
+      <ancestor name="TObject" namespace="System">
+        <methodref name="Create" visibility="public" procflags="constructor">
+        </methodref>
+        <methodref name="Free" visibility="public">
+        </methodref>
+        <methodref name="DisposeOf" visibility="public" procflags="inline">
+        </methodref>
+        <methodref name="InitInstance" visibility="public" procflags="class">
+        </methodref>
+        <methodref name="CleanupInstance" visibility="public">
+        </methodref>
+        <methodref name="ClassType" visibility="public" procflags="inline">
+        </methodref>
+        <methodref name="ClassName" visibility="public" procflags="class">
+        </methodref>
+        <methodref name="ClassNameIs" visibility="public" procflags="class">
+        </methodref>
+        <methodref name="ClassParent" visibility="public" procflags="class">
+        </methodref>
+        <methodref name="ClassInfo" visibility="public" procflags="class inline">
+        </methodref>
+        <methodref name="InstanceSize" visibility="public" procflags="class inline">
+        </methodref>
+        <methodref name="InheritsFrom" visibility="public" procflags="class">
+        </methodref>
+        <methodref name="MethodAddress" visibility="public" procflags="class overload">
+        </methodref>
+        <methodref name="MethodAddress" visibility="public" procflags="class overload">
+        </methodref>
+        <methodref name="MethodName" visibility="public" procflags="class">
+        </methodref>
+        <methodref name="QualifiedClassName" visibility="public" procflags="class">
+        </methodref>
+        <methodref name="FieldAddress" visibility="public" procflags="overload">
+        </methodref>
+        <methodref name="FieldAddress" visibility="public" procflags="overload">
+        </methodref>
+        <methodref name="GetInterface" visibility="public">
+        </methodref>
+        <methodref name="GetInterfaceEntry" visibility="public" procflags="class">
+        </methodref>
+        <methodref name="GetInterfaceTable" visibility="public" procflags="class inline">
+        </methodref>
+        <methodref name="UnitName" visibility="public" procflags="class">
+        </methodref>
+        <methodref name="UnitScope" visibility="public" procflags="class">
+        </methodref>
+        <methodref name="Equals" visibility="public" procflags="virtual">
+        </methodref>
+        <methodref name="GetHashCode" visibility="public" procflags="virtual">
+        </methodref>
+        <methodref name="ToString" visibility="public" procflags="virtual">
+        </methodref>
+        <methodref name="SafeCallException" visibility="public" procflags="virtual">
+        </methodref>
+        <methodref name="AfterConstruction" visibility="public" procflags="virtual">
+        </methodref>
+        <methodref name="BeforeDestruction" visibility="public" procflags="virtual">
+        </methodref>
+        <methodref name="Dispatch" visibility="public" procflags="virtual">
+        </methodref>
+        <methodref name="DefaultHandler" visibility="public" procflags="virtual">
+        </methodref>
+        <methodref name="NewInstance" visibility="public" procflags="class virtual">
+        </methodref>
+        <methodref name="FreeInstance" visibility="public" procflags="virtual">
+        </methodref>
+        <methodref name="Destroy" visibility="public" procflags="destructor virtual">
+        </methodref>
+        <methodref name="CPP_ABI_1" visibility="public" procflags="virtual">
+        </methodref>
+        <methodref name="CPP_ABI_2" visibility="public" procflags="virtual">
+        </methodref>
+        <methodref name="CPP_ABI_3" visibility="public" procflags="virtual">
+        </methodref>
+        <methodref name="GetDisposed" visibility="protected" procflags="inline">
+        </methodref>
+        <methodref name="CheckDisposed" visibility="protected" procflags="inline">
+        </methodref>
+        <propertyref name="Disposed" visibility="protected">
+        </propertyref>
+      </ancestor>
+    </ancestor>
+    <interfaces>
+      <implements name="IMobilePermissionsManifest" />
+    </interfaces>
+    <members>
+      <function name="ACCESS_CHECKIN_PROPERTIES" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="12">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="ACCESS_COARSE_LOCATION" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="13">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="ACCESS_FINE_LOCATION" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="14">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="ACCESS_LOCATION_EXTRA_COMMANDS" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="15">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="ACCESS_NETWORK_STATE" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="16">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="ACCESS_NOTIFICATION_POLICY" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="17">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="ACCESS_WIFI_STATE" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="18">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="ACCOUNT_MANAGER" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="19">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="ADD_VOICEMAIL" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="20">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="ANSWER_PHONE_CALLS" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="21">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="BATTERY_STATS" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="22">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="BIND_ACCESSIBILITY_SERVICE" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="23">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="BIND_APPWIDGET" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="24">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="BIND_AUTOFILL_SERVICE" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="25">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="BIND_CARRIER_MESSAGING_SERVICE" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="26">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="BIND_CARRIER_SERVICES" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="27">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="BIND_CHOOSER_TARGET_SERVICE" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="28">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="BIND_CONDITION_PROVIDER_SERVICE" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="29">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="BIND_DEVICE_ADMIN" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="30">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="BIND_DREAM_SERVICE" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="31">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="BIND_INCALL_SERVICE" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="32">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="BIND_INPUT_METHOD" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="33">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="BIND_MIDI_DEVICE_SERVICE" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="34">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="BIND_NFC_SERVICE" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="35">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="BIND_NOTIFICATION_LISTENER_SERVICE" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="36">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="BIND_PRINT_SERVICE" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="37">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="BIND_QUICK_SETTINGS_TILE" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="38">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="BIND_REMOTEVIEWS" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="39">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="BIND_SCREENING_SERVICE" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="40">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="BIND_TELECOM_CONNECTION_SERVICE" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="41">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="BIND_TEXT_SERVICE" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="42">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="BIND_TV_INPUT" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="43">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="BIND_VISUAL_VOICEMAIL_SERVICE" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="44">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="BIND_VOICE_INTERACTION" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="45">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="BIND_VPN_SERVICE" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="46">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="BIND_VR_LISTENER_SERVICE" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="47">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="BIND_WALLPAPER" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="48">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="BLUETOOTH" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="49">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="BLUETOOTH_ADMIN" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="50">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="BLUETOOTH_PRIVILEGED" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="51">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="BODY_SENSORS" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="52">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="BROADCAST_PACKAGE_REMOVED" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="53">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="BROADCAST_SMS" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="54">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="BROADCAST_STICKY" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="55">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="BROADCAST_WAP_PUSH" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="56">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="CALL_PHONE" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="57">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="CALL_PRIVILEGED" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="58">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="CAMERA" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="59">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="CAPTURE_AUDIO_OUTPUT" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="60">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="CAPTURE_SECURE_VIDEO_OUTPUT" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="61">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="CAPTURE_VIDEO_OUTPUT" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="62">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="CHANGE_COMPONENT_ENABLED_STATE" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="63">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="CHANGE_CONFIGURATION" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="64">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="CHANGE_NETWORK_STATE" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="65">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="CHANGE_WIFI_MULTICAST_STATE" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="66">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="CHANGE_WIFI_STATE" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="67">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="CLEAR_APP_CACHE" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="68">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="CONTROL_LOCATION_UPDATES" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="69">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="DELETE_CACHE_FILES" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="70">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="DELETE_PACKAGES" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="71">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="DIAGNOSTIC" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="72">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="DISABLE_KEYGUARD" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="73">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="DUMP" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="74">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="EXPAND_STATUS_BAR" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="75">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="FACTORY_TEST" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="76">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="GET_ACCOUNTS" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="77">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="GET_ACCOUNTS_PRIVILEGED" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="78">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="GET_PACKAGE_SIZE" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="79">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="GET_TASKS" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="80">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="GLOBAL_SEARCH" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="81">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="INSTALL_LOCATION_PROVIDER" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="82">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="INSTALL_PACKAGES" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="83">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="INSTALL_SHORTCUT" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="84">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="INSTANT_APP_FOREGROUND_SERVICE" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="85">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="INTERNET" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="86">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="KILL_BACKGROUND_PROCESSES" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="87">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="LOCATION_HARDWARE" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="88">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="MANAGE_DOCUMENTS" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="89">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="MANAGE_OWN_CALLS" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="90">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="MASTER_CLEAR" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="91">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="MEDIA_CONTENT_CONTROL" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="92">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="MODIFY_AUDIO_SETTINGS" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="93">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="MODIFY_PHONE_STATE" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="94">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="MOUNT_FORMAT_FILESYSTEMS" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="95">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="MOUNT_UNMOUNT_FILESYSTEMS" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="96">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="NFC" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="97">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="PACKAGE_USAGE_STATS" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="98">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="PERSISTENT_ACTIVITY" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="99">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="PROCESS_OUTGOING_CALLS" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="100">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="READ_CALENDAR" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="101">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="READ_CALL_LOG" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="102">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="READ_CONTACTS" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="103">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="READ_EXTERNAL_STORAGE" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="104">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="READ_FRAME_BUFFER" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="105">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="READ_INPUT_STATE" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="106">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="READ_LOGS" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="107">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="READ_PHONE_NUMBERS" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="108">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="READ_PHONE_STATE" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="109">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="READ_SMS" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="110">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="READ_SYNC_SETTINGS" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="111">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="READ_SYNC_STATS" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="112">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="READ_VOICEMAIL" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="113">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="REBOOT" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="114">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="RECEIVE_BOOT_COMPLETED" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="115">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="RECEIVE_MMS" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="116">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="RECEIVE_SMS" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="117">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="RECEIVE_WAP_PUSH" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="118">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="RECORD_AUDIO" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="119">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="REORDER_TASKS" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="120">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="REQUEST_COMPANION_RUN_IN_BACKGROUND" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="121">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="REQUEST_COMPANION_USE_DATA_IN_BACKGROUND" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="122">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="REQUEST_DELETE_PACKAGES" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="123">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="124">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="REQUEST_INSTALL_PACKAGES" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="125">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="RESTART_PACKAGES" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="126">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="SEND_RESPOND_VIA_MESSAGE" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="127">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="SEND_SMS" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="128">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="SET_ALARM" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="129">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="SET_ALWAYS_FINISH" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="130">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="SET_ANIMATION_SCALE" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="131">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="SET_DEBUG_APP" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="132">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="SET_PREFERRED_APPLICATIONS" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="133">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="SET_PROCESS_LIMIT" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="134">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="SET_TIME" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="135">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="SET_TIME_ZONE" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="136">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="SET_WALLPAPER" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="137">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="SET_WALLPAPER_HINTS" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="138">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="SIGNAL_PERSISTENT_PROCESSES" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="139">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="STATUS_BAR" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="140">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="SYSTEM_ALERT_WINDOW" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="141">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="TRANSMIT_IR" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="142">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="UNINSTALL_SHORTCUT" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="143">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="UPDATE_DEVICE_STATS" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="144">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="USE_FINGERPRINT" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="145">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="USE_SIP" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="146">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="VIBRATE" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="147">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="WAKE_LOCK" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="148">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="WRITE_APN_SETTINGS" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="149">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="WRITE_CALENDAR" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="150">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="WRITE_CALL_LOG" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="151">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="WRITE_CONTACTS" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="152">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="WRITE_EXTERNAL_STORAGE" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="153">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="WRITE_GSERVICES" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="154">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="WRITE_SECURE_SETTINGS" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="155">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="WRITE_SETTINGS" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="156">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="WRITE_SYNC_SETTINGS" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="157">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="WRITE_VOICEMAIL" visibility="public" file="MobilePermissions.JNI.Os.Base.pas" line="158">
+        <parameters>
+          <retval type="JString">
+            <attributes>
+              <attribute name="JavaSignatureAttribute" />
+            </attributes>
+          </retval>
+        </parameters>
+      </function>
+      <function name="New" visibility="public" procflags="class" file="MobilePermissions.JNI.Os.Base.pas" line="160">
+        <parameters>
+          <retval type="IMobilePermissionsManifest" />
+        </parameters>
+      </function>
+    </members>
+  </class>
+  <variable name="BaseManifest" type="IMobilePermissionsManifest" file="MobilePermissions.JNI.Os.Base.pas" line="164" />
+</namespace>

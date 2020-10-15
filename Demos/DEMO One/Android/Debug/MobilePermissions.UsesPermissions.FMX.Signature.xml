@@ -1,0 +1,448 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<namespace name="MobilePermissions.UsesPermissions.FMX.Signature" platform="Android">
+  <class name="TUsesPermissionsFMXSignature" file="MobilePermissions.UsesPermissions.FMX.Signature.pas" line="9">
+    <ancestor name="TUsesPermissionsFMXBase" namespace="MobilePermissions.UsesPermissions.FMX.Base">
+      <methodref name="AddPermission" visibility="protected" />
+      <methodref name="HasPermission" visibility="protected" />
+      <methodref name="JavaClass" visibility="protected" />
+      <methodref name="Permissions" visibility="public" />
+      <methodref name="create" visibility="public" procflags="constructor" />
+      <methodref name="Destroy" visibility="public" procflags="destructor override" />
+      <ancestor name="TInterfacedObject" namespace="System">
+        <interfaces>
+          <implements name="IInterface" />
+        </interfaces>
+        <methodref name="GetRefCount" visibility="private" procflags="inline">
+        </methodref>
+        <methodref name="__MarkDestroying" visibility="protected" procflags="static inline">
+        </methodref>
+        <methodref name="QueryInterface" visibility="protected">
+        </methodref>
+        <methodref name="_AddRef" visibility="protected">
+        </methodref>
+        <methodref name="_Release" visibility="protected">
+        </methodref>
+        <methodref name="AfterConstruction" visibility="public" procflags="override">
+        </methodref>
+        <methodref name="BeforeDestruction" visibility="public" procflags="override">
+        </methodref>
+        <methodref name="NewInstance" visibility="public" procflags="class override">
+        </methodref>
+        <propertyref name="RefCount" visibility="public">
+        </propertyref>
+        <ancestor name="TObject" namespace="System">
+          <methodref name="Create" visibility="public" procflags="constructor">
+          </methodref>
+          <methodref name="Free" visibility="public">
+          </methodref>
+          <methodref name="DisposeOf" visibility="public" procflags="inline">
+          </methodref>
+          <methodref name="InitInstance" visibility="public" procflags="class">
+          </methodref>
+          <methodref name="CleanupInstance" visibility="public">
+          </methodref>
+          <methodref name="ClassType" visibility="public" procflags="inline">
+          </methodref>
+          <methodref name="ClassName" visibility="public" procflags="class">
+          </methodref>
+          <methodref name="ClassNameIs" visibility="public" procflags="class">
+          </methodref>
+          <methodref name="ClassParent" visibility="public" procflags="class">
+          </methodref>
+          <methodref name="ClassInfo" visibility="public" procflags="class inline">
+          </methodref>
+          <methodref name="InstanceSize" visibility="public" procflags="class inline">
+          </methodref>
+          <methodref name="InheritsFrom" visibility="public" procflags="class">
+          </methodref>
+          <methodref name="MethodAddress" visibility="public" procflags="class overload">
+          </methodref>
+          <methodref name="MethodAddress" visibility="public" procflags="class overload">
+          </methodref>
+          <methodref name="MethodName" visibility="public" procflags="class">
+          </methodref>
+          <methodref name="QualifiedClassName" visibility="public" procflags="class">
+          </methodref>
+          <methodref name="FieldAddress" visibility="public" procflags="overload">
+          </methodref>
+          <methodref name="FieldAddress" visibility="public" procflags="overload">
+          </methodref>
+          <methodref name="GetInterface" visibility="public">
+          </methodref>
+          <methodref name="GetInterfaceEntry" visibility="public" procflags="class">
+          </methodref>
+          <methodref name="GetInterfaceTable" visibility="public" procflags="class inline">
+          </methodref>
+          <methodref name="UnitName" visibility="public" procflags="class">
+          </methodref>
+          <methodref name="UnitScope" visibility="public" procflags="class">
+          </methodref>
+          <methodref name="Equals" visibility="public" procflags="virtual">
+          </methodref>
+          <methodref name="GetHashCode" visibility="public" procflags="virtual">
+          </methodref>
+          <methodref name="ToString" visibility="public" procflags="virtual">
+          </methodref>
+          <methodref name="SafeCallException" visibility="public" procflags="virtual">
+          </methodref>
+          <methodref name="AfterConstruction" visibility="public" procflags="virtual">
+          </methodref>
+          <methodref name="BeforeDestruction" visibility="public" procflags="virtual">
+          </methodref>
+          <methodref name="Dispatch" visibility="public" procflags="virtual">
+          </methodref>
+          <methodref name="DefaultHandler" visibility="public" procflags="virtual">
+          </methodref>
+          <methodref name="NewInstance" visibility="public" procflags="class virtual">
+          </methodref>
+          <methodref name="FreeInstance" visibility="public" procflags="virtual">
+          </methodref>
+          <methodref name="Destroy" visibility="public" procflags="destructor virtual">
+          </methodref>
+          <methodref name="CPP_ABI_1" visibility="public" procflags="virtual">
+          </methodref>
+          <methodref name="CPP_ABI_2" visibility="public" procflags="virtual">
+          </methodref>
+          <methodref name="CPP_ABI_3" visibility="public" procflags="virtual">
+          </methodref>
+          <methodref name="GetDisposed" visibility="protected" procflags="inline">
+          </methodref>
+          <methodref name="CheckDisposed" visibility="protected" procflags="inline">
+          </methodref>
+          <propertyref name="Disposed" visibility="protected">
+          </propertyref>
+        </ancestor>
+      </ancestor>
+    </ancestor>
+    <interfaces>
+      <implements name="IUsesPermissionsSignature" />
+    </interfaces>
+    <members>
+      <function name="GetBindAccessibility" visibility="private" file="MobilePermissions.UsesPermissions.FMX.Signature.pas" line="11">
+        <parameters>
+          <retval type="Boolean" />
+        </parameters>
+      </function>
+      <function name="GetBindAutofill" visibility="private" file="MobilePermissions.UsesPermissions.FMX.Signature.pas" line="12">
+        <parameters>
+          <retval type="Boolean" />
+        </parameters>
+      </function>
+      <function name="GetBindCallScreening" visibility="private" file="MobilePermissions.UsesPermissions.FMX.Signature.pas" line="13">
+        <parameters>
+          <retval type="Boolean" />
+        </parameters>
+      </function>
+      <function name="GetBindCarrierMessaging" visibility="private" file="MobilePermissions.UsesPermissions.FMX.Signature.pas" line="14">
+        <parameters>
+          <retval type="Boolean" />
+        </parameters>
+      </function>
+      <function name="GetBindCarrierService" visibility="private" file="MobilePermissions.UsesPermissions.FMX.Signature.pas" line="15">
+        <parameters>
+          <retval type="Boolean" />
+        </parameters>
+      </function>
+      <function name="GetBindChooserTargetService" visibility="private" file="MobilePermissions.UsesPermissions.FMX.Signature.pas" line="16">
+        <parameters>
+          <retval type="Boolean" />
+        </parameters>
+      </function>
+      <function name="GetBindConditionProviderService" visibility="private" file="MobilePermissions.UsesPermissions.FMX.Signature.pas" line="17">
+        <parameters>
+          <retval type="Boolean" />
+        </parameters>
+      </function>
+      <function name="GetBindDeviceAdmin" visibility="private" file="MobilePermissions.UsesPermissions.FMX.Signature.pas" line="18">
+        <parameters>
+          <retval type="Boolean" />
+        </parameters>
+      </function>
+      <function name="GetBindDreamService" visibility="private" file="MobilePermissions.UsesPermissions.FMX.Signature.pas" line="19">
+        <parameters>
+          <retval type="Boolean" />
+        </parameters>
+      </function>
+      <function name="GetBindInCallService" visibility="private" file="MobilePermissions.UsesPermissions.FMX.Signature.pas" line="20">
+        <parameters>
+          <retval type="Boolean" />
+        </parameters>
+      </function>
+      <function name="GetBindInputMethod" visibility="private" file="MobilePermissions.UsesPermissions.FMX.Signature.pas" line="21">
+        <parameters>
+          <retval type="Boolean" />
+        </parameters>
+      </function>
+      <function name="GetBindMIDIDeviceService" visibility="private" file="MobilePermissions.UsesPermissions.FMX.Signature.pas" line="22">
+        <parameters>
+          <retval type="Boolean" />
+        </parameters>
+      </function>
+      <function name="GetBindNFCService" visibility="private" file="MobilePermissions.UsesPermissions.FMX.Signature.pas" line="23">
+        <parameters>
+          <retval type="Boolean" />
+        </parameters>
+      </function>
+      <function name="GetBindNotificationListenerService" visibility="private" file="MobilePermissions.UsesPermissions.FMX.Signature.pas" line="24">
+        <parameters>
+          <retval type="Boolean" />
+        </parameters>
+      </function>
+      <function name="GetBindPrintService" visibility="private" file="MobilePermissions.UsesPermissions.FMX.Signature.pas" line="25">
+        <parameters>
+          <retval type="Boolean" />
+        </parameters>
+      </function>
+      <function name="GetBindQuickSettingsTile" visibility="private" file="MobilePermissions.UsesPermissions.FMX.Signature.pas" line="26">
+        <parameters>
+          <retval type="Boolean" />
+        </parameters>
+      </function>
+      <function name="GetBindRemoteviews" visibility="private" file="MobilePermissions.UsesPermissions.FMX.Signature.pas" line="27">
+        <parameters>
+          <retval type="Boolean" />
+        </parameters>
+      </function>
+      <function name="GetBindTelecomConnectionService" visibility="private" file="MobilePermissions.UsesPermissions.FMX.Signature.pas" line="28">
+        <parameters>
+          <retval type="Boolean" />
+        </parameters>
+      </function>
+      <function name="GetBindTextService" visibility="private" file="MobilePermissions.UsesPermissions.FMX.Signature.pas" line="29">
+        <parameters>
+          <retval type="Boolean" />
+        </parameters>
+      </function>
+      <function name="GetBindTVInput" visibility="private" file="MobilePermissions.UsesPermissions.FMX.Signature.pas" line="30">
+        <parameters>
+          <retval type="Boolean" />
+        </parameters>
+      </function>
+      <function name="GetBindVisualVoicemailService" visibility="private" file="MobilePermissions.UsesPermissions.FMX.Signature.pas" line="31">
+        <parameters>
+          <retval type="Boolean" />
+        </parameters>
+      </function>
+      <function name="GetBindVoiceInteraction" visibility="private" file="MobilePermissions.UsesPermissions.FMX.Signature.pas" line="32">
+        <parameters>
+          <retval type="Boolean" />
+        </parameters>
+      </function>
+      <function name="GetBindVPNService" visibility="private" file="MobilePermissions.UsesPermissions.FMX.Signature.pas" line="33">
+        <parameters>
+          <retval type="Boolean" />
+        </parameters>
+      </function>
+      <function name="GetBindVRListenerService" visibility="private" file="MobilePermissions.UsesPermissions.FMX.Signature.pas" line="34">
+        <parameters>
+          <retval type="Boolean" />
+        </parameters>
+      </function>
+      <function name="GetBindWallpaper" visibility="private" file="MobilePermissions.UsesPermissions.FMX.Signature.pas" line="35">
+        <parameters>
+          <retval type="Boolean" />
+        </parameters>
+      </function>
+      <function name="GetClearAppCache" visibility="private" file="MobilePermissions.UsesPermissions.FMX.Signature.pas" line="36">
+        <parameters>
+          <retval type="Boolean" />
+        </parameters>
+      </function>
+      <function name="GetManageDocuments" visibility="private" file="MobilePermissions.UsesPermissions.FMX.Signature.pas" line="37">
+        <parameters>
+          <retval type="Boolean" />
+        </parameters>
+      </function>
+      <function name="GetReadVoicemail" visibility="private" file="MobilePermissions.UsesPermissions.FMX.Signature.pas" line="38">
+        <parameters>
+          <retval type="Boolean" />
+        </parameters>
+      </function>
+      <function name="GetRequestInstallPackages" visibility="private" file="MobilePermissions.UsesPermissions.FMX.Signature.pas" line="39">
+        <parameters>
+          <retval type="Boolean" />
+        </parameters>
+      </function>
+      <function name="GetSystemAlertWindow" visibility="private" file="MobilePermissions.UsesPermissions.FMX.Signature.pas" line="40">
+        <parameters>
+          <retval type="Boolean" />
+        </parameters>
+      </function>
+      <function name="GetWriteSettings" visibility="private" file="MobilePermissions.UsesPermissions.FMX.Signature.pas" line="41">
+        <parameters>
+          <retval type="Boolean" />
+        </parameters>
+      </function>
+      <function name="GetWriteVoicemail" visibility="private" file="MobilePermissions.UsesPermissions.FMX.Signature.pas" line="42">
+        <parameters>
+          <retval type="Boolean" />
+        </parameters>
+      </function>
+      <procedure name="SetBindAccessibility" visibility="private" file="MobilePermissions.UsesPermissions.FMX.Signature.pas" line="44">
+        <parameters>
+          <parameter name="Value" type="Boolean" paramflags="const" />
+        </parameters>
+      </procedure>
+      <procedure name="SetBindAutofill" visibility="private" file="MobilePermissions.UsesPermissions.FMX.Signature.pas" line="45">
+        <parameters>
+          <parameter name="Value" type="Boolean" paramflags="const" />
+        </parameters>
+      </procedure>
+      <procedure name="SetBindCallScreening" visibility="private" file="MobilePermissions.UsesPermissions.FMX.Signature.pas" line="46">
+        <parameters>
+          <parameter name="Value" type="Boolean" paramflags="const" />
+        </parameters>
+      </procedure>
+      <procedure name="SetBindCarrierMessaging" visibility="private" file="MobilePermissions.UsesPermissions.FMX.Signature.pas" line="47">
+        <parameters>
+          <parameter name="Value" type="Boolean" paramflags="const" />
+        </parameters>
+      </procedure>
+      <procedure name="SetBindCarrierService" visibility="private" file="MobilePermissions.UsesPermissions.FMX.Signature.pas" line="48">
+        <parameters>
+          <parameter name="Value" type="Boolean" paramflags="const" />
+        </parameters>
+      </procedure>
+      <procedure name="SetBindChooserTargetService" visibility="private" file="MobilePermissions.UsesPermissions.FMX.Signature.pas" line="49">
+        <parameters>
+          <parameter name="Value" type="Boolean" paramflags="const" />
+        </parameters>
+      </procedure>
+      <procedure name="SetBindConditionProviderService" visibility="private" file="MobilePermissions.UsesPermissions.FMX.Signature.pas" line="50">
+        <parameters>
+          <parameter name="Value" type="Boolean" paramflags="const" />
+        </parameters>
+      </procedure>
+      <procedure name="SetBindDeviceAdmin" visibility="private" file="MobilePermissions.UsesPermissions.FMX.Signature.pas" line="51">
+        <parameters>
+          <parameter name="Value" type="Boolean" paramflags="const" />
+        </parameters>
+      </procedure>
+      <procedure name="SetBindDreamService" visibility="private" file="MobilePermissions.UsesPermissions.FMX.Signature.pas" line="52">
+        <parameters>
+          <parameter name="Value" type="Boolean" paramflags="const" />
+        </parameters>
+      </procedure>
+      <procedure name="SetBindInCallService" visibility="private" file="MobilePermissions.UsesPermissions.FMX.Signature.pas" line="53">
+        <parameters>
+          <parameter name="Value" type="Boolean" paramflags="const" />
+        </parameters>
+      </procedure>
+      <procedure name="SetBindInputMethod" visibility="private" file="MobilePermissions.UsesPermissions.FMX.Signature.pas" line="54">
+        <parameters>
+          <parameter name="Value" type="Boolean" paramflags="const" />
+        </parameters>
+      </procedure>
+      <procedure name="SetBindMIDIDeviceService" visibility="private" file="MobilePermissions.UsesPermissions.FMX.Signature.pas" line="55">
+        <parameters>
+          <parameter name="Value" type="Boolean" paramflags="const" />
+        </parameters>
+      </procedure>
+      <procedure name="SetBindNFCService" visibility="private" file="MobilePermissions.UsesPermissions.FMX.Signature.pas" line="56">
+        <parameters>
+          <parameter name="Value" type="Boolean" paramflags="const" />
+        </parameters>
+      </procedure>
+      <procedure name="SetBindNotificationListenerService" visibility="private" file="MobilePermissions.UsesPermissions.FMX.Signature.pas" line="57">
+        <parameters>
+          <parameter name="Value" type="Boolean" paramflags="const" />
+        </parameters>
+      </procedure>
+      <procedure name="SetBindPrintService" visibility="private" file="MobilePermissions.UsesPermissions.FMX.Signature.pas" line="58">
+        <parameters>
+          <parameter name="Value" type="Boolean" paramflags="const" />
+        </parameters>
+      </procedure>
+      <procedure name="SetBindQuickSettingsTile" visibility="private" file="MobilePermissions.UsesPermissions.FMX.Signature.pas" line="59">
+        <parameters>
+          <parameter name="Value" type="Boolean" paramflags="const" />
+        </parameters>
+      </procedure>
+      <procedure name="SetBindRemoteviews" visibility="private" file="MobilePermissions.UsesPermissions.FMX.Signature.pas" line="60">
+        <parameters>
+          <parameter name="Value" type="Boolean" paramflags="const" />
+        </parameters>
+      </procedure>
+      <procedure name="SetBindTelecomConnectionService" visibility="private" file="MobilePermissions.UsesPermissions.FMX.Signature.pas" line="61">
+        <parameters>
+          <parameter name="Value" type="Boolean" paramflags="const" />
+        </parameters>
+      </procedure>
+      <procedure name="SetBindTextService" visibility="private" file="MobilePermissions.UsesPermissions.FMX.Signature.pas" line="62">
+        <parameters>
+          <parameter name="Value" type="Boolean" paramflags="const" />
+        </parameters>
+      </procedure>
+      <procedure name="SetBindTVInput" visibility="private" file="MobilePermissions.UsesPermissions.FMX.Signature.pas" line="63">
+        <parameters>
+          <parameter name="Value" type="Boolean" paramflags="const" />
+        </parameters>
+      </procedure>
+      <procedure name="SetBindVisualVoicemailService" visibility="private" file="MobilePermissions.UsesPermissions.FMX.Signature.pas" line="64">
+        <parameters>
+          <parameter name="Value" type="Boolean" paramflags="const" />
+        </parameters>
+      </procedure>
+      <procedure name="SetBindVoiceInteraction" visibility="private" file="MobilePermissions.UsesPermissions.FMX.Signature.pas" line="65">
+        <parameters>
+          <parameter name="Value" type="Boolean" paramflags="const" />
+        </parameters>
+      </procedure>
+      <procedure name="SetBindVPNService" visibility="private" file="MobilePermissions.UsesPermissions.FMX.Signature.pas" line="66">
+        <parameters>
+          <parameter name="Value" type="Boolean" paramflags="const" />
+        </parameters>
+      </procedure>
+      <procedure name="SetBindVRListenerService" visibility="private" file="MobilePermissions.UsesPermissions.FMX.Signature.pas" line="67">
+        <parameters>
+          <parameter name="Value" type="Boolean" paramflags="const" />
+        </parameters>
+      </procedure>
+      <procedure name="SetBindWallpaper" visibility="private" file="MobilePermissions.UsesPermissions.FMX.Signature.pas" line="68">
+        <parameters>
+          <parameter name="Value" type="Boolean" paramflags="const" />
+        </parameters>
+      </procedure>
+      <procedure name="SetClearAppCache" visibility="private" file="MobilePermissions.UsesPermissions.FMX.Signature.pas" line="69">
+        <parameters>
+          <parameter name="Value" type="Boolean" paramflags="const" />
+        </parameters>
+      </procedure>
+      <procedure name="SetManageDocuments" visibility="private" file="MobilePermissions.UsesPermissions.FMX.Signature.pas" line="70">
+        <parameters>
+          <parameter name="Value" type="Boolean" paramflags="const" />
+        </parameters>
+      </procedure>
+      <procedure name="SetReadVoicemail" visibility="private" file="MobilePermissions.UsesPermissions.FMX.Signature.pas" line="71">
+        <parameters>
+          <parameter name="Value" type="Boolean" paramflags="const" />
+        </parameters>
+      </procedure>
+      <procedure name="SetRequestInstallPackages" visibility="private" file="MobilePermissions.UsesPermissions.FMX.Signature.pas" line="72">
+        <parameters>
+          <parameter name="Value" type="Boolean" paramflags="const" />
+        </parameters>
+      </procedure>
+      <procedure name="SetSystemAlertWindow" visibility="private" file="MobilePermissions.UsesPermissions.FMX.Signature.pas" line="73">
+        <parameters>
+          <parameter name="Value" type="Boolean" paramflags="const" />
+        </parameters>
+      </procedure>
+      <procedure name="SetWriteSettings" visibility="private" file="MobilePermissions.UsesPermissions.FMX.Signature.pas" line="74">
+        <parameters>
+          <parameter name="Value" type="Boolean" paramflags="const" />
+        </parameters>
+      </procedure>
+      <procedure name="SetWriteVoicemail" visibility="private" file="MobilePermissions.UsesPermissions.FMX.Signature.pas" line="75">
+        <parameters>
+          <parameter name="Value" type="Boolean" paramflags="const" />
+        </parameters>
+      </procedure>
+      <function name="New" visibility="public" procflags="class" file="MobilePermissions.UsesPermissions.FMX.Signature.pas" line="78">
+        <parameters>
+          <retval type="IUsesPermissionsSignature" />
+        </parameters>
+      </function>
+    </members>
+  </class>
+</namespace>

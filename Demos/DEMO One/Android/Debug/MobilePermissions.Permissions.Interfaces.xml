@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<namespace name="MobilePermissions.Permissions.Interfaces" platform="Android">
+  <interface name="IMobilePermissions" GUID="{4AA3D2CE-F6D5-470A-85DA-C7857B662B95}" ancestor="IInterface" file="MobilePermissions.Permissions.Interfaces.pas" line="9">
+    <function name="Request" visibility="public" procflags="abstract virtual" file="MobilePermissions.Permissions.Interfaces.pas" line="11">
+      <parameters>
+        <parameter name="Permissions" type="TArray&lt;System.string&gt;" />
+        <retval type="IMobilePermissions" />
+      </parameters>
+    </function>
+    <function name="OnRequest" visibility="public" procflags="abstract virtual" file="MobilePermissions.Permissions.Interfaces.pas" line="13">
+      <parameters>
+        <parameter name="Value" type="TNotifyEvent" />
+        <retval type="IMobilePermissions" />
+      </parameters>
+    </function>
+  </interface>
+  <interface name="IMobilePermissionsFactory" GUID="{B0C3F51D-6981-4D83-921E-716504C48C1F}" ancestor="IInterface" file="MobilePermissions.Permissions.Interfaces.pas" line="16">
+    <function name="createMobilePermissions" visibility="public" procflags="abstract virtual" file="MobilePermissions.Permissions.Interfaces.pas" line="18">
+      <parameters>
+        <retval type="IMobilePermissions" />
+      </parameters>
+    </function>
+  </interface>
+</namespace>
