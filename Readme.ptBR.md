@@ -1,6 +1,10 @@
 # MobilePermissions
 Este é um componente para tornar mais fácil a solicitação de permissões no Android 8.x ou superior.
 
+
+# Antes de instalar
+Se você já tem uma versão antiga instalada, certifique-se de seguir o processo de desinstalação deste componente.
+
 # Como Instalar?
 
 1. Abra o Delphi. Abra em modo administrador se necessário.
@@ -111,6 +115,30 @@ end;
 
 3. Execute seu aplicativo no Android.
 
+# Addicional Notes about bug fixes and tips
+
+Erro:<br>
+"" is not a integer value.<br><br>
+
+Se você ainda estiver recebendo o erro acima, siga os passos abaixo:<br><br>
+
+a. Acesse Project > Options > Building > Delphi Compiler<br>
+b. Modifique o Target para Android32 e/ou Android64<br>
+c. Adicione as pastas abaixo no Search Path<br><br>
+\MobilePermissions\source<br>
+\MobilePermissions\component<br><br>
+
+Ex:.<br>
+C:\Componentes\MobilePermissions\source<br>
+C:\Componentes\MobilePermissions\component<br><br>
+
+Recompile e redistribua seu aplicativo e voilà<br><br>
+
+Testes executados en:<br>
+Android 7.0 (Essa versão não necessita do uso do componente, mas pode usar se quiser ;))<br>
+Android 8.x<br>
+Android 9.x<br>
+Android 10<br>
 
 
 
