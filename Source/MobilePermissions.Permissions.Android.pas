@@ -70,7 +70,7 @@ var
   I: Integer;
 {$ENDIF}
 begin
-  if FAndroidVersion = 0 then
+   if FAndroidVersion = 0 then
   begin
 {$IFDEF ANDROID}
     VersionOSStr := JStringToString(TJBuild_VERSION.JavaClass.RELEASE);
