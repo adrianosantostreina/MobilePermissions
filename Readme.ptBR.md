@@ -38,7 +38,7 @@ Certifique-se de ter desinstalado todas as versões anteriores do componente ant
 
 > Se o menu Instalar não for exibido no menu de contexto, selecione Windows 32 bits no Gerenciador de projetos e clique com o botão direito novamente.
 
-![texto alternativo](https://github.com/adrianosantostreina/MobilePermissions/blob/MASTER/screenshots/install-package.png)
+![texto alternativo](https://github.com/adrianosantostreina/MobilePermissions/blob/master/screenshots/install-package.png)
 
 Preparar! 😎
 
@@ -48,7 +48,7 @@ Preparar! 😎
 3. Digite <i>MobilePermissions</i> na caixa de pesquisa.
 4. Ao encontrar o componente clique sobre ele e clique em <b>Botão Install.</b>
 
-![texto alternativo](https://github.com/adrianosantostreina/MobilePermissions/blob/MASTER/screenshots/install-getit01.png)
+![texto alternativo](https://github.com/adrianosantostreina/MobilePermissions/blob/master/screenshots/install-getit01.png)
 
 5. Aceite os termos e contrato clicando em Concordo com tudo e Avançar
 6. Aguarde o processo de instalação
