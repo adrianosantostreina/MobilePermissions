@@ -1,8 +1,9 @@
 <p align="center">
-  <a href="https://github.com/adrianosantostreina/MobilePermissions/blob/MASTER/image/logo.fw.png">
-    <img alt="MobilePermissions" src="https://github.com/adrianosantostreina/MobilePermissions/blob/MASTER/image/logo.fw.png">
+  <a href="https://github.com/adrianosantostreina/MobilePermissions/blob/master/image/logo.fw.png">
+    <img alt="MobilePermissions" src="https://github.com/adrianosantostreina/MobilePermissions/blob/master/image/logo.fw.png">
   </a>
 </p>
+
 
 # Mobile Permissions
 Este é um componente para facilitar a solicitação de permissão no Android 8.x ou posterior.
