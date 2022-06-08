@@ -4,8 +4,6 @@
   </a>
 </p>
 
-
-
 # MobilePermissions
 This is a component to turn more easy the request permission in Android 8.x or later.
 
@@ -39,7 +37,7 @@ Make sure you have uninstalled any previous versions of the component before ins
 
 > If the Install menu does not showing in context menu then select Windows 32-bit in Project Manager and click right button again.
 
-![alt text](https://github.com/adrianosantostreina/MobilePermissions/blob/MASTER/screenshots/install-package.png)
+![alt text](https://github.com/adrianosantostreina/MobilePermissions/blob/master/screenshots/install-package.png)
 
 Ready! 😎
 
@@ -49,7 +47,7 @@ Ready! 😎
 3. Type <i>MobilePermissions</i> in the search box.
 4. When you find the component click over it his and click in <b>Install Button.</b>
 
-![alt text](https://github.com/adrianosantostreina/MobilePermissions/blob/MASTER/screenshots/install-getit01.png)
+![alt text](https://github.com/adrianosantostreina/MobilePermissions/blob/master/screenshots/install-getit01.png)
 
 5. Accept terms and contract clicking in Agree all and Next
 6. Wait the installion process
