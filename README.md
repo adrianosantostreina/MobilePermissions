@@ -1,8 +1,10 @@
 <p align="center">
-  <a href="https://github.com/adrianosantostreina/MobilePermissions/blob/MASTER/image/logo.fw.png">
-    <img alt="MobilePermissions" src="https://github.com/adrianosantostreina/MobilePermissions/blob/MASTER/image/logo.fw.png">
+  <a href="https://github.com/adrianosantostreina/MobilePermissions/blob/master/image/logo.fw.png">
+    <img alt="MobilePermissions" src="https://github.com/adrianosantostreina/MobilePermissions/blob/master/image/logo.fw.png">
   </a>
 </p>
+
+
 
 # MobilePermissions
 This is a component to turn more easy the request permission in Android 8.x or later.
