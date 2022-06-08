@@ -28,7 +28,7 @@ package MobilePermissions;
 {$IMPLICITBUILD ON}
 
 requires
-  {$IFDEF MSWINDOWS} designide, {$ENDIF}
+  designide,
   fmx;
 
 contains

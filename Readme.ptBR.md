@@ -1,110 +1,86 @@
-# MobilePermissions
-Este é um componente para tornar mais fácil a solicitação de permissões no Android 8.x ou superior.
+<p align="center">
+  <a href="https://github.com/adrianosantostreina/MobilePermissions/blob/MASTER/image/logo.fw.png">
+    <img alt="MobilePermissions" src="https://github.com/adrianosantostreina/MobilePermissions/blob/MASTER/image/logo.fw.png">
+  </a>
+</p>
+
+# Mobile Permissions
+Este é um componente para facilitar a solicitação de permissão no Android 8.x ou posterior.
+
+O componente MobilePermissions foi desenvolvido para facilitar a solicitação e concessão de permissão aos recursos do sistema operacional que o aplicativo necessita utilizar. Buscamos simplificar a vida do desenvolvedor Delphi Mobile.
+
+Traduzimos todas as permissões previstas em <i>Project > Options > Application > User Permissions</i> para o componente, para que o desenvolvedor não precise entrar na janela de configurações do projeto para marcar as permissões que deseja solicitar, basta arrastar um componente MobilePermissions ao Form e marcar as propriedades que deseja usar.
+
+## 💎 Categorias
+O componente foi dividido em 03 (três) categorias distintas de permissões representadas por imóveis e subpropriedades. São eles:
+
+<ul>
+  <li><b>DANGEROUS</b>: as permissões de uso a seguir exigem aprovação do usuário em tempo de execução. </li>
+  <li><b>SIGNATURE</b>: As seguintes permissões de uso exigem um certificado correspondente. </li>
+  <li><b>STANDARD</b>: Permissões de uso normal</li>
+</ul>
+
+## 😎 Facilidades
+Ao usar o componente, o desenvolvedor não precisa mais acessar <i>Project > Options > Application > User Permissions</i> porque ao marcar/desmarcar a propriedade, o componente ajusta automaticamente as configurações do projeto.
 
 
-# Antes de instalar
-Se você já tem uma versão antiga instalada, certifique-se de seguir o processo de desinstalação deste componente.
+## Antes de instalar
+Certifique-se de ter desinstalado todas as versões anteriores do componente antes de instalar uma nova.
 
-# Como Instalar?
+## Instalação por pacote
 
-1. Abra o Delphi. Abra em modo administrador se necessário.
+1. Abra o Delphi no <b>modo de administrador</b>. O Delphi precisa buildar e criar um .BPL nos diretórios do sistema.
+2. Abra o arquivo do pacote MobilePermissions <b>MobilePermissions.dpk.</b>
+3. Clique com o botão direito em MobilePermissions.bpl no Project Manager e selecione <b>Clean.</b>
+4. Clique com o botão direito em MobilePermissions.bpl no Project Manager e selecione <b>Build.</b>
+5. Clique com o botão direito em MobilePermissions.bpl no Project Manager e selecione <b>Install.</b>
 
-2. Abra o arquivo de pacote do MobilePermissions
-    ($Path)\Package\MobilePermissions.dpk
+> Se o menu Instalar não for exibido no menu de contexto, selecione Windows 32 bits no Gerenciador de projetos e clique com o botão direito novamente.
 
-3. Clique com o botão direito do mouse em MobilePermissions.bpl no Project Manager e selecione Clean
+![texto alternativo](https://github.com/adrianosantostreina/MobilePermissions/blob/MASTER/screenshots/install-package.png)
 
-4. Clique com o botão direito do mouse em MobilePermissions.bpl no Project Manager e selecione Build
+Preparar! 😎
 
-5. Clique com o botão direito no MobilePermissions.bpl no Project Manager e selecione Install
+## Instalação pelo Get It Package Manager?
+1. Abra o Delphi no <b>modo de administrador</b>. O Delphi precisa construir e criar um .BPL nos diretórios do sistema.
+2. Abra <i>Ferramentas > Get It Packager Manager.</i>
+3. Digite <i>MobilePermissions</i> na caixa de pesquisa.
+4. Ao encontrar o componente clique sobre ele e clique em <b>Botão Install.</b>
 
-P.s. Se Install não estiver sendo mostrado no menu popup selecione o Target Windows 32-bit no Project Manager e clique novamente com o botão direito.
+![texto alternativo](https://github.com/adrianosantostreina/MobilePermissions/blob/MASTER/screenshots/install-getit01.png)
 
-![alt text](https://github.com/adrianosantostreina/MobilePermissions/blob/master/screenshots/install-package.png)
-
-Pronto!
-
-# Como instalar usando o Get It Package Manager?
-
-1. Abra o Delphi. Abra em modo administrador se necessário
-
-2. Abra Tools > Get It Packager Manager
-
-3. Digite MobilePermissions na caixa de pesquisa
-
-4. Quando encontrar o componente passe o mouse sobre ele e clique em Install
-
-![alt text](https://github.com/adrianosantostreina/MobilePermissions/blob/master/screenshots/install-getit1.png)
-
-5. Aceite os termos clicando em Agree all
-
-![alt text](https://github.com/adrianosantostreina/MobilePermissions/blob/master/screenshots/install-getit2.png)
-
+5. Aceite os termos e contrato clicando em Concordo com tudo e Avançar
 6. Aguarde o processo de instalação
 
-![alt text](https://github.com/adrianosantostreina/MobilePermissions/blob/master/screenshots/install-getit3.png)
+Pronto! 😎
 
-Pronto!
+## ⚡️ Início rápido
+###### Modo 1
+1. Solte um componente no formulário (Tool Pallete TDevRocks).
+2. Selecione a permissão que deseja solicitar ao Android em seu projeto móvel.
+3. Execute seu aplicativo no Android.
 
-# Como desinstalar?
+###### Modo 2
+1. Crie um novo projeto.
+2. Arraste os controles como abaixo.
+<ul>
+  <li>Arraste um TButtom para o formulário</li>
+  <li>Arraste um TMobilePermissions para o formulário</li>
+  <li>No evento OnCreate do tipo Form</li>
+</ul>
 
-1. Abra o Delphi. Abra em modo administrador se necessário
-
-2. Abra o pacote do compoente MobilePermissions
-    ($Path)\Package\MobilePermissions.dpk
-
-3. Clique com o botão direito em MobilePermissions.bpl no Project Manager e selecione Uninstall
-
-Pronto!
-
-# Como desinstalar usando o Get It Package Manager
-
-1. Abra o Delphi. Abra em modo administrador se necessário
-
-2. Abra Tools > Get It Packager Manager
-
-3. Digite MobilePermissions na caixa de pesquisa
-
-4. Quando encontrar o componente passe o mouse sobre ele e clique em Uninstall
-
-5. Confirme
-
-6. Aguarde o processo de desinstalação
-
-![alt text](https://github.com/adrianosantostreina/MobilePermissions/blob/master/screenshots/uninstall2.png)
-
-Pronto!
-
-
-
-# Como usar (Modo 1)?
-
-1. Arraste uma instância do componente para o form (Paleta TDevRocks)
-
-2. Selecione a permissão que quer solicitar em seu projeto Android
-
-3. Execute seu aplicativo no Android
-
-# Como usar (Modo 2)?
-
-1. Arraste uma instância do componente para o form (Paleta TDevRocks)
-
-2. Digite o código como no exemplo abaixo:
-
+3. Digite o código.
 ```delphi
-
-procecure TForm1.OnCreate(Sender: TObject);
+procedure TForm1.OnCreate(Sender: TObject);
 begin
   MobilePermissions1.[CATEGORY].[Permission] := True;
   MobilePermissions1.Apply;
 end;
-
 ```
 
-Exemplo:
+Exemplo.:
 
 ```delphi
-
 procedure TForm1.Button1Click(Sender: TObject);
 begin
   MobilePermissions1.Dangerous.CAMERA := True;
@@ -115,36 +91,30 @@ end;
 
 3. Execute seu aplicativo no Android.
 
-# Addicional Notes about bug fixes and tips
+## ⚠ Requisitos
+Adicione este caminho de pasta no campo <b>Caminho de pesquisa</b> como abaixo:<br>
 
-Erro:<br>
-"" is not a integer value.<br><br>
-
-Se você ainda estiver recebendo o erro acima, siga os passos abaixo:<br><br>
-
-a. Acesse Project > Options > Building > Delphi Compiler<br>
-b. Modifique o Target para Android32 e/ou Android64<br>
-c. Adicione as pastas abaixo no Search Path<br><br>
+```
 \MobilePermissions\source<br>
 \MobilePermissions\component<br><br>
+```
 
-Ex:.<br>
-C:\Componentes\MobilePermissions\source<br>
-C:\Componentes\MobilePermissions\component<br><br>
+Recompile e redistrconstrua seu projeto e voilà<br>
 
-Recompile e redistribua seu aplicativo e voilà<br><br>
-
-Testes executados en:<br>
-Android 7.0 (Essa versão não necessita do uso do componente, mas pode usar se quiser ;))<br>
+## 🧪 Testes realizados em
+Android 7.0 (Esta versão não precisa deste componente, mas você pode usar sem problemas)<br>
 Android 8.x<br>
 Android 9.x<br>
-Android 10<br>
+Android10<br>
+Android11<br>
+Android 12<br>
 
+## 💻 Contribuidores de código
+<img src="https://github.com/adrianosantostreina/MobilePermissions/blob/master/image/contributors.png" width=250px alt="Code Contributors" style="max-width:100%;">
 
+## Idiomas da documentação
+[Inglês (en)](https://github.com/adrianosantostreina/MobilePermissions/blob/master/README.md)<br>
+[Português (pt-BR)](https://github.com/adrianosantostreina/MobilePermissions/blob/master/README.ptBR.md)<br>
 
-
-
-
-
-
-
+## ⚠️ Licença
+`MobilePermissions` é uma biblioteca gratuita e de código aberto licenciada sob a [Licença MIT](https://github.com/adrianosantostreina/MobilePermissions/blob/master/LICENSE.md).
