@@ -115,7 +115,7 @@ Android 12<br>
 
 ## Idiomas da documentação
 [Inglês (en)](https://github.com/adrianosantostreina/MobilePermissions/blob/master/README.md)<br>
-[Português (pt-BR)](https://github.com/adrianosantostreina/MobilePermissions/blob/master/README.ptBR.md)<br>
+[Português (pt-BR)](https://github.com/adrianosantostreina/MobilePermissions/blob/master/Readme.ptBR.md)<br>
 
 ## ⚠️ Licença
 `MobilePermissions` é uma biblioteca gratuita e de código aberto licenciada sob a [Licença MIT](https://github.com/adrianosantostreina/MobilePermissions/blob/master/LICENSE.md).
