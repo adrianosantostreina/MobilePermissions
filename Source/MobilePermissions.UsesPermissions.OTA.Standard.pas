@@ -19,6 +19,7 @@ type TUsesPermissionsOTAStandard = class(TUsesPermissionsOTABase, IUsesPermissio
     function GetBluetoothAdmin: Boolean;
     function GetBluetooth: Boolean;
     function GetBroadcastSticky: Boolean;
+    function GetCallCompanionApp: Boolean;
     function GetChangeConfiguration: Boolean;
     function GetChangeNetworkState: Boolean;
     function GetChangeWifiMulticastState: Boolean;
@@ -69,6 +70,7 @@ type TUsesPermissionsOTAStandard = class(TUsesPermissionsOTABase, IUsesPermissio
     procedure SetBluetoothAdmin(const Value: Boolean);
     procedure SetBluetooth(const Value: Boolean);
     procedure SetBroadcastSticky(const Value: Boolean);
+    procedure SetCallCompanionApp(const Value: Boolean);
     procedure SetChangeConfiguration(const Value: Boolean);
     procedure SetChangeNetworkState(const Value: Boolean);
     procedure SetChangeWifiMulticastState(const Value: Boolean);
@@ -158,6 +160,11 @@ end;
 function TUsesPermissionsOTAStandard.GetBroadcastSticky: Boolean;
 begin
   Result := HasPermission(AUP_BROADCAST_STICKY);
+end;
+
+function TUsesPermissionsOTAStandard.GetCallCompanionApp: Boolean;
+begin
+  Result := HasPermission(AUP_CALL_COMPANION_APP);
 end;
 
 function TUsesPermissionsOTAStandard.GetChangeConfiguration: Boolean;
@@ -413,6 +420,11 @@ end;
 procedure TUsesPermissionsOTAStandard.SetBroadcastSticky(const Value: Boolean);
 begin
   RequestPermission(AUP_BROADCAST_STICKY, Value);
+end;
+
+procedure TUsesPermissionsOTAStandard.SetCallCompanionApp(const Value: Boolean);
+begin
+  RequestPermission(AUP_CALL_COMPANION_APP, Value);
 end;
 
 procedure TUsesPermissionsOTAStandard.SetChangeConfiguration(const Value: Boolean);

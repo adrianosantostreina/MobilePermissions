@@ -18,7 +18,7 @@ implementation
 
 procedure Register;
 begin
-  RegisterComponents('TDevRocks', [TMobilePermissions]);
+  RegisterComponents('Adriano Santos Components', [TMobilePermissions]);
   {$IFDEF MSWINDOWS}
   RegisterComponentEditor(TMobilePermissions, TMobilePermissionsEditor);
   {$ENDIF}

@@ -20,6 +20,7 @@ type TModelStandardPermissions = class
     function GetBluetoothAdmin: Boolean;
     function GetBluetooth: Boolean;
     function GetBroadcastSticky: Boolean;
+    function GetCallCompanionApp: Boolean;
     function GetChangeConfiguration: Boolean;
     function GetChangeNetworkState: Boolean;
     function GetChangeWifiMulticastState: Boolean;
@@ -70,6 +71,7 @@ type TModelStandardPermissions = class
     procedure SetBluetoothAdmin(const Value: Boolean);
     procedure SetBluetooth(const Value: Boolean);
     procedure SetBroadcastSticky(const Value: Boolean);
+    procedure SetCallCompanionApp(const Value: Boolean);
     procedure SetChangeConfiguration(const Value: Boolean);
     procedure SetChangeNetworkState(const Value: Boolean);
     procedure SetChangeWifiMulticastState(const Value: Boolean);
@@ -121,6 +123,7 @@ type TModelStandardPermissions = class
     property BluetoothAdmin: Boolean read GetBluetoothAdmin write SetBluetoothAdmin;
     property Bluetooth: Boolean read GetBluetooth write SetBluetooth;
     property BroadcastSticky: Boolean read GetBroadcastSticky write SetBroadcastSticky;
+    property CallCompanionApp: Boolean read GetCallCompanionApp write SetCallCompanionApp;
     property ChangeConfiguration: Boolean read GetChangeConfiguration write SetChangeConfiguration;
     property ChangeNetworkState: Boolean read GetChangeNetworkState write SetChangeNetworkState;
     property ChangeWifiMulticastState: Boolean read GetChangeWifiMulticastState write SetChangeWifiMulticastState;
@@ -221,6 +224,11 @@ end;
 function TModelStandardPermissions.GetBroadcastSticky: Boolean;
 begin
   Result := FPermissions.GetBroadcastSticky;
+end;
+
+function TModelStandardPermissions.GetCallCompanionApp: Boolean;
+begin
+  Result := FPermissions.GetCallCompanionApp;
 end;
 
 function TModelStandardPermissions.GetChangeConfiguration: Boolean;
@@ -471,6 +479,11 @@ end;
 procedure TModelStandardPermissions.SetBroadcastSticky(const Value: Boolean);
 begin
   FPermissions.SetBroadcastSticky(Value);
+end;
+
+procedure TModelStandardPermissions.SetCallCompanionApp(const Value: Boolean);
+begin
+  FPermissions.SetCallCompanionApp(Value);
 end;
 
 procedure TModelStandardPermissions.SetChangeConfiguration(const Value: Boolean);

@@ -18,6 +18,7 @@ type
     function GetBluetoothAdmin: Boolean;
     function GetBluetooth: Boolean;
     function GetBroadcastSticky: Boolean;
+    function GetCallCompanionApp: Boolean;
     function GetChangeConfiguration: Boolean;
     function GetChangeNetworkState: Boolean;
     function GetChangeWifiMulticastState: Boolean;
@@ -68,6 +69,7 @@ type
     procedure SetBluetoothAdmin(const Value: Boolean);
     procedure SetBluetooth(const Value: Boolean);
     procedure SetBroadcastSticky(const Value: Boolean);
+    procedure SetCallCompanionApp(const Value: Boolean);
     procedure SetChangeConfiguration(const Value: Boolean);
     procedure SetChangeNetworkState(const Value: Boolean);
     procedure SetChangeWifiMulticastState(const Value: Boolean);

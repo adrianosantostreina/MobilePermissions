@@ -16,6 +16,7 @@ type TUsesPermissionsFMXStandard = class(TUsesPermissionsFMXBase, IUsesPermissio
     function GetBluetoothAdmin: Boolean;
     function GetBluetooth: Boolean;
     function GetBroadcastSticky: Boolean;
+    function GetCallCompanionApp: Boolean;
     function GetChangeConfiguration: Boolean;
     function GetChangeNetworkState: Boolean;
     function GetChangeWifiMulticastState: Boolean;
@@ -66,6 +67,7 @@ type TUsesPermissionsFMXStandard = class(TUsesPermissionsFMXBase, IUsesPermissio
     procedure SetBluetoothAdmin(const Value: Boolean);
     procedure SetBluetooth(const Value: Boolean);
     procedure SetBroadcastSticky(const Value: Boolean);
+    procedure SetCallCompanionApp(const Value: Boolean);
     procedure SetChangeConfiguration(const Value: Boolean);
     procedure SetChangeNetworkState(const Value: Boolean);
     procedure SetChangeWifiMulticastState(const Value: Boolean);
@@ -154,6 +156,11 @@ end;
 function TUsesPermissionsFMXStandard.GetBroadcastSticky: Boolean;
 begin
   Result := HasPermission(JavaClass.BROADCAST_STICKY);
+end;
+
+function TUsesPermissionsFMXStandard.GetCallCompanionApp: Boolean;
+begin
+  Result := HasPermission(JavaClass.CALL_COMPANION_APP);
 end;
 
 function TUsesPermissionsFMXStandard.GetChangeConfiguration: Boolean;
@@ -404,6 +411,11 @@ end;
 procedure TUsesPermissionsFMXStandard.SetBroadcastSticky(const Value: Boolean);
 begin
   AddPermission(JavaClass.BROADCAST_STICKY, Value);
+end;
+
+procedure TUsesPermissionsFMXStandard.SetCallCompanionApp(const Value: Boolean);
+begin
+  AddPermission(JavaClass.CALL_COMPANION_APP, Value);
 end;
 
 procedure TUsesPermissionsFMXStandard.SetChangeConfiguration(const Value: Boolean);
