@@ -8,71 +8,71 @@ uses
 
 type TUsesPermissionsFMXSignature = class(TUsesPermissionsFMXBase, IUsesPermissionsSignature)
   private
-    function  GetBindAccessibility               : Boolean;
-    function  GetBindAutofill                    : Boolean;
-    function  GetBindCallScreening               : Boolean;
-    function  GetBindCarrierMessaging            : Boolean;
-    function  GetBindCarrierService              : Boolean;
-    function  GetBindChooserTargetService        : Boolean;
-    function  GetBindConditionProviderService    : Boolean;
-    function  GetBindDeviceAdmin                 : Boolean;
-    function  GetBindDreamService                : Boolean;
-    function  GetBindInCallService               : Boolean;
-    function  GetBindInputMethod                 : Boolean;
-    function  GetBindMIDIDeviceService           : Boolean;
-    function  GetBindNFCService                  : Boolean;
-    function  GetBindNotificationListenerService : Boolean;
-    function  GetBindPrintService                : Boolean;
-    function  GetBindQuickSettingsTile           : Boolean;
-    function  GetBindRemoteviews                 : Boolean;
-    function  GetBindTelecomConnectionService    : Boolean;
-    function  GetBindTextService                 : Boolean;
-    function  GetBindTVInput                     : Boolean;
-    function  GetBindVisualVoicemailService      : Boolean;
-    function  GetBindVoiceInteraction            : Boolean;
-    function  GetBindVPNService                  : Boolean;
-    function  GetBindVRListenerService           : Boolean;
-    function  GetBindWallpaper                   : Boolean;
-    function  GetClearAppCache                   : Boolean;
-    function  GetManageDocuments                 : Boolean;
-    function  GetReadVoicemail                   : Boolean;
-    function  GetRequestInstallPackages          : Boolean;
-    function  GetSystemAlertWindow               : Boolean;
-    function  GetWriteSettings                   : Boolean;
-    function  GetWriteVoicemail                  : Boolean;
+    function GetBindAccessibility: Boolean;
+    function GetBindAutofill: Boolean;
+    function GetBindCallScreening: Boolean;
+    function GetBindCarrierMessaging: Boolean;
+    function GetBindCarrierService: Boolean;
+    function GetBindChooserTargetService: Boolean;
+    function GetBindConditionProviderService: Boolean;
+    function GetBindDeviceAdmin: Boolean;
+    function GetBindDreamService: Boolean;
+    function GetBindInCallService: Boolean;
+    function GetBindInputMethod: Boolean;
+    function GetBindMIDIDeviceService: Boolean;
+    function GetBindNFCService: Boolean;
+    function GetBindNotificationListenerService: Boolean;
+    function GetBindPrintService: Boolean;
+    function GetBindQuickSettingsTile: Boolean;
+    function GetBindRemoteviews: Boolean;
+    function GetBindTelecomConnectionService: Boolean;
+    function GetBindTextService: Boolean;
+    function GetBindTVInput: Boolean;
+    function GetBindVisualVoicemailService: Boolean;
+    function GetBindVoiceInteraction: Boolean;
+    function GetBindVPNService: Boolean;
+    function GetBindVRListenerService: Boolean;
+    function GetBindWallpaper: Boolean;
+    function GetClearAppCache: Boolean;
+    function GetManageDocuments: Boolean;
+    function GetReadVoicemail: Boolean;
+    function GetRequestInstallPackages: Boolean;
+    function GetSystemAlertWindow: Boolean;
+    function GetWriteSettings: Boolean;
+    function GetWriteVoicemail: Boolean;
 
-    procedure SetBindAccessibility               (const Value: Boolean);
-    procedure SetBindAutofill                    (const Value: Boolean);
-    procedure SetBindCallScreening               (const Value: Boolean);
-    procedure SetBindCarrierMessaging            (const Value: Boolean);
-    procedure SetBindCarrierService              (const Value: Boolean);
-    procedure SetBindChooserTargetService        (const Value: Boolean);
-    procedure SetBindConditionProviderService    (const Value: Boolean);
-    procedure SetBindDeviceAdmin                 (const Value: Boolean);
-    procedure SetBindDreamService                (const Value: Boolean);
-    procedure SetBindInCallService               (const Value: Boolean);
-    procedure SetBindInputMethod                 (const Value: Boolean);
-    procedure SetBindMIDIDeviceService           (const Value: Boolean);
-    procedure SetBindNFCService                  (const Value: Boolean);
-    procedure SetBindNotificationListenerService (const Value: Boolean);
-    procedure SetBindPrintService                (const Value: Boolean);
-    procedure SetBindQuickSettingsTile           (const Value: Boolean);
-    procedure SetBindRemoteviews                 (const Value: Boolean);
-    procedure SetBindTelecomConnectionService    (const Value: Boolean);
-    procedure SetBindTextService                 (const Value: Boolean);
-    procedure SetBindTVInput                     (const Value: Boolean);
-    procedure SetBindVisualVoicemailService      (const Value: Boolean);
-    procedure SetBindVoiceInteraction            (const Value: Boolean);
-    procedure SetBindVPNService                  (const Value: Boolean);
-    procedure SetBindVRListenerService           (const Value: Boolean);
-    procedure SetBindWallpaper                   (const Value: Boolean);
-    procedure SetClearAppCache                   (const Value: Boolean);
-    procedure SetManageDocuments                 (const Value: Boolean);
-    procedure SetReadVoicemail                   (const Value: Boolean);
-    procedure SetRequestInstallPackages          (const Value: Boolean);
-    procedure SetSystemAlertWindow               (const Value: Boolean);
-    procedure SetWriteSettings                   (const Value: Boolean);
-    procedure SetWriteVoicemail                  (const Value: Boolean);
+    procedure SetBindAccessibility(const Value: Boolean);
+    procedure SetBindAutofill(const Value: Boolean);
+    procedure SetBindCallScreening(const Value: Boolean);
+    procedure SetBindCarrierMessaging(const Value: Boolean);
+    procedure SetBindCarrierService(const Value: Boolean);
+    procedure SetBindChooserTargetService(const Value: Boolean);
+    procedure SetBindConditionProviderService(const Value: Boolean);
+    procedure SetBindDeviceAdmin(const Value: Boolean);
+    procedure SetBindDreamService(const Value: Boolean);
+    procedure SetBindInCallService(const Value: Boolean);
+    procedure SetBindInputMethod(const Value: Boolean);
+    procedure SetBindMIDIDeviceService(const Value: Boolean);
+    procedure SetBindNFCService(const Value: Boolean);
+    procedure SetBindNotificationListenerService(const Value: Boolean);
+    procedure SetBindPrintService(const Value: Boolean);
+    procedure SetBindQuickSettingsTile(const Value: Boolean);
+    procedure SetBindRemoteviews(const Value: Boolean);
+    procedure SetBindTelecomConnectionService(const Value: Boolean);
+    procedure SetBindTextService(const Value: Boolean);
+    procedure SetBindTVInput(const Value: Boolean);
+    procedure SetBindVisualVoicemailService(const Value: Boolean);
+    procedure SetBindVoiceInteraction(const Value: Boolean);
+    procedure SetBindVPNService(const Value: Boolean);
+    procedure SetBindVRListenerService(const Value: Boolean);
+    procedure SetBindWallpaper(const Value: Boolean);
+    procedure SetClearAppCache(const Value: Boolean);
+    procedure SetManageDocuments(const Value: Boolean);
+    procedure SetReadVoicemail(const Value: Boolean);
+    procedure SetRequestInstallPackages(const Value: Boolean);
+    procedure SetSystemAlertWindow(const Value: Boolean);
+    procedure SetWriteSettings(const Value: Boolean);
+    procedure SetWriteVoicemail(const Value: Boolean);
 
   public
     class function New: IUsesPermissionsSignature;
@@ -84,167 +84,167 @@ implementation
 
 function TUsesPermissionsFMXSignature.GetBindAccessibility: Boolean;
 begin
-  result := HasPermission(JavaClass.BIND_ACCESSIBILITY_SERVICE);
+  Result := HasPermission(JavaClass.BIND_ACCESSIBILITY_SERVICE);
 end;
 
 function TUsesPermissionsFMXSignature.GetBindAutofill: Boolean;
 begin
-  result := HasPermission(JavaClass.BIND_AUTOFILL_SERVICE);
+  Result := HasPermission(JavaClass.BIND_AUTOFILL_SERVICE);
 end;
 
 function TUsesPermissionsFMXSignature.GetBindCallScreening: Boolean;
 begin
-  result := HasPermission(JavaClass.BIND_SCREENING_SERVICE);
+  Result := HasPermission(JavaClass.BIND_SCREENING_SERVICE);
 end;
 
 function TUsesPermissionsFMXSignature.GetBindCarrierMessaging: Boolean;
 begin
-  result := HasPermission(JavaClass.BIND_CARRIER_MESSAGING_SERVICE);
+  Result := HasPermission(JavaClass.BIND_CARRIER_MESSAGING_SERVICE);
 end;
 
 function TUsesPermissionsFMXSignature.GetBindCarrierService: Boolean;
 begin
-  result := HasPermission(JavaClass.BIND_CARRIER_SERVICES);
+  Result := HasPermission(JavaClass.BIND_CARRIER_SERVICES);
 end;
 
 function TUsesPermissionsFMXSignature.GetBindChooserTargetService: Boolean;
 begin
-  result := HasPermission(JavaClass.BIND_CHOOSER_TARGET_SERVICE);
+  Result := HasPermission(JavaClass.BIND_CHOOSER_TARGET_SERVICE);
 end;
 
 function TUsesPermissionsFMXSignature.GetBindConditionProviderService: Boolean;
 begin
-  result := HasPermission(JavaClass.BIND_CONDITION_PROVIDER_SERVICE);
+  Result := HasPermission(JavaClass.BIND_CONDITION_PROVIDER_SERVICE);
 end;
 
 function TUsesPermissionsFMXSignature.GetBindDeviceAdmin: Boolean;
 begin
-  result := HasPermission(JavaClass.BIND_DEVICE_ADMIN);
+  Result := HasPermission(JavaClass.BIND_DEVICE_ADMIN);
 end;
 
 function TUsesPermissionsFMXSignature.GetBindDreamService: Boolean;
 begin
-  result := HasPermission(JavaClass.BIND_DREAM_SERVICE);
+  Result := HasPermission(JavaClass.BIND_DREAM_SERVICE);
 end;
 
 function TUsesPermissionsFMXSignature.GetBindInCallService: Boolean;
 begin
-  result := HasPermission(JavaClass.BIND_INCALL_SERVICE);
+  Result := HasPermission(JavaClass.BIND_INCALL_SERVICE);
 end;
 
 function TUsesPermissionsFMXSignature.GetBindInputMethod: Boolean;
 begin
-  result := HasPermission(JavaClass.BIND_INPUT_METHOD);
+  Result := HasPermission(JavaClass.BIND_INPUT_METHOD);
 end;
 
 function TUsesPermissionsFMXSignature.GetBindMIDIDeviceService: Boolean;
 begin
-  result := HasPermission(JavaClass.BIND_MIDI_DEVICE_SERVICE);
+  Result := HasPermission(JavaClass.BIND_MIDI_DEVICE_SERVICE);
 end;
 
 function TUsesPermissionsFMXSignature.GetBindNFCService: Boolean;
 begin
-  result := HasPermission(JavaClass.BIND_NFC_SERVICE);
+  Result := HasPermission(JavaClass.BIND_NFC_SERVICE);
 end;
 
 function TUsesPermissionsFMXSignature.GetBindNotificationListenerService: Boolean;
 begin
-  result := HasPermission(JavaClass.BIND_NOTIFICATION_LISTENER_SERVICE);
+  Result := HasPermission(JavaClass.BIND_NOTIFICATION_LISTENER_SERVICE);
 end;
 
 function TUsesPermissionsFMXSignature.GetBindPrintService: Boolean;
 begin
-  result := HasPermission(JavaClass.BIND_PRINT_SERVICE);
+  Result := HasPermission(JavaClass.BIND_PRINT_SERVICE);
 end;
 
 function TUsesPermissionsFMXSignature.GetBindQuickSettingsTile: Boolean;
 begin
-  result := HasPermission(JavaClass.BIND_QUICK_SETTINGS_TILE);
+  Result := HasPermission(JavaClass.BIND_QUICK_SETTINGS_TILE);
 end;
 
 function TUsesPermissionsFMXSignature.GetBindRemoteviews: Boolean;
 begin
-  result := HasPermission(JavaClass.BIND_REMOTEVIEWS);
+  Result := HasPermission(JavaClass.BIND_REMOTEVIEWS);
 end;
 
 function TUsesPermissionsFMXSignature.GetBindTelecomConnectionService: Boolean;
 begin
-  result := HasPermission(JavaClass.BIND_TELECOM_CONNECTION_SERVICE);
+  Result := HasPermission(JavaClass.BIND_TELECOM_CONNECTION_SERVICE);
 end;
 
 function TUsesPermissionsFMXSignature.GetBindTextService: Boolean;
 begin
-  result := HasPermission(JavaClass.BIND_TEXT_SERVICE);
+  Result := HasPermission(JavaClass.BIND_TEXT_SERVICE);
 end;
 
 function TUsesPermissionsFMXSignature.GetBindTVInput: Boolean;
 begin
-  result := HasPermission(JavaClass.BIND_TV_INPUT);
+  Result := HasPermission(JavaClass.BIND_TV_INPUT);
 end;
 
 function TUsesPermissionsFMXSignature.GetBindVisualVoicemailService: Boolean;
 begin
-  result := HasPermission(JavaClass.BIND_VISUAL_VOICEMAIL_SERVICE);
+  Result := HasPermission(JavaClass.BIND_VISUAL_VOICEMAIL_SERVICE);
 end;
 
 function TUsesPermissionsFMXSignature.GetBindVoiceInteraction: Boolean;
 begin
-  result := HasPermission(JavaClass.BIND_VOICE_INTERACTION);
+  Result := HasPermission(JavaClass.BIND_VOICE_INTERACTION);
 end;
 
 function TUsesPermissionsFMXSignature.GetBindVPNService: Boolean;
 begin
-  result := HasPermission(JavaClass.BIND_VPN_SERVICE);
+  Result := HasPermission(JavaClass.BIND_VPN_SERVICE);
 end;
 
 function TUsesPermissionsFMXSignature.GetBindVRListenerService: Boolean;
 begin
-  result := HasPermission(JavaClass.BIND_VR_LISTENER_SERVICE);
+  Result := HasPermission(JavaClass.BIND_VR_LISTENER_SERVICE);
 end;
 
 function TUsesPermissionsFMXSignature.GetBindWallpaper: Boolean;
 begin
-  result := HasPermission(JavaClass.BIND_WALLPAPER);
+  Result := HasPermission(JavaClass.BIND_WALLPAPER);
 end;
 
 function TUsesPermissionsFMXSignature.GetClearAppCache: Boolean;
 begin
-  result := HasPermission(JavaClass.CLEAR_APP_CACHE);
+  Result := HasPermission(JavaClass.CLEAR_APP_CACHE);
 end;
 
 function TUsesPermissionsFMXSignature.GetManageDocuments: Boolean;
 begin
-  result := HasPermission(JavaClass.MANAGE_DOCUMENTS);
+  Result := HasPermission(JavaClass.MANAGE_DOCUMENTS);
 end;
 
 function TUsesPermissionsFMXSignature.GetReadVoicemail: Boolean;
 begin
-  result := HasPermission(JavaClass.READ_VOICEMAIL);
+  Result := HasPermission(JavaClass.READ_VOICEMAIL);
 end;
 
 function TUsesPermissionsFMXSignature.GetRequestInstallPackages: Boolean;
 begin
-  result := HasPermission(JavaClass.REQUEST_INSTALL_PACKAGES);
+  Result := HasPermission(JavaClass.REQUEST_INSTALL_PACKAGES);
 end;
 
 function TUsesPermissionsFMXSignature.GetSystemAlertWindow: Boolean;
 begin
-  result := HasPermission(JavaClass.SYSTEM_ALERT_WINDOW);
+  Result := HasPermission(JavaClass.SYSTEM_ALERT_WINDOW);
 end;
 
 function TUsesPermissionsFMXSignature.GetWriteSettings: Boolean;
 begin
-  result := HasPermission(JavaClass.WRITE_SETTINGS);
+  Result := HasPermission(JavaClass.WRITE_SETTINGS);
 end;
 
 function TUsesPermissionsFMXSignature.GetWriteVoicemail: Boolean;
 begin
-  result := HasPermission(JavaClass.WRITE_VOICEMAIL);
+  Result := HasPermission(JavaClass.WRITE_VOICEMAIL);
 end;
 
 class function TUsesPermissionsFMXSignature.New: IUsesPermissionsSignature;
 begin
-  result := Self.Create;
+  Result := Self.Create;
 end;
 
 procedure TUsesPermissionsFMXSignature.SetBindAccessibility(const Value: Boolean);

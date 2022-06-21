@@ -12,136 +12,136 @@ type TModelDangerousPermissions = class
   private
     FPermissions: IUsesPermissionsDangerous;
 
-    function  GetAccessCoarseLocation          : Boolean;
-    function  GetAccessFineLocation            : Boolean;
-    function  GetAccessMockLocation            : Boolean;
-    function  GetAddVoiceMail                  : Boolean;
-    function  GetAnswerPhonecalls              : Boolean;
-    function  GetAuthenticateAccounts          : Boolean;
-    function  GetBodySensors                   : Boolean;
-    function  GetCallPhone                     : Boolean;
-    function  GetCamera                        : Boolean;
-    function  GetContinueCallStartedAnotherApp : Boolean;
-    function  GetGetAccounts                   : Boolean;
-    function  GetManageAccounts                : Boolean;
-    function  GetProcessOutgoingCalls          : Boolean;
-    function  GetReadCalendar                  : Boolean;
-    function  GetReadCallLog         		       : Boolean;
-    function  GetReadContacts        		       : Boolean;
-    function  GetReadExternalStorage 		       : Boolean;
-    function  GetReadHistoryBookmarks		       : Boolean;
-    function  GetReadPhoneNumbers    		       : Boolean;
-    function  GetReadPhoneState      		       : Boolean;
-    function  GetReadProfile         		       : Boolean;
-    function  GetReadSMS             		       : Boolean;
-    function  GetReadSocialStream    		       : Boolean;
-    function  GetReadUserDictionary  		       : Boolean;
-    function  GetReceiveMMS          		       : Boolean;
-    function  GetReceiveSMS          		       : Boolean;
-    function  GetReceiveWAPPush      		       : Boolean;
-    function  GetRecordAudio         		       : Boolean;
-    function  GetSendSMS             		       : Boolean;
-    function  GetSubscribedFeedsWrite		       : Boolean;
-    function  GetUninstallShortcut   		       : Boolean;
-    function  GetUseCredentials                : Boolean;
-    function  GetUseSIP                        : Boolean;
-    function  GetWriteCalendar                 : Boolean;
-    function  GetWriteCallLog                  : Boolean;
-    function  GetWriteContacts                 : Boolean;
-    function  GetWriteExternalStorage          : Boolean;
-    function  GetWriteHistoyBookmarks          : Boolean;
-    function  GetWriteProfile                  : Boolean;
-    function  GetWriteSMS                      : Boolean;
-    function  GetWriteSocialStream             : Boolean;
+    function GetAccessCoarseLocation: Boolean;
+    function GetAccessFineLocation: Boolean;
+    function GetAccessMockLocation: Boolean;
+    function GetAddVoiceMail: Boolean;
+    function GetAnswerPhonecalls: Boolean;
+    function GetAuthenticateAccounts: Boolean;
+    function GetBodySensors: Boolean;
+    function GetCallPhone: Boolean;
+    function GetCamera: Boolean;
+    function GetContinueCallStartedAnotherApp: Boolean;
+    function GetGetAccounts: Boolean;
+    function GetManageAccounts: Boolean;
+    function GetProcessOutgoingCalls: Boolean;
+    function GetReadCalendar: Boolean;
+    function GetReadCallLog: Boolean;
+    function GetReadContacts: Boolean;
+    function GetReadExternalStorage: Boolean;
+    function GetReadHistoryBookmarks: Boolean;
+    function GetReadPhoneNumbers: Boolean;
+    function GetReadPhoneState: Boolean;
+    function GetReadProfile: Boolean;
+    function GetReadSMS: Boolean;
+    function GetReadSocialStream: Boolean;
+    function GetReadUserDictionary: Boolean;
+    function GetReceiveMMS: Boolean;
+    function GetReceiveSMS: Boolean;
+    function GetReceiveWAPPush: Boolean;
+    function GetRecordAudio: Boolean;
+    function GetSendSMS: Boolean;
+    function GetSubscribedFeedsWrite: Boolean;
+    function GetUninstallShortcut: Boolean;
+    function GetUseCredentials: Boolean;
+    function GetUseSIP: Boolean;
+    function GetWriteCalendar: Boolean;
+    function GetWriteCallLog: Boolean;
+    function GetWriteContacts: Boolean;
+    function GetWriteExternalStorage: Boolean;
+    function GetWriteHistoyBookmarks: Boolean;
+    function GetWriteProfile: Boolean;
+    function GetWriteSMS: Boolean;
+    function GetWriteSocialStream: Boolean;
 
-    procedure SetAccessCoarseLocation          (const Value: Boolean);
-    procedure SetAccessFineLocation            (const Value: Boolean);
-    procedure SetAccessMockLocation            (const Value: Boolean);
-    procedure SetAddVoiceMail                  (const Value: Boolean);
-    procedure SetAnswerPhonecalls              (const Value: Boolean);
-    procedure SetAuthenticateAccounts          (const Value: Boolean);
-    procedure SetBodySensors                   (const Value: Boolean);
-    procedure SetCallPhone                     (const Value: Boolean);
-    procedure SetCamera                        (const Value: Boolean);
-    procedure SetContinueCallStartedAnotherApp (const Value: Boolean);
-    procedure SetGetAccounts                   (const Value: Boolean);
-    procedure SetManageAccounts                (const Value: Boolean);
-    procedure SetProcessOutgoingCalls          (const Value: Boolean);
-    procedure SetReadCalendar                  (const Value: Boolean);
-    procedure SetReadCallLog                   (const Value: Boolean);
-    procedure SetReadContacts                  (const Value: Boolean);
-    procedure SetReadExternalStorage           (const Value: Boolean);
-    procedure SetReadHistoryBookmarks          (const Value: Boolean);
-    procedure SetReadPhoneNumbers              (const Value: Boolean);
-    procedure SetReadPhoneState                (const Value: Boolean);
-    procedure SetReadProfile                   (const Value: Boolean);
-    procedure SetReadSMS                       (const Value: Boolean);
-    procedure SetReadSocialStream              (const Value: Boolean);
-    procedure SetReadUserDictionary            (const Value: Boolean);
-    procedure SetReceiveMMS                    (const Value: Boolean);
-    procedure SetReceiveSMS                    (const Value: Boolean);
-    procedure SetReceiveWAPPush                (const Value: Boolean);
-    procedure SetRecordAudio                   (const Value: Boolean);
-    procedure SetSendSMS                       (const Value: Boolean);
-    procedure SetSubscribedFeedsWrite          (const Value: Boolean);
-    procedure SetUninstallShortcut	           (const Value: Boolean);
-    procedure SetUseCredentials                (const Value: Boolean);
-    procedure SetUseSIP                        (const Value: Boolean);
-    procedure SetWriteCalendar                 (const Value: Boolean);
-    procedure SetWriteCallLog                  (const Value: Boolean);
-    procedure SetWriteContacts                 (const Value: Boolean);
-    procedure SetWriteExternalStorage          (const Value: Boolean);
-    procedure SetWriteHistoyBookmarks          (const Value: Boolean);
-    procedure SetWriteProfile                  (const Value: Boolean);
-    procedure SetWriteSMS                      (const Value: Boolean);
-    procedure SetWriteSocialStream             (const Value: Boolean);
+    procedure SetAccessCoarseLocation(const Value: Boolean);
+    procedure SetAccessFineLocation(const Value: Boolean);
+    procedure SetAccessMockLocation(const Value: Boolean);
+    procedure SetAddVoiceMail(const Value: Boolean);
+    procedure SetAnswerPhonecalls(const Value: Boolean);
+    procedure SetAuthenticateAccounts(const Value: Boolean);
+    procedure SetBodySensors(const Value: Boolean);
+    procedure SetCallPhone(const Value: Boolean);
+    procedure SetCamera(const Value: Boolean);
+    procedure SetContinueCallStartedAnotherApp(const Value: Boolean);
+    procedure SetGetAccounts(const Value: Boolean);
+    procedure SetManageAccounts(const Value: Boolean);
+    procedure SetProcessOutgoingCalls(const Value: Boolean);
+    procedure SetReadCalendar(const Value: Boolean);
+    procedure SetReadCallLog(const Value: Boolean);
+    procedure SetReadContacts(const Value: Boolean);
+    procedure SetReadExternalStorage(const Value: Boolean);
+    procedure SetReadHistoryBookmarks(const Value: Boolean);
+    procedure SetReadPhoneNumbers(const Value: Boolean);
+    procedure SetReadPhoneState(const Value: Boolean);
+    procedure SetReadProfile(const Value: Boolean);
+    procedure SetReadSMS(const Value: Boolean);
+    procedure SetReadSocialStream(const Value: Boolean);
+    procedure SetReadUserDictionary(const Value: Boolean);
+    procedure SetReceiveMMS(const Value: Boolean);
+    procedure SetReceiveSMS(const Value: Boolean);
+    procedure SetReceiveWAPPush(const Value: Boolean);
+    procedure SetRecordAudio(const Value: Boolean);
+    procedure SetSendSMS(const Value: Boolean);
+    procedure SetSubscribedFeedsWrite(const Value: Boolean);
+    procedure SetUninstallShortcut(const Value: Boolean);
+    procedure SetUseCredentials(const Value: Boolean);
+    procedure SetUseSIP(const Value: Boolean);
+    procedure SetWriteCalendar(const Value: Boolean);
+    procedure SetWriteCallLog(const Value: Boolean);
+    procedure SetWriteContacts(const Value: Boolean);
+    procedure SetWriteExternalStorage(const Value: Boolean);
+    procedure SetWriteHistoyBookmarks(const Value: Boolean);
+    procedure SetWriteProfile(const Value: Boolean);
+    procedure SetWriteSMS(const Value: Boolean);
+    procedure SetWriteSocialStream(const Value: Boolean);
 
   published
-    property AccessCoarseLocation          : Boolean read GetAccessCoarseLocation          write SetAccessCoarseLocation;
-    property AccessFineLocation            : Boolean read GetAccessFineLocation            write SetAccessFineLocation;
-    property AccessMockLocation            : Boolean read GetAccessMockLocation            write SetAccessMockLocation;
-    property AddVoiceMail                  : Boolean read GetAddVoiceMail                  write SetAddVoiceMail;
-    property AnswerPhonecalls              : Boolean read GetAnswerPhonecalls              write SetAnswerPhonecalls;
-    property AuthenticateAccounts          : Boolean read GetAuthenticateAccounts          write SetAuthenticateAccounts;
-    property BodySensors                   : Boolean read GetBodySensors                   write SetBodySensors;
-    property CallPhone                     : Boolean read GetCallPhone                     write SetCallPhone;
-    property Camera                        : Boolean read GetCamera                        write SetCamera;
-    property ContinueCallStartedAnotherApp : Boolean read GetContinueCallStartedAnotherApp write SetContinueCallStartedAnotherApp;
-    property GetAccounts                   : Boolean read GetGetAccounts                   write SetGetAccounts;
-    property ManageAccounts                : Boolean read GetManageAccounts                write SetManageAccounts;
-    property ProcessOutgoingCalls          : Boolean read GetProcessOutgoingCalls          write SetProcessOutgoingCalls;
-    property ReadCalendar                  : Boolean read GetReadCalendar                  write SetReadCalendar;
-    property ReadCallLog                   : Boolean read GetReadCallLog                   write SetReadCallLog;
-    property ReadContacts                  : Boolean read GetReadContacts                  write SetReadContacts;
-    property ReadExternalStorage           : Boolean read GetReadExternalStorage           write SetReadExternalStorage;
-    property ReadHistoryBookmarks          : Boolean read GetReadHistoryBookmarks          write SetReadHistoryBookmarks;
-    property ReadPhoneNumbers              : Boolean read GetReadPhoneNumbers              write SetReadPhoneNumbers;
-    property ReadPhoneState                : Boolean read GetReadPhoneState                write SetReadPhoneState;
-    property ReadProfile                   : Boolean read GetReadProfile                   write SetReadProfile;
-    property ReadSMS                       : Boolean read GetReadSMS                       write SetReadSMS;
-    property ReadSocialStream              : Boolean read GetReadSocialStream              write SetReadSocialStream;
-    property ReadUserDictionary            : Boolean read GetReadUserDictionary            write SetReadUserDictionary;
-    property ReceiveMMS                    : Boolean read GetReceiveMMS                    write SetReceiveMMS;
-    property ReceiveSMS                    : Boolean read GetReceiveSMS                    write SetReceiveSMS;
-    property ReceiveWAPPush                : Boolean read GetReceiveWAPPush                write SetReceiveWAPPush;
-    property RecordAudio                   : Boolean read GetRecordAudio                   write SetRecordAudio;
-    property SendSMS                       : Boolean read GetSendSMS                       write SetSendSMS;
-    property SubscribedFeedsWrite          : Boolean read GetSubscribedFeedsWrite          write SetSubscribedFeedsWrite;
-    property UninstallShortcut             : Boolean read GetUninstallShortcut             write SetUninstallShortcut;
-    property UseCredentials                : Boolean read GetUseCredentials                write SetUseCredentials;
-    property UseSIP                        : Boolean read GetUseSIP                        write SetUseSIP;
-    property WriteCalendar                 : Boolean read GetWriteCalendar                 write SetWriteCalendar;
-    property WriteCallLog                  : Boolean read GetWriteCallLog                  write SetWriteCallLog;
-    property WriteContacts                 : Boolean read GetWriteContacts                 write SetWriteContacts;
-    property WriteExternalStorage          : Boolean read GetWriteExternalStorage          write SetWriteExternalStorage;
-    property WriteHistoyBookmarks          : Boolean read GetWriteHistoyBookmarks          write SetWriteHistoyBookmarks;
-    property WriteProfile                  : Boolean read GetWriteProfile                  write SetWriteProfile;
-    property WriteSMS                      : Boolean read GetWriteSMS                      write SetWriteSMS;
-    property WriteSocialStream             : Boolean read GetWriteSocialStream             write SetWriteSocialStream;
+    property AccessCoarseLocation: Boolean read GetAccessCoarseLocation write SetAccessCoarseLocation;
+    property AccessFineLocation: Boolean read GetAccessFineLocation write SetAccessFineLocation;
+    property AccessMockLocation: Boolean read GetAccessMockLocation write SetAccessMockLocation;
+    property AddVoiceMail: Boolean read GetAddVoiceMail write SetAddVoiceMail;
+    property AnswerPhonecalls: Boolean read GetAnswerPhonecalls write SetAnswerPhonecalls;
+    property AuthenticateAccounts: Boolean read GetAuthenticateAccounts write SetAuthenticateAccounts;
+    property BodySensors: Boolean read GetBodySensors write SetBodySensors;
+    property CallPhone: Boolean read GetCallPhone write SetCallPhone;
+    property Camera: Boolean read GetCamera write SetCamera;
+    property ContinueCallStartedAnotherApp: Boolean read GetContinueCallStartedAnotherApp write SetContinueCallStartedAnotherApp;
+    property GetAccounts: Boolean read GetGetAccounts write SetGetAccounts;
+    property ManageAccounts: Boolean read GetManageAccounts write SetManageAccounts;
+    property ProcessOutgoingCalls: Boolean read GetProcessOutgoingCalls write SetProcessOutgoingCalls;
+    property ReadCalendar: Boolean read GetReadCalendar write SetReadCalendar;
+    property ReadCallLog: Boolean read GetReadCallLog write SetReadCallLog;
+    property ReadContacts: Boolean read GetReadContacts write SetReadContacts;
+    property ReadExternalStorage: Boolean read GetReadExternalStorage write SetReadExternalStorage;
+    property ReadHistoryBookmarks: Boolean read GetReadHistoryBookmarks write SetReadHistoryBookmarks;
+    property ReadPhoneNumbers: Boolean read GetReadPhoneNumbers write SetReadPhoneNumbers;
+    property ReadPhoneState: Boolean read GetReadPhoneState write SetReadPhoneState;
+    property ReadProfile: Boolean read GetReadProfile write SetReadProfile;
+    property ReadSMS: Boolean read GetReadSMS write SetReadSMS;
+    property ReadSocialStream: Boolean read GetReadSocialStream write SetReadSocialStream;
+    property ReadUserDictionary: Boolean read GetReadUserDictionary write SetReadUserDictionary;
+    property ReceiveMMS: Boolean read GetReceiveMMS write SetReceiveMMS;
+    property ReceiveSMS: Boolean read GetReceiveSMS write SetReceiveSMS;
+    property ReceiveWAPPush: Boolean read GetReceiveWAPPush write SetReceiveWAPPush;
+    property RecordAudio: Boolean read GetRecordAudio write SetRecordAudio;
+    property SendSMS: Boolean read GetSendSMS write SetSendSMS;
+    property SubscribedFeedsWrite: Boolean read GetSubscribedFeedsWrite write SetSubscribedFeedsWrite;
+    property UninstallShortcut: Boolean read GetUninstallShortcut write SetUninstallShortcut;
+    property UseCredentials: Boolean read GetUseCredentials write SetUseCredentials;
+    property UseSIP: Boolean read GetUseSIP write SetUseSIP;
+    property WriteCalendar: Boolean read GetWriteCalendar write SetWriteCalendar;
+    property WriteCallLog: Boolean read GetWriteCallLog write SetWriteCallLog;
+    property WriteContacts: Boolean read GetWriteContacts write SetWriteContacts;
+    property WriteExternalStorage: Boolean read GetWriteExternalStorage write SetWriteExternalStorage;
+    property WriteHistoyBookmarks: Boolean read GetWriteHistoyBookmarks write SetWriteHistoyBookmarks;
+    property WriteProfile: Boolean read GetWriteProfile write SetWriteProfile;
+    property WriteSMS: Boolean read GetWriteSMS write SetWriteSMS;
+    property WriteSocialStream: Boolean read GetWriteSocialStream write SetWriteSocialStream;
 
   public
     function Permissions: TArray<string>;
-    constructor create;
+    constructor Create;
     destructor Destroy; override;
 end;
 
@@ -149,7 +149,7 @@ implementation
 
 { TModelDangerousPermissions }
 
-constructor TModelDangerousPermissions.create;
+constructor TModelDangerousPermissions.Create;
 begin
   FPermissions := TFactoryUsesPermissions.New.createPermissionsDangerous;
 end;
@@ -161,417 +161,417 @@ end;
 
 function TModelDangerousPermissions.GetAccessCoarseLocation: Boolean;
 begin
-  Result := FPermissions.AccessCoarseLocation;
+  Result := FPermissions.GetAccessCoarseLocation;
 end;
 
 function TModelDangerousPermissions.GetAccessFineLocation: Boolean;
 begin
-  Result := FPermissions.AccessFineLocation;
+  Result := FPermissions.GetAccessFineLocation;
 end;
 
 function TModelDangerousPermissions.GetAccessMockLocation: Boolean;
 begin
-  Result := FPermissions.AccessMockLocation;
+  Result := FPermissions.GetAccessMockLocation;
 end;
 
 function TModelDangerousPermissions.GetAddVoiceMail: Boolean;
 begin
-  Result := FPermissions.AddVoiceMail;
+  Result := FPermissions.GetAddVoiceMail;
 end;
 
 function TModelDangerousPermissions.GetAnswerPhonecalls: Boolean;
 begin
-  Result := FPermissions.AnswerPhonecalls;
+  Result := FPermissions.GetAnswerPhonecalls;
 end;
 
 function TModelDangerousPermissions.GetAuthenticateAccounts: Boolean;
 begin
-  Result := FPermissions.AuthenticateAccounts;
+  Result := FPermissions.GetAuthenticateAccounts;
 end;
 
 function TModelDangerousPermissions.GetBodySensors: Boolean;
 begin
-  Result := FPermissions.BodySensors;
+  Result := FPermissions.GetBodySensors;
 end;
 
 function TModelDangerousPermissions.GetCallPhone: Boolean;
 begin
-  Result := FPermissions.CallPhone;
+  Result := FPermissions.GetCallPhone;
 end;
 
 function TModelDangerousPermissions.GetCamera: Boolean;
 begin
-  result := FPermissions.Camera;
+  Result := FPermissions.GetCamera;
 end;
 
 function TModelDangerousPermissions.GetContinueCallStartedAnotherApp: Boolean;
 begin
-  Result := FPermissions.ContinueCallStartedAnotherApp;
+  Result := FPermissions.GetContinueCallStartedAnotherApp;
 end;
 
 function TModelDangerousPermissions.GetWriteExternalStorage: Boolean;
 begin
-  result := FPermissions.WriteExternalStorage;
+  Result := FPermissions.GetWriteExternalStorage;
 end;
 
 function TModelDangerousPermissions.Permissions: TArray<string>;
 begin
-  result := FPermissions.Permissions;
+  Result := FPermissions.Permissions;
 end;
 
 function TModelDangerousPermissions.GetGetAccounts: Boolean;
 begin
-  Result := FPermissions.GetAccounts;
+  Result := FPermissions.GetGetAccounts;
 end;
 
 function TModelDangerousPermissions.GetManageAccounts: Boolean;
 begin
-  result := FPermissions.ManageAccounts;
+  Result := FPermissions.GetManageAccounts;
 end;
 
 function TModelDangerousPermissions.GetWriteHistoyBookmarks: Boolean;
 begin
-  result := FPermissions.WriteHistoyBookmarks;
+  Result := FPermissions.GetWriteHistoyBookmarks;
 end;
 
 function TModelDangerousPermissions.GetProcessOutgoingCalls: Boolean;
 begin
-  Result := FPermissions.ProcessOutgoingCalls;
+  Result := FPermissions.GetProcessOutgoingCalls;
 end;
 
 function TModelDangerousPermissions.GetWriteProfile: Boolean;
 begin
-  result := FPermissions.WriteProfile;
+  Result := FPermissions.GetWriteProfile;
 end;
 
 function TModelDangerousPermissions.GetReadCalendar: Boolean;
 begin
-  Result := FPermissions.ReadCalendar;
+  Result := FPermissions.GetReadCalendar;
 end;
 
 function TModelDangerousPermissions.GetReadCallLog: Boolean;
 begin
-  result := FPermissions.ReadCallLog;
+  Result := FPermissions.GetReadCallLog;
 end;
 
 function TModelDangerousPermissions.GetReadContacts: Boolean;
 begin
-  result := FPermissions.ReadContacts;
+  Result := FPermissions.GetReadContacts;
 end;
 
 function TModelDangerousPermissions.GetReadExternalStorage: Boolean;
 begin
-  result := FPermissions.ReadExternalStorage;
+  Result := FPermissions.GetReadExternalStorage;
 end;
 
 function TModelDangerousPermissions.GetReadHistoryBookmarks: Boolean;
 begin
-  result := FPermissions.ReadHistoryBookmarks;
+  Result := FPermissions.GetReadHistoryBookmarks;
 end;
 
 function TModelDangerousPermissions.GetReadPhoneNumbers: Boolean;
 begin
-  result := FPermissions.ReadPhoneNumbers;
+  Result := FPermissions.GetReadPhoneNumbers;
 end;
 
 function TModelDangerousPermissions.GetReadPhoneState: Boolean;
 begin
-  result := FPermissions.ReadPhoneState;
+  Result := FPermissions.GetReadPhoneState;
 end;
 
 function TModelDangerousPermissions.GetReadProfile: Boolean;
 begin
-  result := FPermissions.ReadProfile;
+  Result := FPermissions.GetReadProfile;
 end;
 
 function TModelDangerousPermissions.GetReadSMS: Boolean;
 begin
-  result := FPermissions.ReadSMS;
+  Result := FPermissions.GetReadSMS;
 end;
 
 function TModelDangerousPermissions.GetReadSocialStream: Boolean;
 begin
-  result := FPermissions.ReadSocialStream;
+  Result := FPermissions.GetReadSocialStream;
 end;
 
 function TModelDangerousPermissions.GetReadUserDictionary: Boolean;
 begin
-  result := FPermissions.ReadUserDictionary;
+  Result := FPermissions.GetReadUserDictionary;
 end;
 
 function TModelDangerousPermissions.GetReceiveMMS: Boolean;
 begin
-  result := FPermissions.ReceiveMMS;
+  Result := FPermissions.GetReceiveMMS;
 end;
 
 function TModelDangerousPermissions.GetReceiveSMS: Boolean;
 begin
-  result := FPermissions.ReceiveSMS;
+  Result := FPermissions.GetReceiveSMS;
 end;
 
 function TModelDangerousPermissions.GetReceiveWAPPush: Boolean;
 begin
-  result := FPermissions.ReceiveWAPPush;
+  Result := FPermissions.GetReceiveWAPPush;
 end;
 
 function TModelDangerousPermissions.GetRecordAudio: Boolean;
 begin
-  result := FPermissions.RecordAudio;
+  Result := FPermissions.GetRecordAudio;
 end;
 
 function TModelDangerousPermissions.GetSendSMS: Boolean;
 begin
-  result := FPermissions.SendSMS;
+  Result := FPermissions.GetSendSMS;
 end;
 
 function TModelDangerousPermissions.GetWriteSMS: Boolean;
 begin
-  result := FPermissions.WriteSMS;
+  Result := FPermissions.GetWriteSMS;
 end;
 
 function TModelDangerousPermissions.GetWriteSocialStream: Boolean;
 begin
-  result := FPermissions.WriteSocialStream;
+  Result := FPermissions.GetWriteSocialStream;
 end;
 
 function TModelDangerousPermissions.GetSubscribedFeedsWrite: Boolean;
 begin
-  result := FPermissions.SubscribedFeedsWrite;
+  Result := FPermissions.GetSubscribedFeedsWrite;
 end;
 
 function TModelDangerousPermissions.GetUninstallShortcut: Boolean;
 begin
-  result := FPermissions.UninstallShortcut;
+  Result := FPermissions.GetUninstallShortcut;
 end;
 
 function TModelDangerousPermissions.GetUseCredentials: Boolean;
 begin
-  result := FPermissions.UseCredentials;
+  Result := FPermissions.GetUseCredentials;
 end;
 
 function TModelDangerousPermissions.GetUseSIP: Boolean;
 begin
-  result := FPermissions.UseSIP;
+  Result := FPermissions.GetUseSIP;
 end;
 
 function TModelDangerousPermissions.GetWriteCalendar: Boolean;
 begin
-  result := FPermissions.WriteCalendar;
+  Result := FPermissions.GetWriteCalendar;
 end;
 
 function TModelDangerousPermissions.GetWriteCallLog: Boolean;
 begin
-  result := FPermissions.WriteCallLog;
+  Result := FPermissions.GetWriteCallLog;
 end;
 
 function TModelDangerousPermissions.GetWriteContacts: Boolean;
 begin
-  result := FPermissions.WriteContacts;
+  Result := FPermissions.GetWriteContacts;
 end;
 
 procedure TModelDangerousPermissions.SetAccessCoarseLocation(const Value: Boolean);
 begin
-  FPermissions.AccessCoarseLocation := Value;
+  FPermissions.SetAccessCoarseLocation(Value);
 end;
 
 procedure TModelDangerousPermissions.SetAccessFineLocation(const Value: Boolean);
 begin
-  FPermissions.AccessFineLocation := Value;
+  FPermissions.SetAccessFineLocation(Value);
 end;
 
 procedure TModelDangerousPermissions.SetAccessMockLocation(const Value: Boolean);
 begin
-  FPermissions.AccessMockLocation := Value;
+  FPermissions.SetAccessMockLocation(Value);
 end;
 
 procedure TModelDangerousPermissions.SetAddVoiceMail(const Value: Boolean);
 begin
-  FPermissions.AddVoiceMail := Value;
+  FPermissions.SetAddVoiceMail(Value);
 end;
 
 procedure TModelDangerousPermissions.SetAnswerPhonecalls(const Value: Boolean);
 begin
-  FPermissions.AnswerPhonecalls := Value;
+  FPermissions.SetAnswerPhonecalls(Value);
 end;
 
 procedure TModelDangerousPermissions.SetAuthenticateAccounts(const Value: Boolean);
 begin
-  FPermissions.AuthenticateAccounts := Value;
+  FPermissions.SetAuthenticateAccounts(Value);
 end;
 
 procedure TModelDangerousPermissions.SetBodySensors(const Value: Boolean);
 begin
-  FPermissions.BodySensors := Value;
+  FPermissions.SetBodySensors(Value);
 end;
 
 procedure TModelDangerousPermissions.SetCallPhone(const Value: Boolean);
 begin
-  FPermissions.CallPhone := Value;
+  FPermissions.SetCallPhone(Value);
 end;
 
 procedure TModelDangerousPermissions.SetCamera(const Value: Boolean);
 begin
-  FPermissions.Camera := Value;
+  FPermissions.SetCamera(Value);
 end;
 
 procedure TModelDangerousPermissions.SetContinueCallStartedAnotherApp(const Value: Boolean);
 begin
-  FPermissions.ContinueCallStartedAnotherApp := Value;
+  FPermissions.SetContinueCallStartedAnotherApp(Value);
 end;
 
 procedure TModelDangerousPermissions.SetWriteExternalStorage(const Value: Boolean);
 begin
-  FPermissions.WriteExternalStorage := Value;
+  FPermissions.SetWriteExternalStorage(Value);
 end;
 
 procedure TModelDangerousPermissions.SetGetAccounts(const Value: Boolean);
 begin
-  FPermissions.GetAccounts := Value;
+  FPermissions.SetGetAccounts(Value);
 end;
 
 procedure TModelDangerousPermissions.SetManageAccounts(const Value: Boolean);
 begin
-  FPermissions.ManageAccounts := Value;
+  FPermissions.SetManageAccounts(Value);
 end;
 
 procedure TModelDangerousPermissions.SetWriteHistoyBookmarks(const Value: Boolean);
 begin
-  FPermissions.WriteHistoyBookmarks := Value;
+  FPermissions.SetWriteHistoyBookmarks(Value);
 end;
 
 procedure TModelDangerousPermissions.SetProcessOutgoingCalls(const Value: Boolean);
 begin
-  FPermissions.ProcessOutgoingCalls := Value;
+  FPermissions.SetProcessOutgoingCalls(Value);
 end;
 
 procedure TModelDangerousPermissions.SetWriteProfile(const Value: Boolean);
 begin
-  FPermissions.WriteProfile := Value;
+  FPermissions.SetWriteProfile(Value);
 end;
 
 procedure TModelDangerousPermissions.SetReadCalendar(const Value: Boolean);
 begin
-  FPermissions.ReadCalendar := Value;
+  FPermissions.SetReadCalendar(Value);
 end;
 
 procedure TModelDangerousPermissions.SetReadCallLog(const Value: Boolean);
 begin
-  FPermissions.ReadCallLog := Value;
+  FPermissions.SetReadCallLog(Value);
 end;
 
 procedure TModelDangerousPermissions.SetReadContacts(const Value: Boolean);
 begin
-  FPermissions.ReadContacts := Value;
+  FPermissions.SetReadContacts(Value);
 end;
 
 procedure TModelDangerousPermissions.SetReadExternalStorage(const Value: Boolean);
 begin
-  FPermissions.ReadExternalStorage := Value;
+  FPermissions.SetReadExternalStorage(Value);
 end;
 
 procedure TModelDangerousPermissions.SetReadHistoryBookmarks(const Value: Boolean);
 begin
-  FPermissions.ReadHistoryBookmarks := Value;
+  FPermissions.SetReadHistoryBookmarks(Value);
 end;
 
 procedure TModelDangerousPermissions.SetReadPhoneNumbers(const Value: Boolean);
 begin
-  FPermissions.ReadPhoneNumbers := Value;
+  FPermissions.SetReadPhoneNumbers(Value);
 end;
 
 procedure TModelDangerousPermissions.SetReadPhoneState(const Value: Boolean);
 begin
-  FPermissions.ReadPhoneState := Value;
+  FPermissions.SetReadPhoneState(Value);
 end;
 
 procedure TModelDangerousPermissions.SetReadProfile(const Value: Boolean);
 begin
-  FPermissions.ReadProfile := Value;
+  FPermissions.SetReadProfile(Value);
 end;
 
 procedure TModelDangerousPermissions.SetReadSMS(const Value: Boolean);
 begin
-  FPermissions.ReadSMS := Value;
+  FPermissions.SetReadSMS(Value);
 end;
 
 procedure TModelDangerousPermissions.SetReadSocialStream(const Value: Boolean);
 begin
-  FPermissions.ReadSocialStream := Value;
+  FPermissions.SetReadSocialStream(Value);
 end;
 
 procedure TModelDangerousPermissions.SetReadUserDictionary(const Value: Boolean);
 begin
-  FPermissions.ReadUserDictionary := Value;
+  FPermissions.SetReadUserDictionary(Value);
 end;
 
 procedure TModelDangerousPermissions.SetReceiveMMS(const Value: Boolean);
 begin
-  FPermissions.ReceiveMMS := Value;
+  FPermissions.SetReceiveMMS(Value);
 end;
 
 procedure TModelDangerousPermissions.SetReceiveSMS(const Value: Boolean);
 begin
-  FPermissions.ReceiveSMS := Value;
+  FPermissions.SetReceiveSMS(Value);
 end;
 
 procedure TModelDangerousPermissions.SetReceiveWAPPush(const Value: Boolean);
 begin
-  FPermissions.ReceiveWAPPush := Value;
+  FPermissions.SetReceiveWAPPush(Value);
 end;
 
 procedure TModelDangerousPermissions.SetRecordAudio(const Value: Boolean);
 begin
-  FPermissions.RecordAudio := Value;
+  FPermissions.SetRecordAudio(Value);
 end;
 
 procedure TModelDangerousPermissions.SetSendSMS(const Value: Boolean);
 begin
-  FPermissions.SendSMS := Value;
+  FPermissions.SetSendSMS(Value);
 end;
 
 procedure TModelDangerousPermissions.SetWriteSMS(const Value: Boolean);
 begin
-  FPermissions.WriteSMS := Value;
+  FPermissions.SetWriteSMS(Value);
 end;
 
 procedure TModelDangerousPermissions.SetWriteSocialStream(const Value: Boolean);
 begin
-  FPermissions.WriteSocialStream := Value;
+  FPermissions.SetWriteSocialStream(Value);
 end;
 
 procedure TModelDangerousPermissions.SetSubscribedFeedsWrite(const Value: Boolean);
 begin
-  FPermissions.SubscribedFeedsWrite := Value;
+  FPermissions.SetSubscribedFeedsWrite(Value);
 end;
 
 procedure TModelDangerousPermissions.SetUninstallShortcut(const Value: Boolean);
 begin
-  FPermissions.UninstallShortcut := Value;
+  FPermissions.SetUninstallShortcut(Value);
 end;
 
 procedure TModelDangerousPermissions.SetUseCredentials(const Value: Boolean);
 begin
-  FPermissions.UseCredentials := Value;
+  FPermissions.SetUseCredentials(Value);
 end;
 
 procedure TModelDangerousPermissions.SetUseSIP(const Value: Boolean);
 begin
-  FPermissions.UseSIP := Value;
+  FPermissions.SetUseSIP(Value);
 end;
 
 procedure TModelDangerousPermissions.SetWriteCalendar(const Value: Boolean);
 begin
-  FPermissions.WriteCalendar := Value;
+  FPermissions.SetWriteCalendar(Value);
 end;
 
 procedure TModelDangerousPermissions.SetWriteCallLog(const Value: Boolean);
 begin
-  FPermissions.WriteCallLog := Value;
+  FPermissions.SetWriteCallLog(Value);
 end;
 
 procedure TModelDangerousPermissions.SetWriteContacts(const Value: Boolean);
 begin
-  FPermissions.WriteContacts := Value;
+  FPermissions.SetWriteContacts(Value);
 end;
 
 end.

@@ -14,24 +14,25 @@ uses
 type
   TMobilePermissions = class(TFmxObject)
   private
-    FPermissions : IMobilePermissions;
-    FStandard    : TModelStandardPermissions;
-    FDangerous   : TModelDangerousPermissions;
-    FSignature   : TModelSignaturePermissions;
+    FPermissions: IMobilePermissions;
+    FStandard: TModelStandardPermissions;
+    FDangerous: TModelDangerousPermissions;
+    FSignature: TModelSignaturePermissions;
+    FOnApply: TNotifyEvent;
 
-    FOnApply : TNotifyEvent;
-
-    function getUsesPermissions: TArray<String>;
+    function GetUsesPermissions: TArray<String>;
     procedure SetOnApply(const Value: TNotifyEvent);
+
   public
     constructor Create(AOwner: TComponent); override;
     destructor Destroy; override;
 
     procedure Apply;
+
   published
     property OnApply: TNotifyEvent read FOnApply write SetOnApply;
 
-    property Standard : TModelStandardPermissions  read FStandard;
+    property Standard: TModelStandardPermissions read FStandard;
     property Dangerous: TModelDangerousPermissions read FDangerous;
     property Signature: TModelSignaturePermissions read FSignature;
   end;
@@ -42,20 +43,20 @@ implementation
 
 procedure TMobilePermissions.Apply;
 var
-  usesPermissions: TArray<string>;
+  LUsesPermissions: TArray<string>;
 begin
-  usesPermissions := getUsesPermissions;
+  LUsesPermissions := GetUsesPermissions;
 
-  FPermissions.Request(usesPermissions);
+  FPermissions.Request(LUsesPermissions);
 end;
 
 constructor TMobilePermissions.Create(AOwner: TComponent);
 begin
   inherited;
   FPermissions := TMobilePermissionsFactory.New.createMobilePermissions;
-  FStandard    := TModelStandardPermissions.Create;
-  FDangerous   := TModelDangerousPermissions.Create;
-  FSignature   := TModelSignaturePermissions.Create;
+  FStandard := TModelStandardPermissions.Create;
+  FDangerous := TModelDangerousPermissions.Create;
+  FSignature := TModelSignaturePermissions.Create;
 end;
 
 destructor TMobilePermissions.Destroy;
@@ -66,19 +67,19 @@ begin
   inherited;
 end;
 
-function TMobilePermissions.getUsesPermissions: TArray<String>;
+function TMobilePermissions.GetUsesPermissions: TArray<String>;
 var
-  standardPermissions  : TArray<string>;
-  dangerousPermissions : TArray<string>;
-  signaturePermissions : TArray<string>;
+  LStandardPermissions: TArray<string>;
+  LDangerousPermissions: TArray<string>;
+  LSignaturePermissions: TArray<string>;
 begin
-  standardPermissions  := FStandard.Permissions;
-  dangerousPermissions := FDangerous.Permissions;
-  signaturePermissions := FSignature.Permissions;
+  LStandardPermissions := FStandard.Permissions;
+  LDangerousPermissions := FDangerous.Permissions;
+  LSignaturePermissions := FSignature.Permissions;
 
-  result := Concat(standardPermissions,
-                   dangerousPermissions,
-                   signaturePermissions);
+  Result := Concat(LStandardPermissions,
+                   LDangerousPermissions,
+                   LSignaturePermissions);
 end;
 
 procedure TMobilePermissions.SetOnApply(const Value: TNotifyEvent);

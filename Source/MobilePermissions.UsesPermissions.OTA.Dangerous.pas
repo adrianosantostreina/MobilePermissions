@@ -10,89 +10,89 @@ uses
 
 type TUsesPermissionsOTADangerous = class(TUsesPermissionsOTABase, IUsesPermissionsDangerous)
   private
-    function  GetAccessCoarseLocation          : Boolean;
-    function  GetAccessFineLocation            : Boolean;
-    function  GetAccessMockLocation            : Boolean;
-    function  GetAddVoiceMail                  : Boolean;
-    function  GetAnswerPhonecalls              : Boolean;
-    function  GetAuthenticateAccounts          : Boolean;
-    function  GetBodySensors                   : Boolean;
-    function  GetCallPhone                     : Boolean;
-    function  GetCamera                        : Boolean;
-    function  GetContinueCallStartedAnotherApp : Boolean;
-    function  GetGetAccounts                   : Boolean;
-    function  GetManageAccounts                : Boolean;
-    function  GetProcessOutgoingCalls          : Boolean;
-    function  GetReadCalendar                  : Boolean;
-    function  GetReadCallLog         		       : Boolean;
-    function  GetReadContacts        		       : Boolean;
-    function  GetReadExternalStorage 		       : Boolean;
-    function  GetReadHistoryBookmarks		       : Boolean;
-    function  GetReadPhoneNumbers    		       : Boolean;
-    function  GetReadPhoneState      		       : Boolean;
-    function  GetReadProfile         		       : Boolean;
-    function  GetReadSMS             		       : Boolean;
-    function  GetReadSocialStream    		       : Boolean;
-    function  GetReadUserDictionary  		       : Boolean;
-    function  GetReceiveMMS          		       : Boolean;
-    function  GetReceiveSMS          		       : Boolean;
-    function  GetReceiveWAPPush      		       : Boolean;
-    function  GetRecordAudio         		       : Boolean;
-    function  GetSendSMS             		       : Boolean;
-    function  GetSubscribedFeedsWrite		       : Boolean;
-    function  GetUninstallShortcut   		       : Boolean;
-    function  GetUseCredentials                : Boolean;
-    function  GetUseSIP                        : Boolean;
-    function  GetWriteCalendar                 : Boolean;
-    function  GetWriteCallLog                  : Boolean;
-    function  GetWriteContacts                 : Boolean;
-    function  GetWriteExternalStorage          : Boolean;
-    function  GetWriteHistoyBookmarks          : Boolean;
-    function  GetWriteProfile                  : Boolean;
-    function  GetWriteSMS                      : Boolean;
-    function  GetWriteSocialStream             : Boolean;
+    function GetAccessCoarseLocation: Boolean;
+    function GetAccessFineLocation: Boolean;
+    function GetAccessMockLocation: Boolean;
+    function GetAddVoiceMail: Boolean;
+    function GetAnswerPhonecalls: Boolean;
+    function GetAuthenticateAccounts: Boolean;
+    function GetBodySensors: Boolean;
+    function GetCallPhone: Boolean;
+    function GetCamera: Boolean;
+    function GetContinueCallStartedAnotherApp: Boolean;
+    function GetGetAccounts: Boolean;
+    function GetManageAccounts: Boolean;
+    function GetProcessOutgoingCalls: Boolean;
+    function GetReadCalendar: Boolean;
+    function GetReadCallLog: Boolean;
+    function GetReadContacts: Boolean;
+    function GetReadExternalStorage: Boolean;
+    function GetReadHistoryBookmarks: Boolean;
+    function GetReadPhoneNumbers: Boolean;
+    function GetReadPhoneState: Boolean;
+    function GetReadProfile: Boolean;
+    function GetReadSMS: Boolean;
+    function GetReadSocialStream: Boolean;
+    function GetReadUserDictionary: Boolean;
+    function GetReceiveMMS: Boolean;
+    function GetReceiveSMS: Boolean;
+    function GetReceiveWAPPush: Boolean;
+    function GetRecordAudio: Boolean;
+    function GetSendSMS: Boolean;
+    function GetSubscribedFeedsWrite: Boolean;
+    function GetUninstallShortcut: Boolean;
+    function GetUseCredentials: Boolean;
+    function GetUseSIP: Boolean;
+    function GetWriteCalendar: Boolean;
+    function GetWriteCallLog: Boolean;
+    function GetWriteContacts: Boolean;
+    function GetWriteExternalStorage: Boolean;
+    function GetWriteHistoyBookmarks: Boolean;
+    function GetWriteProfile: Boolean;
+    function GetWriteSMS: Boolean;
+    function GetWriteSocialStream: Boolean;
 
-    procedure SetAccessCoarseLocation          (const Value: Boolean);
-    procedure SetAccessFineLocation            (const Value: Boolean);
-    procedure SetAccessMockLocation            (const Value: Boolean);
-    procedure SetAddVoiceMail                  (const Value: Boolean);
-    procedure SetAnswerPhonecalls              (const Value: Boolean);
-    procedure SetAuthenticateAccounts          (const Value: Boolean);
-    procedure SetBodySensors                   (const Value: Boolean);
-    procedure SetCallPhone                     (const Value: Boolean);
-    procedure SetCamera                        (const Value: Boolean);
-    procedure SetContinueCallStartedAnotherApp (const Value: Boolean);
-    procedure SetGetAccounts                   (const Value: Boolean);
-    procedure SetManageAccounts                (const Value: Boolean);
-    procedure SetProcessOutgoingCalls          (const Value: Boolean);
-    procedure SetReadCalendar                  (const Value: Boolean);
-    procedure SetReadCallLog                   (const Value: Boolean);
-    procedure SetReadContacts                  (const Value: Boolean);
-    procedure SetReadExternalStorage           (const Value: Boolean);
-    procedure SetReadHistoryBookmarks          (const Value: Boolean);
-    procedure SetReadPhoneNumbers              (const Value: Boolean);
-    procedure SetReadPhoneState                (const Value: Boolean);
-    procedure SetReadProfile                   (const Value: Boolean);
-    procedure SetReadSMS                       (const Value: Boolean);
-    procedure SetReadSocialStream              (const Value: Boolean);
-    procedure SetReadUserDictionary            (const Value: Boolean);
-    procedure SetReceiveMMS                    (const Value: Boolean);
-    procedure SetReceiveSMS                    (const Value: Boolean);
-    procedure SetReceiveWAPPush                (const Value: Boolean);
-    procedure SetRecordAudio                   (const Value: Boolean);
-    procedure SetSendSMS                       (const Value: Boolean);
-    procedure SetSubscribedFeedsWrite          (const Value: Boolean);
-    procedure SetUninstallShortcut	           (const Value: Boolean);
-    procedure SetUseCredentials                (const Value: Boolean);
-    procedure SetUseSIP                        (const Value: Boolean);
-    procedure SetWriteCalendar                 (const Value: Boolean);
-    procedure SetWriteCallLog                  (const Value: Boolean);
-    procedure SetWriteContacts                 (const Value: Boolean);
-    procedure SetWriteExternalStorage          (const Value: Boolean);
-    procedure SetWriteHistoyBookmarks          (const Value: Boolean);
-    procedure SetWriteProfile                  (const Value: Boolean);
-    procedure SetWriteSMS                      (const Value: Boolean);
-    procedure SetWriteSocialStream             (const Value: Boolean);
+    procedure SetAccessCoarseLocation(const Value: Boolean);
+    procedure SetAccessFineLocation(const Value: Boolean);
+    procedure SetAccessMockLocation(const Value: Boolean);
+    procedure SetAddVoiceMail(const Value: Boolean);
+    procedure SetAnswerPhonecalls(const Value: Boolean);
+    procedure SetAuthenticateAccounts(const Value: Boolean);
+    procedure SetBodySensors(const Value: Boolean);
+    procedure SetCallPhone(const Value: Boolean);
+    procedure SetCamera(const Value: Boolean);
+    procedure SetContinueCallStartedAnotherApp(const Value: Boolean);
+    procedure SetGetAccounts(const Value: Boolean);
+    procedure SetManageAccounts(const Value: Boolean);
+    procedure SetProcessOutgoingCalls(const Value: Boolean);
+    procedure SetReadCalendar(const Value: Boolean);
+    procedure SetReadCallLog(const Value: Boolean);
+    procedure SetReadContacts(const Value: Boolean);
+    procedure SetReadExternalStorage(const Value: Boolean);
+    procedure SetReadHistoryBookmarks(const Value: Boolean);
+    procedure SetReadPhoneNumbers(const Value: Boolean);
+    procedure SetReadPhoneState(const Value: Boolean);
+    procedure SetReadProfile(const Value: Boolean);
+    procedure SetReadSMS(const Value: Boolean);
+    procedure SetReadSocialStream(const Value: Boolean);
+    procedure SetReadUserDictionary(const Value: Boolean);
+    procedure SetReceiveMMS(const Value: Boolean);
+    procedure SetReceiveSMS(const Value: Boolean);
+    procedure SetReceiveWAPPush(const Value: Boolean);
+    procedure SetRecordAudio(const Value: Boolean);
+    procedure SetSendSMS(const Value: Boolean);
+    procedure SetSubscribedFeedsWrite(const Value: Boolean);
+    procedure SetUninstallShortcut(const Value: Boolean);
+    procedure SetUseCredentials(const Value: Boolean);
+    procedure SetUseSIP(const Value: Boolean);
+    procedure SetWriteCalendar(const Value: Boolean);
+    procedure SetWriteCallLog(const Value: Boolean);
+    procedure SetWriteContacts(const Value: Boolean);
+    procedure SetWriteExternalStorage(const Value: Boolean);
+    procedure SetWriteHistoyBookmarks(const Value: Boolean);
+    procedure SetWriteProfile(const Value: Boolean);
+    procedure SetWriteSMS(const Value: Boolean);
+    procedure SetWriteSocialStream(const Value: Boolean);
 
   public
     function Permissions: TArray<string>;
@@ -106,17 +106,17 @@ implementation
 
 function TUsesPermissionsOTADangerous.GetAccessCoarseLocation: Boolean;
 begin
-  result := HasPermission(AUP_ACCESS_COARSE_LOCATION);
+  Result := HasPermission(AUP_ACCESS_COARSE_LOCATION);
 end;
 
 function TUsesPermissionsOTADangerous.GetAccessFineLocation: Boolean;
 begin
-  result := HasPermission(AUP_ACCESS_FINE_LOCATION);
+  Result := HasPermission(AUP_ACCESS_FINE_LOCATION);
 end;
 
 function TUsesPermissionsOTADangerous.GetAccessMockLocation: Boolean;
 begin
-  result := HasPermission(AUP_ACCESS_MOCK_LOCATION);
+  Result := HasPermission(AUP_ACCESS_MOCK_LOCATION);
 end;
 
 function TUsesPermissionsOTADangerous.GetAddVoiceMail: Boolean;
@@ -126,22 +126,22 @@ end;
 
 function TUsesPermissionsOTADangerous.GetAnswerPhonecalls: Boolean;
 begin
-  result := HasPermission(AUP_ANSWER_PHONE_CALLS);
+  Result := HasPermission(AUP_ANSWER_PHONE_CALLS);
 end;
 
 function TUsesPermissionsOTADangerous.GetAuthenticateAccounts: Boolean;
 begin
-  result := HasPermission(AUP_AUTHENTICATE_ACCOUNTS);
+  Result := HasPermission(AUP_AUTHENTICATE_ACCOUNTS);
 end;
 
 function TUsesPermissionsOTADangerous.GetBodySensors: Boolean;
 begin
-  result := HasPermission(AUP_BODY_SENSORS);
+  Result := HasPermission(AUP_BODY_SENSORS);
 end;
 
 function TUsesPermissionsOTADangerous.GetCallPhone: Boolean;
 begin
-  result := HasPermission(AUP_CALL_PHONE);
+  Result := HasPermission(AUP_CALL_PHONE);
 end;
 
 function TUsesPermissionsOTADangerous.GetCamera: Boolean;
@@ -151,7 +151,7 @@ end;
 
 function TUsesPermissionsOTADangerous.GetContinueCallStartedAnotherApp: Boolean;
 begin
-  result := HasPermission(AUP_ACCEPT_HANDOVER);
+  Result := HasPermission(AUP_ACCEPT_HANDOVER);
 end;
 
 function TUsesPermissionsOTADangerous.GetWriteExternalStorage: Boolean;
@@ -161,12 +161,12 @@ end;
 
 function TUsesPermissionsOTADangerous.GetGetAccounts: Boolean;
 begin
-  result := HasPermission(AUP_GET_ACCOUNTS);
+  Result := HasPermission(AUP_GET_ACCOUNTS);
 end;
 
 function TUsesPermissionsOTADangerous.GetManageAccounts: Boolean;
 begin
-  result := HasPermission(AUP_MANAGE_ACCOUNTS);
+  Result := HasPermission(AUP_MANAGE_ACCOUNTS);
 end;
 
 function TUsesPermissionsOTADangerous.GetWriteHistoyBookmarks: Boolean;
@@ -176,17 +176,17 @@ end;
 
 function TUsesPermissionsOTADangerous.GetProcessOutgoingCalls: Boolean;
 begin
-  result := HasPermission(AUP_PROCESS_OUTGOING_CALLS);
+  Result := HasPermission(AUP_PROCESS_OUTGOING_CALLS);
 end;
 
 function TUsesPermissionsOTADangerous.GetWriteProfile: Boolean;
 begin
-  result := HasPermission(AUP_WRITE_PROFILE);
+  Result := HasPermission(AUP_WRITE_PROFILE);
 end;
 
 function TUsesPermissionsOTADangerous.GetReadCalendar: Boolean;
 begin
-  result := HasPermission(AUP_READ_CALENDAR);
+  Result := HasPermission(AUP_READ_CALENDAR);
 end;
 
 function TUsesPermissionsOTADangerous.GetReadCallLog: Boolean;
@@ -311,12 +311,12 @@ end;
 
 class function TUsesPermissionsOTADangerous.New: IUsesPermissionsDangerous;
 begin
-  result := Self.Create;
+  Result := Self.Create;
 end;
 
 function TUsesPermissionsOTADangerous.Permissions: TArray<string>;
 begin
-  result := [];
+  Result := [];
 end;
 
 procedure TUsesPermissionsOTADangerous.SetAccessCoarseLocation(const Value: Boolean);

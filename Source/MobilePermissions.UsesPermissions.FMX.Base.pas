@@ -18,15 +18,15 @@ uses
   System.StrUtils,
   System.SysUtils;
 
-type TUsesPermissionsFMXBase = class abstract(TInterfacedObject)
+type
+  TUsesPermissionsFMXBase = class abstract(TInterfacedObject)
   private
-    FPermissions : TList<String>;
+    FPermissions: TList<String>;
 
   protected
 
     procedure AddPermission(APermission: JavaString; const Value: Boolean);
-    function  HasPermission(APermission: JavaString): Boolean;
-
+    function HasPermission(APermission: JavaString): Boolean;
     function JavaClass: JavaManifest;
 
   public
@@ -58,39 +58,39 @@ begin
   {$ENDIF}
 
   {$IFDEF ANDROID}
-    result := PermissionsService.IsPermissionGranted(JStringToString( APermission));
+    Result := PermissionsService.IsPermissionGranted(JStringToString( APermission));
   {$ELSE}
-    result := True;
+    Result := True;
   {$ENDIF}
 end;
 
 function TUsesPermissionsFMXBase.Permissions: TArray<String>;
 begin
-  result := FPermissions.ToArray;
+  Result := FPermissions.ToArray;
 end;
 
 function TUsesPermissionsFMXBase.JavaClass: JavaManifest;
 begin
   {$IFDEF ANDROID}
-  result :=  TJManifest_permission.JavaClass;
+  Result :=  TJManifest_permission.JavaClass;
   {$ELSE}
-  result := BaseManifest;
+  Result := BaseManifest;
   {$ENDIF}
 end;
 
 procedure TUsesPermissionsFMXBase.AddPermission(APermission: JavaString; const Value: Boolean);
 var
-  permission: string;
+  LPermission: string;
 begin
   {$IFDEF ANDROID}
-    permission := JStringToString( APermission );
+    LPermission := JStringToString( APermission );
   {$ELSE}
-    permission := APermission;
+    LPermission := APermission;
   {$ENDIF}
 
-  FPermissions.Remove(permission);
+  FPermissions.Remove(LPermission);
   if Value then
-    FPermissions.Add(permission);
+    FPermissions.Add(LPermission);
 end;
 
 end.
