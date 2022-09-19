@@ -2,6 +2,8 @@ unit MobilePermissions.Permissions.Android;
 
 interface
 
+{$LEGACYIFEND OFF}
+
 uses
 {$IF CompilerVersion >= 33.0}
   // Delphi 10.3 Rio
@@ -37,9 +39,11 @@ type
       : TClassicStringDynArray;
       const AGrantResults: TClassicPermissionStatusDynArray);
 {$ELSE}
+   {$IF CompilerVersion >= 33.0}
     // before Delphi 11 Alexandria
     procedure RequestPermissionsResultProc(const APermissions: TArray<string>;
       const AGrantResults: TArray<TPermissionStatus>);
+   {$ENDIF}
 {$ENDIF}
   public
     function Request(Permissions: TArray<string>): IMobilePermissions; override;
@@ -70,7 +74,7 @@ var
   I: Integer;
 {$ENDIF}
 begin
-   if FAndroidVersion = 0 then
+  if FAndroidVersion = 0 then
   begin
 {$IFDEF ANDROID}
     VersionOSStr := JStringToString(TJBuild_VERSION.JavaClass.RELEASE);
@@ -104,13 +108,17 @@ procedure TMobilePermissionsAndroid.RequestPermissionsResultProc
   (const APermissions: TClassicStringDynArray;
   const AGrantResults: TClassicPermissionStatusDynArray);
 {$ELSE}
+{$IF CompilerVersion >= 33.0}
 procedure TMobilePermissionsAndroid.RequestPermissionsResultProc(
   const APermissions: TArray<string>;
   const AGrantResults: TArray<TPermissionStatus>);
 {$ENDIF}
+{$ENDIF}
+{$IF CompilerVersion >= 33.0}
 begin
   if Assigned(FOnRequest) then
     FOnRequest(nil);
 end;
+{$ENDIF}
 
 end.
