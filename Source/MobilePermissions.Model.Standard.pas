@@ -164,7 +164,7 @@ type TModelStandardPermissions = class
     property WriteUserDictionary                 : Boolean read GetWriteUserDictionary                 write SetWriteUserDictionary;
   public
     function Permissions: TArray<String>;
-    constructor create;
+    constructor Create;
     destructor Destroy; override;
 end;
 
@@ -172,7 +172,7 @@ implementation
 
 { TModelStandardPermissions }
 
-constructor TModelStandardPermissions.create;
+constructor TModelStandardPermissions.Create;
 begin
   FPermissions := TFactoryUsesPermissions.New.createPermissionsStandard;
 end;

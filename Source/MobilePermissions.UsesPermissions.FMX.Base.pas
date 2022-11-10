@@ -2,6 +2,8 @@ unit MobilePermissions.UsesPermissions.FMX.Base;
 
 interface
 
+{$LEGACYIFEND OFF}
+
 uses
   {$IFDEF ANDROID}
     Androidapi.Helpers,
