@@ -15,12 +15,14 @@ uses
   FMX.Graphics,
   FMX.Dialogs,
   FMX.Controls.Presentation,
-  FMX.StdCtrls;
+  FMX.StdCtrls, FMX.Objects, FMX.Memo.Types, FMX.ScrollBox, FMX.Memo;
 
 type
   TfrmMobilePermissionsHelp = class(TForm)
     Panel1: TPanel;
-    Label1: TLabel;
+    Image1: TImage;
+    imgBack: TImage;
+    Memo1: TMemo;
   private
     { Private declarations }
   public
