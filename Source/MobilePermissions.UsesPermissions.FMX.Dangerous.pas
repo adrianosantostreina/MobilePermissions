@@ -8,89 +8,89 @@ uses
 
 type TUsesPermissionsFMXDangerous = class(TUsesPermissionsFMXBase, IUsesPermissionsDangerous)
   private
-    function  GetAccessCoarseLocation          : Boolean;
-    function  GetAccessFineLocation            : Boolean;
-    function  GetAccessMockLocation            : Boolean;
-    function  GetAddVoiceMail                  : Boolean;
-    function  GetAnswerPhonecalls              : Boolean;
-    function  GetAuthenticateAccounts          : Boolean;
-    function  GetBodySensors                   : Boolean;
-    function  GetCallPhone                     : Boolean;
-    function  GetCamera                        : Boolean;
-    function  GetContinueCallStartedAnotherApp : Boolean;
-    function  GetGetAccounts                   : Boolean;
-    function  GetManageAccounts                : Boolean;
-    function  GetProcessOutgoingCalls          : Boolean;
-    function  GetReadCalendar                  : Boolean;
-    function  GetReadCallLog         		       : Boolean;
-    function  GetReadContacts        		       : Boolean;
-    function  GetReadExternalStorage 		       : Boolean;
-    function  GetReadHistoryBookmarks		       : Boolean;
-    function  GetReadPhoneNumbers    		       : Boolean;
-    function  GetReadPhoneState      		       : Boolean;
-    function  GetReadProfile         		       : Boolean;
-    function  GetReadSMS             		       : Boolean;
-    function  GetReadSocialStream    		       : Boolean;
-    function  GetReadUserDictionary  		       : Boolean;
-    function  GetReceiveMMS          		       : Boolean;
-    function  GetReceiveSMS          		       : Boolean;
-    function  GetReceiveWAPPush      		       : Boolean;
-    function  GetRecordAudio         		       : Boolean;
-    function  GetSendSMS             		       : Boolean;
-    function  GetSubscribedFeedsWrite		       : Boolean;
-    function  GetUninstallShortcut   		       : Boolean;
-    function  GetUseCredentials                : Boolean;
-    function  GetUseSIP                        : Boolean;
-    function  GetWriteCalendar                 : Boolean;
-    function  GetWriteCallLog                  : Boolean;
-    function  GetWriteContacts                 : Boolean;
-    function  GetWriteExternalStorage          : Boolean;
-    function  GetWriteHistoyBookmarks          : Boolean;
-    function  GetWriteProfile                  : Boolean;
-    function  GetWriteSMS                      : Boolean;
-    function  GetWriteSocialStream             : Boolean;
+    function GetAccessCoarseLocation: Boolean;
+    function GetAccessFineLocation: Boolean;
+    function GetAccessMockLocation: Boolean;
+    function GetAddVoiceMail: Boolean;
+    function GetAnswerPhonecalls: Boolean;
+    function GetAuthenticateAccounts: Boolean;
+    function GetBodySensors: Boolean;
+    function GetCallPhone: Boolean;
+    function GetCamera: Boolean;
+    function GetContinueCallStartedAnotherApp: Boolean;
+    function GetGetAccounts: Boolean;
+    function GetManageAccounts: Boolean;
+    function GetProcessOutgoingCalls: Boolean;
+    function GetReadCalendar: Boolean;
+    function GetReadCallLog: Boolean;
+    function GetReadContacts: Boolean;
+    function GetReadExternalStorage: Boolean;
+    function GetReadHistoryBookmarks: Boolean;
+    function GetReadPhoneNumbers: Boolean;
+    function GetReadPhoneState: Boolean;
+    function GetReadProfile: Boolean;
+    function GetReadSMS: Boolean;
+    function GetReadSocialStream: Boolean;
+    function GetReadUserDictionary: Boolean;
+    function GetReceiveMMS: Boolean;
+    function GetReceiveSMS: Boolean;
+    function GetReceiveWAPPush: Boolean;
+    function GetRecordAudio: Boolean;
+    function GetSendSMS: Boolean;
+    function GetSubscribedFeedsWrite: Boolean;
+    function GetUninstallShortcut: Boolean;
+    function GetUseCredentials: Boolean;
+    function GetUseSIP: Boolean;
+    function GetWriteCalendar: Boolean;
+    function GetWriteCallLog: Boolean;
+    function GetWriteContacts: Boolean;
+    function GetWriteExternalStorage: Boolean;
+    function GetWriteHistoyBookmarks: Boolean;
+    function GetWriteProfile: Boolean;
+    function GetWriteSMS: Boolean;
+    function GetWriteSocialStream: Boolean;
 
-    procedure SetAccessCoarseLocation          (const Value: Boolean);
-    procedure SetAccessFineLocation            (const Value: Boolean);
-    procedure SetAccessMockLocation            (const Value: Boolean);
-    procedure SetAddVoiceMail                  (const Value: Boolean);
-    procedure SetAnswerPhonecalls              (const Value: Boolean);
-    procedure SetAuthenticateAccounts          (const Value: Boolean);
-    procedure SetBodySensors                   (const Value: Boolean);
-    procedure SetCallPhone                     (const Value: Boolean);
-    procedure SetCamera                        (const Value: Boolean);
-    procedure SetContinueCallStartedAnotherApp (const Value: Boolean);
-    procedure SetGetAccounts                   (const Value: Boolean);
-    procedure SetManageAccounts                (const Value: Boolean);
-    procedure SetProcessOutgoingCalls          (const Value: Boolean);
-    procedure SetReadCalendar                  (const Value: Boolean);
-    procedure SetReadCallLog                   (const Value: Boolean);
-    procedure SetReadContacts                  (const Value: Boolean);
-    procedure SetReadExternalStorage           (const Value: Boolean);
-    procedure SetReadHistoryBookmarks          (const Value: Boolean);
-    procedure SetReadPhoneNumbers              (const Value: Boolean);
-    procedure SetReadPhoneState                (const Value: Boolean);
-    procedure SetReadProfile                   (const Value: Boolean);
-    procedure SetReadSMS                       (const Value: Boolean);
-    procedure SetReadSocialStream              (const Value: Boolean);
-    procedure SetReadUserDictionary            (const Value: Boolean);
-    procedure SetReceiveMMS                    (const Value: Boolean);
-    procedure SetReceiveSMS                    (const Value: Boolean);
-    procedure SetReceiveWAPPush                (const Value: Boolean);
-    procedure SetRecordAudio                   (const Value: Boolean);
-    procedure SetSendSMS                       (const Value: Boolean);
-    procedure SetSubscribedFeedsWrite          (const Value: Boolean);
-    procedure SetUninstallShortcut	           (const Value: Boolean);
-    procedure SetUseCredentials                (const Value: Boolean);
-    procedure SetUseSIP                        (const Value: Boolean);
-    procedure SetWriteCalendar                 (const Value: Boolean);
-    procedure SetWriteCallLog                  (const Value: Boolean);
-    procedure SetWriteContacts                 (const Value: Boolean);
-    procedure SetWriteExternalStorage          (const Value: Boolean);
-    procedure SetWriteHistoyBookmarks          (const Value: Boolean);
-    procedure SetWriteProfile                  (const Value: Boolean);
-    procedure SetWriteSMS                      (const Value: Boolean);
-    procedure SetWriteSocialStream             (const Value: Boolean);
+    procedure SetAccessCoarseLocation(const Value: Boolean);
+    procedure SetAccessFineLocation(const Value: Boolean);
+    procedure SetAccessMockLocation(const Value: Boolean);
+    procedure SetAddVoiceMail(const Value: Boolean);
+    procedure SetAnswerPhonecalls(const Value: Boolean);
+    procedure SetAuthenticateAccounts(const Value: Boolean);
+    procedure SetBodySensors(const Value: Boolean);
+    procedure SetCallPhone(const Value: Boolean);
+    procedure SetCamera(const Value: Boolean);
+    procedure SetContinueCallStartedAnotherApp(const Value: Boolean);
+    procedure SetGetAccounts(const Value: Boolean);
+    procedure SetManageAccounts(const Value: Boolean);
+    procedure SetProcessOutgoingCalls(const Value: Boolean);
+    procedure SetReadCalendar(const Value: Boolean);
+    procedure SetReadCallLog(const Value: Boolean);
+    procedure SetReadContacts(const Value: Boolean);
+    procedure SetReadExternalStorage(const Value: Boolean);
+    procedure SetReadHistoryBookmarks(const Value: Boolean);
+    procedure SetReadPhoneNumbers(const Value: Boolean);
+    procedure SetReadPhoneState(const Value: Boolean);
+    procedure SetReadProfile(const Value: Boolean);
+    procedure SetReadSMS(const Value: Boolean);
+    procedure SetReadSocialStream(const Value: Boolean);
+    procedure SetReadUserDictionary(const Value: Boolean);
+    procedure SetReceiveMMS(const Value: Boolean);
+    procedure SetReceiveSMS(const Value: Boolean);
+    procedure SetReceiveWAPPush(const Value: Boolean);
+    procedure SetRecordAudio(const Value: Boolean);
+    procedure SetSendSMS(const Value: Boolean);
+    procedure SetSubscribedFeedsWrite(const Value: Boolean);
+    procedure SetUninstallShortcut(const Value: Boolean);
+    procedure SetUseCredentials(const Value: Boolean);
+    procedure SetUseSIP(const Value: Boolean);
+    procedure SetWriteCalendar(const Value: Boolean);
+    procedure SetWriteCallLog(const Value: Boolean);
+    procedure SetWriteContacts(const Value: Boolean);
+    procedure SetWriteExternalStorage(const Value: Boolean);
+    procedure SetWriteHistoyBookmarks(const Value: Boolean);
+    procedure SetWriteProfile(const Value: Boolean);
+    procedure SetWriteSMS(const Value: Boolean);
+    procedure SetWriteSocialStream(const Value: Boolean);
 
   public
     class function New: IUsesPermissionsDangerous;
@@ -108,210 +108,210 @@ end;
 
 function TUsesPermissionsFMXDangerous.GetAccessFineLocation: Boolean;
 begin
-  result := HasPermission(JavaClass.ACCESS_FINE_LOCATION);
+  Result := HasPermission(JavaClass.ACCESS_FINE_LOCATION);
 end;
 
 function TUsesPermissionsFMXDangerous.GetAccessMockLocation: Boolean;
 begin
-  result := True;
+  Result := True;
 end;
 
 function TUsesPermissionsFMXDangerous.GetAddVoiceMail: Boolean;
 begin
-  result := HasPermission(JavaClass.ADD_VOICEMAIL);
+  Result := HasPermission(JavaClass.ADD_VOICEMAIL);
 end;
 
 function TUsesPermissionsFMXDangerous.GetAnswerPhonecalls: Boolean;
 begin
-  result := HasPermission(JavaClass.ANSWER_PHONE_CALLS);
+  Result := HasPermission(JavaClass.ANSWER_PHONE_CALLS);
 end;
 
 function TUsesPermissionsFMXDangerous.GetAuthenticateAccounts: Boolean;
 begin
-  result := HasPermission(JavaClass.GET_ACCOUNTS_PRIVILEGED);
+  Result := HasPermission(JavaClass.GET_ACCOUNTS_PRIVILEGED);
 end;
 
 function TUsesPermissionsFMXDangerous.GetBodySensors: Boolean;
 begin
-  result := HasPermission(JavaClass.BODY_SENSORS);
+  Result := HasPermission(JavaClass.BODY_SENSORS);
 end;
 
 function TUsesPermissionsFMXDangerous.GetCallPhone: Boolean;
 begin
-  result := HasPermission(JavaClass.CALL_PHONE);
+  Result := HasPermission(JavaClass.CALL_PHONE);
 end;
 
 function TUsesPermissionsFMXDangerous.GetCamera: Boolean;
 begin
-  result := HasPermission(JavaClass.CAMERA);
+  Result := HasPermission(JavaClass.CAMERA);
 end;
 
 function TUsesPermissionsFMXDangerous.GetContinueCallStartedAnotherApp: Boolean;
 begin
-  result := HasPermission(JavaClass.CALL_PRIVILEGED);
+  Result := HasPermission(JavaClass.CALL_PRIVILEGED);
 end;
 
 function TUsesPermissionsFMXDangerous.GetWriteExternalStorage: Boolean;
 begin
-  result := HasPermission(JavaClass.WRITE_EXTERNAL_STORAGE);
+  Result := HasPermission(JavaClass.WRITE_EXTERNAL_STORAGE);
 end;
 
 function TUsesPermissionsFMXDangerous.GetGetAccounts: Boolean;
 begin
-  result := HasPermission(JavaClass.GET_ACCOUNTS);
+  Result := HasPermission(JavaClass.GET_ACCOUNTS);
 end;
 
 function TUsesPermissionsFMXDangerous.GetManageAccounts: Boolean;
 begin
-  result := True;
+  Result := True;
 end;
 
 function TUsesPermissionsFMXDangerous.GetWriteHistoyBookmarks: Boolean;
 begin
-  result := True;
+  Result := True;
 end;
 
 function TUsesPermissionsFMXDangerous.GetProcessOutgoingCalls: Boolean;
 begin
-  result := HasPermission(JavaClass.PROCESS_OUTGOING_CALLS);
+  Result := HasPermission(JavaClass.PROCESS_OUTGOING_CALLS);
 end;
 
 function TUsesPermissionsFMXDangerous.GetWriteProfile: Boolean;
 begin
-  result := True;
+  Result := True;
 end;
 
 function TUsesPermissionsFMXDangerous.GetReadCalendar: Boolean;
 begin
-  result := HasPermission(JavaClass.READ_CALENDAR);
+  Result := HasPermission(JavaClass.READ_CALENDAR);
 end;
 
 function TUsesPermissionsFMXDangerous.GetReadCallLog: Boolean;
 begin
-  result := HasPermission(JavaClass.READ_CALL_LOG);
+  Result := HasPermission(JavaClass.READ_CALL_LOG);
 end;
 
 function TUsesPermissionsFMXDangerous.GetReadContacts: Boolean;
 begin
-  result := HasPermission(JavaClass.READ_CONTACTS);
+  Result := HasPermission(JavaClass.READ_CONTACTS);
 end;
 
 function TUsesPermissionsFMXDangerous.GetReadExternalStorage: Boolean;
 begin
-  result := HasPermission(JavaClass.READ_EXTERNAL_STORAGE);
+  Result := HasPermission(JavaClass.READ_EXTERNAL_STORAGE);
 end;
 
 function TUsesPermissionsFMXDangerous.GetReadHistoryBookmarks: Boolean;
 begin
-  result := True;
+  Result := True;
 end;
 
 function TUsesPermissionsFMXDangerous.GetReadPhoneNumbers: Boolean;
 begin
-  result := HasPermission(JavaClass.READ_PHONE_NUMBERS);
+  Result := HasPermission(JavaClass.READ_PHONE_NUMBERS);
 end;
 
 function TUsesPermissionsFMXDangerous.GetReadPhoneState: Boolean;
 begin
-  result := HasPermission(JavaClass.READ_PHONE_STATE);
+  Result := HasPermission(JavaClass.READ_PHONE_STATE);
 end;
 
 function TUsesPermissionsFMXDangerous.GetReadProfile: Boolean;
 begin
-  result := True;
+  Result := True;
 end;
 
 function TUsesPermissionsFMXDangerous.GetReadSMS: Boolean;
 begin
-  result := HasPermission(JavaClass.READ_SMS);
+  Result := HasPermission(JavaClass.READ_SMS);
 end;
 
 function TUsesPermissionsFMXDangerous.GetReadSocialStream: Boolean;
 begin
-  result := True;
+  Result := True;
 end;
 
 function TUsesPermissionsFMXDangerous.GetReadUserDictionary: Boolean;
 begin
-  result := True;
+  Result := True;
 end;
 
 function TUsesPermissionsFMXDangerous.GetReceiveMMS: Boolean;
 begin
-  result := HasPermission(JavaClass.RECEIVE_MMS);
+  Result := HasPermission(JavaClass.RECEIVE_MMS);
 end;
 
 function TUsesPermissionsFMXDangerous.GetReceiveSMS: Boolean;
 begin
-  result := HasPermission(JavaClass.RECEIVE_SMS);
+  Result := HasPermission(JavaClass.RECEIVE_SMS);
 end;
 
 function TUsesPermissionsFMXDangerous.GetReceiveWAPPush: Boolean;
 begin
-  result := HasPermission(JavaClass.RECEIVE_WAP_PUSH);
+  Result := HasPermission(JavaClass.RECEIVE_WAP_PUSH);
 end;
 
 function TUsesPermissionsFMXDangerous.GetRecordAudio: Boolean;
 begin
-  result := HasPermission(JavaClass.RECORD_AUDIO);
+  Result := HasPermission(JavaClass.RECORD_AUDIO);
 end;
 
 function TUsesPermissionsFMXDangerous.GetSendSMS: Boolean;
 begin
-  result := HasPermission(JavaClass.SEND_SMS);
+  Result := HasPermission(JavaClass.SEND_SMS);
 end;
 
 function TUsesPermissionsFMXDangerous.GetWriteSMS: Boolean;
 begin
   //obsolete
-  result := True;
+  Result := True;
 end;
 
 function TUsesPermissionsFMXDangerous.GetWriteSocialStream: Boolean;
 begin
   //obsolete
-  result := True;
+  Result := True;
 end;
 
 function TUsesPermissionsFMXDangerous.GetSubscribedFeedsWrite: Boolean;
 begin
-  result := True;
+  Result := True;
 end;
 
 function TUsesPermissionsFMXDangerous.GetUninstallShortcut: Boolean;
 begin
-  result := HasPermission(JavaClass.UNINSTALL_SHORTCUT);
+  Result := HasPermission(JavaClass.UNINSTALL_SHORTCUT);
 end;
 
 function TUsesPermissionsFMXDangerous.GetUseCredentials: Boolean;
 begin
   //obsolete
-  result := True;
+  Result := True;
 end;
 
 function TUsesPermissionsFMXDangerous.GetUseSIP: Boolean;
 begin
-  result := HasPermission(JavaClass.USE_SIP);
+  Result := HasPermission(JavaClass.USE_SIP);
 end;
 
 function TUsesPermissionsFMXDangerous.GetWriteCalendar: Boolean;
 begin
-  result := HasPermission(JavaClass.WRITE_CALENDAR);
+  Result := HasPermission(JavaClass.WRITE_CALENDAR);
 end;
 
 function TUsesPermissionsFMXDangerous.GetWriteCallLog: Boolean;
 begin
-  result := HasPermission(JavaClass.WRITE_CALL_LOG);
+  Result := HasPermission(JavaClass.WRITE_CALL_LOG);
 end;
 
 function TUsesPermissionsFMXDangerous.GetWriteContacts: Boolean;
 begin
-  result := HasPermission(JavaClass.WRITE_CONTACTS);
+  Result := HasPermission(JavaClass.WRITE_CONTACTS);
 end;
 
 class function TUsesPermissionsFMXDangerous.New: IUsesPermissionsDangerous;
 begin
-  result := Self.Create;
+  Result := Self.Create;
 end;
 
 procedure TUsesPermissionsFMXDangerous.SetAccessCoarseLocation(const Value: Boolean);

@@ -11,106 +11,107 @@ uses
 type TUsesPermissionsOTAStandard = class(TUsesPermissionsOTABase, IUsesPermissionsStandard)
 
   private
-    function  GetAccessLocationExtra                 : Boolean;
-    function  GetAccessNetworkState                  : Boolean;
-    function  GetAccessNotificationPolicy            : Boolean;
-    function  GetAccessWifiState                     : Boolean;
-    function  GetBatteryStats                        : Boolean;
-    function  GetBluetoothAdmin                      : Boolean;
-    function  GetBluetooth                           : Boolean;
-    function  GetBroadcastSticky                     : Boolean;
-    function  GetChangeConfiguration                 : Boolean;
-    function  GetChangeNetworkState                  : Boolean;
-    function  GetChangeWifiMulticastState            : Boolean;
-    function  GetChangeWifiState                     : Boolean;
-    function  GetDisableKeyguard                     : Boolean;
-    function  GetExpandStatusBar                     : Boolean;
-    function  GetFlashligth                          : Boolean;
-    function  GetForegroundService                   : Boolean;
-    function  GetGetPackageSize                      : Boolean;
-    function  GetGetTasks                            : Boolean;
-    function  GetGlobalSearch                        : Boolean;
-    function  GetInstallShortcut                     : Boolean;
-    function  GetInstantAppForegroundService         : Boolean;
-    function  GetInternet                            : Boolean;
-    function  GetKillBackgroundProcesses             : Boolean;
-    function  GetManageOwnCalls                      : Boolean;
-    function  GetModifyAudioSettings                 : Boolean;
-    function  GetNFCTransactionEvent                 : Boolean;
-    function  GetNFC                                 : Boolean;
-    function  GetPackageUseStats                     : Boolean;
-    function  GetReadGServices                       : Boolean;
-    function  GetReadSyncSettings                    : Boolean;
-    function  GetReadSyncStats                       : Boolean;
-    function  GetReceiveBootCompleted                : Boolean;
-    function  GetReorderTasks                        : Boolean;
-    function  GetRequestCompanion                    : Boolean;
-    function  GetRequestCompanionUseDataInBackground : Boolean;
-    function  GetRequestDeletePackages               : Boolean;
-    function  GetRequestIgnoreBatteryOptimizations   : Boolean;
-    function  GetSetAlarm                            : Boolean;
-    function  GetSetWallpaperHints                   : Boolean;
-    function  GetSetWallpaper                        : Boolean;
-    function  GetSubscribedFeedsRead                 : Boolean;
-    function  GetTransmitIR                          : Boolean;
-    function  GetUseBiometric                        : Boolean;
-    function  GetUseFingerprint                      : Boolean;
-    function  GetVendingBilling                      : Boolean;
-    function  GetVibrate                             : Boolean;
-    function  GetWakeLock                            : Boolean;
-    function  GetWriteSyncSettings                   : Boolean;
-    function  GetWriteUserDictionary                 : Boolean;
+    function GetAccessLocationExtra: Boolean;
+    function GetAccessNetworkState: Boolean;
+    function GetAccessNotificationPolicy: Boolean;
+    function GetAccessWifiState: Boolean;
+    function GetBatteryStats: Boolean;
+    function GetBluetoothAdmin: Boolean;
+    function GetBluetooth: Boolean;
+    function GetBroadcastSticky: Boolean;
+    function GetCallCompanionApp: Boolean;
+    function GetChangeConfiguration: Boolean;
+    function GetChangeNetworkState: Boolean;
+    function GetChangeWifiMulticastState: Boolean;
+    function GetChangeWifiState: Boolean;
+    function GetDisableKeyguard: Boolean;
+    function GetExpandStatusBar: Boolean;
+    function GetFlashligth: Boolean;
+    function GetForegroundService: Boolean;
+    function GetGetPackageSize: Boolean;
+    function GetGetTasks: Boolean;
+    function GetGlobalSearch: Boolean;
+    function GetInstallShortcut: Boolean;
+    function GetInstantAppForegroundService: Boolean;
+    function GetInternet: Boolean;
+    function GetKillBackgroundProcesses: Boolean;
+    function GetManageOwnCalls: Boolean;
+    function GetModifyAudioSettings: Boolean;
+    function GetNFCTransactionEvent: Boolean;
+    function GetNFC: Boolean;
+    function GetPackageUseStats: Boolean;
+    function GetReadGServices: Boolean;
+    function GetReadSyncSettings: Boolean;
+    function GetReadSyncStats: Boolean;
+    function GetReceiveBootCompleted: Boolean;
+    function GetReorderTasks: Boolean;
+    function GetRequestCompanion: Boolean;
+    function GetRequestCompanionUseDataInBackground: Boolean;
+    function GetRequestDeletePackages: Boolean;
+    function GetRequestIgnoreBatteryOptimizations: Boolean;
+    function GetSetAlarm: Boolean;
+    function GetSetWallpaperHints: Boolean;
+    function GetSetWallpaper: Boolean;
+    function GetSubscribedFeedsRead: Boolean;
+    function GetTransmitIR: Boolean;
+    function GetUseBiometric: Boolean;
+    function GetUseFingerprint: Boolean;
+    function GetVendingBilling: Boolean;
+    function GetVibrate: Boolean;
+    function GetWakeLock: Boolean;
+    function GetWriteSyncSettings: Boolean;
+    function GetWriteUserDictionary: Boolean;
 
-    procedure SetAccessLocationExtra                 (const Value: Boolean);
-    procedure SetAccessNetworkState                  (const Value: Boolean);
-    procedure SetAccessNotificationPolicy            (const Value: Boolean);
-    procedure SetAccessWifiState                     (const Value: Boolean);
-    procedure SetBatteryStats                        (const Value: Boolean);
-    procedure SetBluetoothAdmin                      (const Value: Boolean);
-    procedure SetBluetooth                           (const Value: Boolean);
-    procedure SetBroadcastSticky                     (const Value: Boolean);
-    procedure SetChangeConfiguration                 (const Value: Boolean);
-    procedure SetChangeNetworkState                  (const Value: Boolean);
-    procedure SetChangeWifiMulticastState            (const Value: Boolean);
-    procedure SetChangeWifiState                     (const Value: Boolean);
-    procedure SetDisableKeyguard                     (const Value: Boolean);
-    procedure SetExpandStatusBar                     (const Value: Boolean);
-    procedure SetFlashligth                          (const Value: Boolean);
-    procedure SetForegroundService                   (const Value: Boolean);
-    procedure SetGetPackageSize                      (const Value: Boolean);
-    procedure SetGetTasks                            (const Value: Boolean);
-    procedure SetGlobalSearch                        (const Value: Boolean);
-    procedure SetInstallShortcut                     (const Value: Boolean);
-    procedure SetInstantAppForegroundService         (const Value: Boolean);
-    procedure SetInternet                            (const Value: Boolean);
-    procedure SetKillBackgroundProcesses             (const Value: Boolean);
-    procedure SetManageOwnCalls                      (const Value: Boolean);
-    procedure SetModifyAudioSettings                 (const Value: Boolean);
-    procedure SetNFCTransactionEvent                 (const Value: Boolean);
-    procedure SetNFC                                 (const Value: Boolean);
-    procedure SetPackageUseStats                     (const Value: Boolean);
-    procedure SetReadGServices                       (const Value: Boolean);
-    procedure SetReadSyncSettings                    (const Value: Boolean);
-    procedure SetReadSyncStats                       (const Value: Boolean);
-    procedure SetReceiveBootCompleted                (const Value: Boolean);
-    procedure SetReorderTasks                        (const Value: Boolean);
-    procedure SetRequestCompanion                    (const Value: Boolean);
-    procedure SetRequestCompanionUseDataInBackground (const Value: Boolean);
-    procedure SetRequestDeletePackages               (const Value: Boolean);
-    procedure SetRequestIgnoreBatteryOptimizations   (const Value: Boolean);
-    procedure SetSetAlarm                            (const Value: Boolean);
-    procedure SetSetWallpaperHints                   (const Value: Boolean);
-    procedure SetSetWallpaper                        (const Value: Boolean);
-    procedure SetSubscribedFeedsRead                 (const Value: Boolean);
-    procedure SetTransmitIR                          (const Value: Boolean);
-    procedure SetUseBiometric                        (const Value: Boolean);
-    procedure SetUseFingerprint                      (const Value: Boolean);
-    procedure SetVendingBilling                      (const Value: Boolean);
-    procedure SetVibrate                             (const Value: Boolean);
-    procedure SetWakeLock                            (const Value: Boolean);
-    procedure SetWriteSyncSettings                   (const Value: Boolean);
-    procedure SetWriteUserDictionary                 (const Value: Boolean);
-
+    procedure SetAccessLocationExtra(const Value: Boolean);
+    procedure SetAccessNetworkState(const Value: Boolean);
+    procedure SetAccessNotificationPolicy(const Value: Boolean);
+    procedure SetAccessWifiState(const Value: Boolean);
+    procedure SetBatteryStats(const Value: Boolean);
+    procedure SetBluetoothAdmin(const Value: Boolean);
+    procedure SetBluetooth(const Value: Boolean);
+    procedure SetBroadcastSticky(const Value: Boolean);
+    procedure SetCallCompanionApp(const Value: Boolean);
+    procedure SetChangeConfiguration(const Value: Boolean);
+    procedure SetChangeNetworkState(const Value: Boolean);
+    procedure SetChangeWifiMulticastState(const Value: Boolean);
+    procedure SetChangeWifiState(const Value: Boolean);
+    procedure SetDisableKeyguard(const Value: Boolean);
+    procedure SetExpandStatusBar(const Value: Boolean);
+    procedure SetFlashligth(const Value: Boolean);
+    procedure SetForegroundService(const Value: Boolean);
+    procedure SetGetPackageSize(const Value: Boolean);
+    procedure SetGetTasks(const Value: Boolean);
+    procedure SetGlobalSearch(const Value: Boolean);
+    procedure SetInstallShortcut(const Value: Boolean);
+    procedure SetInstantAppForegroundService(const Value: Boolean);
+    procedure SetInternet(const Value: Boolean);
+    procedure SetKillBackgroundProcesses(const Value: Boolean);
+    procedure SetManageOwnCalls(const Value: Boolean);
+    procedure SetModifyAudioSettings(const Value: Boolean);
+    procedure SetNFCTransactionEvent(const Value: Boolean);
+    procedure SetNFC(const Value: Boolean);
+    procedure SetPackageUseStats(const Value: Boolean);
+    procedure SetReadGServices(const Value: Boolean);
+    procedure SetReadSyncSettings(const Value: Boolean);
+    procedure SetReadSyncStats(const Value: Boolean);
+    procedure SetReceiveBootCompleted(const Value: Boolean);
+    procedure SetReorderTasks(const Value: Boolean);
+    procedure SetRequestCompanion(const Value: Boolean);
+    procedure SetRequestCompanionUseDataInBackground(const Value: Boolean);
+    procedure SetRequestDeletePackages(const Value: Boolean);
+    procedure SetRequestIgnoreBatteryOptimizations(const Value: Boolean);
+    procedure SetSetAlarm(const Value: Boolean);
+    procedure SetSetWallpaperHints(const Value: Boolean);
+    procedure SetSetWallpaper(const Value: Boolean);
+    procedure SetSubscribedFeedsRead(const Value: Boolean);
+    procedure SetTransmitIR(const Value: Boolean);
+    procedure SetUseBiometric(const Value: Boolean);
+    procedure SetUseFingerprint(const Value: Boolean);
+    procedure SetVendingBilling(const Value: Boolean);
+    procedure SetVibrate(const Value: Boolean);
+    procedure SetWakeLock(const Value: Boolean);
+    procedure SetWriteSyncSettings(const Value: Boolean);
+    procedure SetWriteUserDictionary(const Value: Boolean);
 
   public
     function Permissions: TArray<string>;
@@ -123,12 +124,12 @@ implementation
 
 function TUsesPermissionsOTAStandard.GetAccessLocationExtra: Boolean;
 begin
-  result := HasPermission(AUP_ACCESS_LOCATION_EXTRA_COMMANDS);
+  Result := HasPermission(AUP_ACCESS_LOCATION_EXTRA_COMMANDS);
 end;
 
 function TUsesPermissionsOTAStandard.GetAccessNetworkState: Boolean;
 begin
-  result := HasPermission(AUP_ACCESS_NETWORK_STATE);
+  Result := HasPermission(AUP_ACCESS_NETWORK_STATE);
 end;
 
 function TUsesPermissionsOTAStandard.GetAccessNotificationPolicy: Boolean;
@@ -138,12 +139,12 @@ end;
 
 function TUsesPermissionsOTAStandard.GetAccessWifiState: Boolean;
 begin
-  result := HasPermission(AUP_ACCESS_WIFI_STATE)
+  Result := HasPermission(AUP_ACCESS_WIFI_STATE)
 end;
 
 function TUsesPermissionsOTAStandard.GetBatteryStats: Boolean;
 begin
-  result := HasPermission(AUP_BATTERY_STATS);
+  Result := HasPermission(AUP_BATTERY_STATS);
 end;
 
 function TUsesPermissionsOTAStandard.GetBluetooth: Boolean;
@@ -159,6 +160,11 @@ end;
 function TUsesPermissionsOTAStandard.GetBroadcastSticky: Boolean;
 begin
   Result := HasPermission(AUP_BROADCAST_STICKY);
+end;
+
+function TUsesPermissionsOTAStandard.GetCallCompanionApp: Boolean;
+begin
+  Result := HasPermission(AUP_CALL_COMPANION_APP);
 end;
 
 function TUsesPermissionsOTAStandard.GetChangeConfiguration: Boolean;
@@ -338,7 +344,7 @@ end;
 
 function TUsesPermissionsOTAStandard.GetWriteUserDictionary: Boolean;
 begin
-  result := HasPermission(AUP_WRITE_USER_DICTIONARY);
+  Result := HasPermission(AUP_WRITE_USER_DICTIONARY);
 end;
 
 function TUsesPermissionsOTAStandard.GetVendingBilling: Boolean;
@@ -368,7 +374,7 @@ end;
 
 class function TUsesPermissionsOTAStandard.New: IUsesPermissionsStandard;
 begin
-  result := Self.Create;
+  Result := Self.Create;
 end;
 
 function TUsesPermissionsOTAStandard.Permissions: TArray<string>;
@@ -414,6 +420,11 @@ end;
 procedure TUsesPermissionsOTAStandard.SetBroadcastSticky(const Value: Boolean);
 begin
   RequestPermission(AUP_BROADCAST_STICKY, Value);
+end;
+
+procedure TUsesPermissionsOTAStandard.SetCallCompanionApp(const Value: Boolean);
+begin
+  RequestPermission(AUP_CALL_COMPANION_APP, Value);
 end;
 
 procedure TUsesPermissionsOTAStandard.SetChangeConfiguration(const Value: Boolean);

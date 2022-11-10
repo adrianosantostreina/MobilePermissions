@@ -11,9 +11,9 @@ uses
 type TFactoryUsesPermissions = class(TInterfacedObject, IFactoryUsesPermissions)
 
   public
-    function createPermissionsStandard : IUsesPermissionsStandard;
-    function createPermissionsDangerous: IUsesPermissionsDangerous;
-    function createPermissionsSignature: IUsesPermissionsSignature;
+    function CreatePermissionsStandard: IUsesPermissionsStandard;
+    function CreatePermissionsDangerous: IUsesPermissionsDangerous;
+    function CreatePermissionsSignature: IUsesPermissionsSignature;
 
     class function New: IFactoryUsesPermissions;
 end;
@@ -22,7 +22,7 @@ implementation
 
 { TFactoryUsesPermissions }
 
-function TFactoryUsesPermissions.createPermissionsDangerous: IUsesPermissionsDangerous;
+function TFactoryUsesPermissions.CreatePermissionsDangerous: IUsesPermissionsDangerous;
 begin
   // OTA
   if Assigned(FPermissionsDangerous) then
@@ -31,7 +31,7 @@ begin
   Exit( TUsesPermissionsFMXDangerous.New );
 end;
 
-function TFactoryUsesPermissions.createPermissionsSignature: IUsesPermissionsSignature;
+function TFactoryUsesPermissions.CreatePermissionsSignature: IUsesPermissionsSignature;
 begin
   // OTA
   if Assigned(FPermissionsSignature) then
@@ -40,7 +40,7 @@ begin
   Exit( TUsesPermissionsFMXSignature.New );
 end;
 
-function TFactoryUsesPermissions.createPermissionsStandard: IUsesPermissionsStandard;
+function TFactoryUsesPermissions.CreatePermissionsStandard: IUsesPermissionsStandard;
 begin
   // OTA
   if Assigned(FPermissionsStandard) then
@@ -51,7 +51,7 @@ end;
 
 class function TFactoryUsesPermissions.New: IFactoryUsesPermissions;
 begin
-  result := Self.Create;
+  Result := Self.Create;
 end;
 
 end.

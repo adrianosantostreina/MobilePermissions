@@ -1,6 +1,6 @@
 <p align="center">
-  <a href="https://github.com/adrianosantostreina/MobilePermissions/blob/master/image/logo.fw.png">
-    <img alt="MobilePermissions" src="https://github.com/adrianosantostreina/MobilePermissions/blob/master/image/logo.fw.png">
+  <a href="./image/logo.fw.png">
+    <img alt="MobilePermissions" src="./image/logo.fw.png">
   </a>
 </p>
 
@@ -37,7 +37,7 @@ Make sure you have uninstalled any previous versions of the component before ins
 
 > If the Install menu does not showing in context menu then select Windows 32-bit in Project Manager and click right button again.
 
-![alt text](https://github.com/adrianosantostreina/MobilePermissions/blob/master/screenshots/install-package.png)
+![alt text](./image/screenshots/install-package.png)
 
 Ready! 😎
 
@@ -47,7 +47,7 @@ Ready! 😎
 3. Type <i>MobilePermissions</i> in the search box.
 4. When you find the component click over it his and click in <b>Install Button.</b>
 
-![alt text](https://github.com/adrianosantostreina/MobilePermissions/blob/master/screenshots/install-getit01.png)
+![alt text](./image/screenshots/install-getit01.png)
 
 5. Accept terms and contract clicking in Agree all and Next
 6. Wait the installion process
@@ -109,14 +109,9 @@ Android 10<br>
 Android 11<br>
 Android 12<br>
 
-## 💻 Code Contributors
-<img src="https://github.com/adrianosantostreina/MobilePermissions/blob/master/image/contributors.png" width=250px alt="Code Contributors" style="max-width:100%;">
-
-
-
 ## Documentation Languages
 [English (en)](https://github.com/adrianosantostreina/MobilePermissions/blob/master/README.md)<br>
-[Português (ptBR)](https://github.com/adrianosantostreina/MobilePermissions/blob/master/Readme.ptBR.md)<br>
+[Português (ptBR)](https://github.com/adrianosantostreina/MobilePermissions/blob/master/README.ptBR.md)<br>
 
 ## ⚠️ License
-`MobilePermissions` is free and open-source library licensed under the [MIT License](https://github.com/adrianosantostreina/MobilePermissions/blob/master/LICENSE.md). 
+`MobilePermissions` is free and open-source library licensed under the [MIT License](./LICENSE.md). 
