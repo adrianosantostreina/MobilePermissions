@@ -1,4 +1,4 @@
-unit MobilePermissions.Component.Register;
+unit MobilePermissions.Component.Registry;
 
 interface
 
