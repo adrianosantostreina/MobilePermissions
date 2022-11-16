@@ -133,13 +133,9 @@
         <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
         <VerInfo_Locale>1033</VerInfo_Locale>
         <DCC_UsePackage>rtl;fmx;$(DCC_UsePackage)</DCC_UsePackage>
-<<<<<<< HEAD
         <DCC_DcpOutput>$(BDSCatalogRepository)\MobilePermissions\bpl</DCC_DcpOutput>
         <DCC_BplOutput>$(BDSCatalogRepository)\MobilePermissions\bpl</DCC_BplOutput>
-=======
-        <DCC_DcpOutput>$(BDSCatalogRepository)\Bpl</DCC_DcpOutput>
-        <DCC_BplOutput>$(BDSCatalogRepository)\Bpl</DCC_BplOutput>
->>>>>>> a208389a41c08cf0136b8e2b45a4fb3e99dce65c
+        <DCC_DcuOutput>$(BDSCatalogRepository)\MobilePermissions\dcu</DCC_DcuOutput>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Base_Win64)'!=''">
         <DCC_Namespace>Winapi;System.Win;Data.Win;Datasnap.Win;Web.Win;Soap.Win;Xml.Win;$(DCC_Namespace)</DCC_Namespace>
@@ -159,11 +155,6 @@
         <DCC_RemoteDebug>false</DCC_RemoteDebug>
         <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
         <VerInfo_Locale>1033</VerInfo_Locale>
-<<<<<<< HEAD
-=======
-        <DCC_DcpOutput>$(BDSCatalogRepository)\Bpl</DCC_DcpOutput>
-        <DCC_BplOutput>$(BDSCatalogRepository)\Bpl</DCC_BplOutput>
->>>>>>> a208389a41c08cf0136b8e2b45a4fb3e99dce65c
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_2)'!=''">
         <DCC_LocalDebugSymbols>false</DCC_LocalDebugSymbols>
@@ -230,17 +221,7 @@
                 <Source>
                     <Source Name="MainSource">MobilePermissions.dpk</Source>
                 </Source>
-<<<<<<< HEAD
                 <Excluded_Packages/>
-=======
-                <Excluded_Packages>
-                    <Excluded_Packages Name="$(BDSBIN)\bcboffice2k280.bpl">Embarcadero C++Builder Office 2000 Servers Package</Excluded_Packages>
-                    <Excluded_Packages Name="$(BDSBIN)\bcbofficexp280.bpl">Embarcadero C++Builder Office XP Servers Package</Excluded_Packages>
-                    <Excluded_Packages Name="$(BDSBIN)\dcloffice2k280.bpl">Microsoft Office 2000 Sample Automation Server Wrapper Components</Excluded_Packages>
-                    <Excluded_Packages Name="$(BDSBIN)\dclofficexp280.bpl">Microsoft Office XP Sample Automation Server Wrapper Components</Excluded_Packages>
-                    <Excluded_Packages Name="C:\Users\adria\.boss\modules\4e7eb35756869019c9263ab22556beb6\modules\.bpl\DOSCommandDD260.bpl">TurboPack DOSCommand Designtime Package for Delphi</Excluded_Packages>
-                </Excluded_Packages>
->>>>>>> a208389a41c08cf0136b8e2b45a4fb3e99dce65c
             </Delphi.Personality>
             <Deployment Version="4">
                 <DeployFile LocalName="$(BDS)\Redist\iossimulator\libcgunwind.1.0.dylib" Class="DependencyModule">
