@@ -170,7 +170,7 @@ implementation
 
 function TMobilePermissionsManifest.ACCESS_CHECKIN_PROPERTIES: JavaString;
 begin
-  Result := EmptyStr;
+  Result := ''; //EmptyStr;
 end;
 
 function TMobilePermissionsManifest.ACCESS_COARSE_LOCATION: JavaString;
