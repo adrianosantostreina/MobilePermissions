@@ -62,7 +62,8 @@ type
     function BROADCAST_SMS: JavaString;
     function BROADCAST_STICKY: JavaString;
     function BROADCAST_WAP_PUSH: JavaString;
-    function CALL_COMPANION_APP: JavaString;
+    //Por algum motivo, não existe CALL_COMPANION_APP no JavaClass. Desativamos a propriedade
+    //function CALL_COMPANION_APP: JavaString;
     function CALL_PHONE: JavaString;
     function CALL_PRIVILEGED: JavaString;
     function CAMERA: JavaString;

@@ -16,19 +16,20 @@ uses
   MobilePermissions.Model.Signature,
   MobilePermissions.Model.Dangerous,
   MobilePermissions.Model.Standard,
-  MobilePermissions.Component,
+  MobilePermissions.Component
 
-  System.Permissions,
   {$IFDEF ANDROID}
-    Androidapi.JNI.JavaTypes,
-    Androidapi.JNI.Os,
-    Androidapi.Helpers
+    ,System.Permissions,
+     Androidapi.JNI.JavaTypes,
+     Androidapi.JNI.Os,
+     Androidapi.Helpers
   {$ENDIF}
   ;
 
 type
   TForm1 = class(TForm)
     MobilePermissions1: TMobilePermissions;
+    procedure FormCreate(Sender: TObject);
   private
     { Private declarations }
   public
@@ -44,6 +45,12 @@ implementation
 {$R *.fmx}
 
 {$HINTS OFF}
+procedure TForm1.FormCreate(Sender: TObject);
+begin
+  MobilePermissions1.Dangerous.Camera := True;
+  MobilePermissions1.Apply;
+end;
+
 procedure TForm1.PedirPermissoes;
 Var
   Ok: Boolean;
