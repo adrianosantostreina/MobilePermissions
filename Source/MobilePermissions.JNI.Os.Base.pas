@@ -3,6 +3,18 @@ unit MobilePermissions.JNI.Os.Base;
 interface
 
 uses
+  {$IFDEF ANDROID}
+  AndroidApi.JNI.JavaTypes,
+  AndroidApi.JNI.Os,
+
+//Androidapi.JNI.GraphicsContentViewText
+//Androidapi.JNI.App
+Androidapi.Helpers,
+//FMX.Platform.Android
+//Androidapi.JNI.JavaTypes
+//Androidapi.JNI.Net
+//Androidapi.JNI.Os
+  {$ENDIF}
   MobilePermissions.JNI.Os,
   System.SysUtils;
 
@@ -170,432 +182,432 @@ implementation
 
 function TMobilePermissionsManifest.ACCESS_CHECKIN_PROPERTIES: JavaString;
 begin
-  Result := ''; //EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.ACCESS_COARSE_LOCATION: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.ACCESS_FINE_LOCATION: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.ACCESS_LOCATION_EXTRA_COMMANDS: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.ACCESS_NETWORK_STATE: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.ACCESS_NOTIFICATION_POLICY: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.ACCESS_WIFI_STATE: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.ACCOUNT_MANAGER: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.ADD_VOICEMAIL: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.ANSWER_PHONE_CALLS: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.BATTERY_STATS: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.BIND_ACCESSIBILITY_SERVICE: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.BIND_APPWIDGET: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.BIND_AUTOFILL_SERVICE: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.BIND_CARRIER_MESSAGING_SERVICE: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.BIND_CARRIER_SERVICES: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.BIND_CHOOSER_TARGET_SERVICE: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.BIND_CONDITION_PROVIDER_SERVICE: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.BIND_DEVICE_ADMIN: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.BIND_DREAM_SERVICE: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.BIND_INCALL_SERVICE: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.BIND_INPUT_METHOD: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.BIND_MIDI_DEVICE_SERVICE: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.BIND_NFC_SERVICE: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.BIND_NOTIFICATION_LISTENER_SERVICE: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.BIND_PRINT_SERVICE: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.BIND_QUICK_SETTINGS_TILE: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.BIND_REMOTEVIEWS: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.BIND_SCREENING_SERVICE: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.BIND_TELECOM_CONNECTION_SERVICE: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.BIND_TEXT_SERVICE: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.BIND_TV_INPUT: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.BIND_VISUAL_VOICEMAIL_SERVICE: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.BIND_VOICE_INTERACTION: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.BIND_VPN_SERVICE: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.BIND_VR_LISTENER_SERVICE: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.BIND_WALLPAPER: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.BLUETOOTH: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.BLUETOOTH_ADMIN: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.BLUETOOTH_PRIVILEGED: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.BODY_SENSORS: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.BROADCAST_PACKAGE_REMOVED: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.BROADCAST_SMS: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.BROADCAST_STICKY: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.BROADCAST_WAP_PUSH: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.CALL_COMPANION_APP: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.CALL_PHONE: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.CALL_PRIVILEGED: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.CAMERA: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.CAPTURE_AUDIO_OUTPUT: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.CAPTURE_SECURE_VIDEO_OUTPUT: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.CAPTURE_VIDEO_OUTPUT: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.CHANGE_COMPONENT_ENABLED_STATE: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.CHANGE_CONFIGURATION: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.CHANGE_NETWORK_STATE: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.CHANGE_WIFI_MULTICAST_STATE: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.CHANGE_WIFI_STATE: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.CLEAR_APP_CACHE: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.CONTROL_LOCATION_UPDATES: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.DELETE_CACHE_FILES: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.DELETE_PACKAGES: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.DIAGNOSTIC: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.DISABLE_KEYGUARD: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.DUMP: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.EXPAND_STATUS_BAR: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.FACTORY_TEST: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.GET_ACCOUNTS: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.GET_ACCOUNTS_PRIVILEGED: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.GET_PACKAGE_SIZE: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.GET_TASKS: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.GLOBAL_SEARCH: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.INSTALL_LOCATION_PROVIDER: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.INSTALL_PACKAGES: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.INSTALL_SHORTCUT: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.INSTANT_APP_FOREGROUND_SERVICE: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.INTERNET: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.KILL_BACKGROUND_PROCESSES: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.LOCATION_HARDWARE: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.MANAGE_DOCUMENTS: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.MANAGE_OWN_CALLS: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.MASTER_CLEAR: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.MEDIA_CONTENT_CONTROL: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.MODIFY_AUDIO_SETTINGS: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.MODIFY_PHONE_STATE: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.MOUNT_FORMAT_FILESYSTEMS: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.MOUNT_UNMOUNT_FILESYSTEMS: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 class function TMobilePermissionsManifest.New: IMobilePermissionsManifest;
@@ -605,312 +617,312 @@ end;
 
 function TMobilePermissionsManifest.NFC: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.PACKAGE_USAGE_STATS: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.PERSISTENT_ACTIVITY: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.PROCESS_OUTGOING_CALLS: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.READ_CALENDAR: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.READ_CALL_LOG: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.READ_CONTACTS: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.READ_EXTERNAL_STORAGE: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.READ_FRAME_BUFFER: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.READ_INPUT_STATE: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.READ_LOGS: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.READ_PHONE_NUMBERS: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.READ_PHONE_STATE: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.READ_SMS: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.READ_SYNC_SETTINGS: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.READ_SYNC_STATS: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.READ_VOICEMAIL: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.REBOOT: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.RECEIVE_BOOT_COMPLETED: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.RECEIVE_MMS: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.RECEIVE_SMS: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.RECEIVE_WAP_PUSH: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.RECORD_AUDIO: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.REORDER_TASKS: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.REQUEST_COMPANION_RUN_IN_BACKGROUND: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.REQUEST_COMPANION_USE_DATA_IN_BACKGROUND: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.REQUEST_DELETE_PACKAGES: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.REQUEST_INSTALL_PACKAGES: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.RESTART_PACKAGES: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.SEND_RESPOND_VIA_MESSAGE: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.SEND_SMS: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.SET_ALARM: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.SET_ALWAYS_FINISH: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.SET_ANIMATION_SCALE: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.SET_DEBUG_APP: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.SET_PREFERRED_APPLICATIONS: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.SET_PROCESS_LIMIT: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.SET_TIME: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.SET_TIME_ZONE: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.SET_WALLPAPER: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.SET_WALLPAPER_HINTS: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.SIGNAL_PERSISTENT_PROCESSES: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.STATUS_BAR: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.SYSTEM_ALERT_WINDOW: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.TRANSMIT_IR: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.UNINSTALL_SHORTCUT: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.UPDATE_DEVICE_STATS: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.USE_FINGERPRINT: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.USE_SIP: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.VIBRATE: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.WAKE_LOCK: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.WRITE_APN_SETTINGS: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.WRITE_CALENDAR: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.WRITE_CALL_LOG: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.WRITE_CONTACTS: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.WRITE_EXTERNAL_STORAGE: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.WRITE_GSERVICES: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.WRITE_SECURE_SETTINGS: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.WRITE_SETTINGS: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.WRITE_SYNC_SETTINGS: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 function TMobilePermissionsManifest.WRITE_VOICEMAIL: JavaString;
 begin
-  Result := EmptyStr;
+  Result := {$IFDEF MSWINDOWS} EmptyStr {$ENDIF} {$IFDEF ANDROID} StringToJString(EmptyStr){$ENDIF};
 end;
 
 initialization

@@ -160,7 +160,8 @@ end;
 
 function TUsesPermissionsFMXStandard.GetCallCompanionApp: Boolean;
 begin
-  Result := HasPermission(JavaClass.CALL_COMPANION_APP);
+//Por algum motivo, não existe CALL_COMPANION_APP no JavaClass. Desativamos a propriedade
+//  Result := HasPermission(JavaClass.CALL_COMPANION_APP);
 end;
 
 function TUsesPermissionsFMXStandard.GetChangeConfiguration: Boolean;
@@ -415,7 +416,8 @@ end;
 
 procedure TUsesPermissionsFMXStandard.SetCallCompanionApp(const Value: Boolean);
 begin
-  AddPermission(JavaClass.CALL_COMPANION_APP, Value);
+//Por algum motivo, não existe CALL_COMPANION_APP no JavaClass. Desativamos a propriedade
+//  AddPermission(JavaClass.CALL_COMPANION_APP, Value);
 end;
 
 procedure TUsesPermissionsFMXStandard.SetChangeConfiguration(const Value: Boolean);

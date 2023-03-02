@@ -164,7 +164,8 @@ end;
 
 function TUsesPermissionsOTAStandard.GetCallCompanionApp: Boolean;
 begin
-  Result := HasPermission(AUP_CALL_COMPANION_APP);
+//Por algum motivo, não existe CALL_COMPANION_APP no JavaClass. Desativamos a propriedade
+//  Result := HasPermission(AUP_CALL_COMPANION_APP);
 end;
 
 function TUsesPermissionsOTAStandard.GetChangeConfiguration: Boolean;
@@ -424,7 +425,8 @@ end;
 
 procedure TUsesPermissionsOTAStandard.SetCallCompanionApp(const Value: Boolean);
 begin
-  RequestPermission(AUP_CALL_COMPANION_APP, Value);
+//Por algum motivo, não existe CALL_COMPANION_APP no JavaClass. Desativamos a propriedade
+//  RequestPermission(AUP_CALL_COMPANION_APP, Value);
 end;
 
 procedure TUsesPermissionsOTAStandard.SetChangeConfiguration(const Value: Boolean);

@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{2B5E901B-45DA-421F-8DCC-A486DB2D4D11}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Package\MobilePermissions.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Demos\New Demo\NewDemo.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="MobilePermissions">
+        <MSBuild Projects="Package\MobilePermissions.dproj"/>
+    </Target>
+    <Target Name="MobilePermissions:Clean">
+        <MSBuild Projects="Package\MobilePermissions.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="MobilePermissions:Make">
+        <MSBuild Projects="Package\MobilePermissions.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="NewDemo">
+        <MSBuild Projects="Demos\New Demo\NewDemo.dproj"/>
+    </Target>
+    <Target Name="NewDemo:Clean">
+        <MSBuild Projects="Demos\New Demo\NewDemo.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="NewDemo:Make">
+        <MSBuild Projects="Demos\New Demo\NewDemo.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="MobilePermissions;NewDemo"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="MobilePermissions:Clean;NewDemo:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="MobilePermissions:Make;NewDemo:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
