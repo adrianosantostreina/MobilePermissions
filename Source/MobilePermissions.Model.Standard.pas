@@ -123,7 +123,8 @@ type TModelStandardPermissions = class
     property BluetoothAdmin: Boolean read GetBluetoothAdmin write SetBluetoothAdmin;
     property Bluetooth: Boolean read GetBluetooth write SetBluetooth;
     property BroadcastSticky: Boolean read GetBroadcastSticky write SetBroadcastSticky;
-    property CallCompanionApp: Boolean read GetCallCompanionApp write SetCallCompanionApp;
+    //Por algum motivo, não existe CALL_COMPANION_APP no JavaClass. Desativamos a propriedade
+    //property CallCompanionApp: Boolean read GetCallCompanionApp write SetCallCompanionApp;
     property ChangeConfiguration: Boolean read GetChangeConfiguration write SetChangeConfiguration;
     property ChangeNetworkState: Boolean read GetChangeNetworkState write SetChangeNetworkState;
     property ChangeWifiMulticastState: Boolean read GetChangeWifiMulticastState write SetChangeWifiMulticastState;
@@ -228,7 +229,8 @@ end;
 
 function TModelStandardPermissions.GetCallCompanionApp: Boolean;
 begin
-  Result := FPermissions.GetCallCompanionApp;
+//Por algum motivo, não existe CALL_COMPANION_APP no JavaClass. Desativamos a propriedade
+//  Result := FPermissions.GetCallCompanionApp;
 end;
 
 function TModelStandardPermissions.GetChangeConfiguration: Boolean;
@@ -483,7 +485,8 @@ end;
 
 procedure TModelStandardPermissions.SetCallCompanionApp(const Value: Boolean);
 begin
-  FPermissions.SetCallCompanionApp(Value);
+//Por algum motivo, não existe CALL_COMPANION_APP no JavaClass. Desativamos a propriedade
+//  FPermissions.SetCallCompanionApp(Value);
 end;
 
 procedure TModelStandardPermissions.SetChangeConfiguration(const Value: Boolean);
