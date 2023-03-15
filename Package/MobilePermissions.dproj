@@ -188,6 +188,7 @@
         <DCCReference Include="..\Source\MobilePermissions.Permissions.Factory.pas"/>
         <DCCReference Include="..\Source\Component\MobilePermissions.Component.Editor.Help.pas">
             <Form>frmMobilePermissionsHelp</Form>
+            <FormType>fmx</FormType>
         </DCCReference>
         <DCCReference Include="..\Source\Component\MobilePermissions.Component.Editor.pas"/>
         <DCCReference Include="..\Source\Component\MobilePermissions.Component.pas"/>
