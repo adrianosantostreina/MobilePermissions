@@ -5,10 +5,10 @@ interface
 uses
   {$IF CompilerVersion >= 33.0}
     System.Permissions,
-  {$ENDIF}
+  {$IFEND}
   {$IF CompilerVersion >= 35.0}
     System.Types,
-  {$ENDIF}
+  {$IFEND}
   {$IFDEF ANDROID}
     Androidapi.Helpers,
     Androidapi.JNI.Os,
@@ -29,7 +29,7 @@ type
   {$ELSE}
   TPermissions = System.TArray<string>;
   TPermissionsStatus = System.TArray<TPermissionStatus>;
-  {$ENDIF}
+  {$IFEND}
 
   TMobilePermissionsAndroid = class(TMobilePermissionsBase, IMobilePermissions)
   private
@@ -91,7 +91,7 @@ begin
   {$IF CompilerVersion >= 33.0}
   if (FAndroidVersion > 6) then
     PermissionsService.RequestPermissions(Permissions, RequestPermissionsResultProc, nil);
-  {$ENDIF}
+  {$IFEND}
 end;
 
 procedure TMobilePermissionsAndroid.RequestPermissionsResultProc(const APermissions: TPermissions; const AGrantResults: TPermissionsStatus);
