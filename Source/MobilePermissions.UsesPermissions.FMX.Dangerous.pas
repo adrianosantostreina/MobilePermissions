@@ -26,6 +26,9 @@ type TUsesPermissionsFMXDangerous = class(TUsesPermissionsFMXBase, IUsesPermissi
     function GetReadContacts: Boolean;
     function GetReadExternalStorage: Boolean;
     function GetReadHistoryBookmarks: Boolean;
+    function GetReadMediaAudio: Boolean;
+    function GetReadMediaImages: Boolean;
+    function GetReadMediaVideo: Boolean;
     function GetReadPhoneNumbers: Boolean;
     function GetReadPhoneState: Boolean;
     function GetReadProfile: Boolean;
@@ -68,6 +71,9 @@ type TUsesPermissionsFMXDangerous = class(TUsesPermissionsFMXBase, IUsesPermissi
     procedure SetReadContacts(const Value: Boolean);
     procedure SetReadExternalStorage(const Value: Boolean);
     procedure SetReadHistoryBookmarks(const Value: Boolean);
+    procedure SetReadMediaAudio(const Value: Boolean);
+    procedure SetReadMediaImages(const Value: Boolean);
+    procedure SetReadMediaVideo(const Value: Boolean);
     procedure SetReadPhoneNumbers(const Value: Boolean);
     procedure SetReadPhoneState(const Value: Boolean);
     procedure SetReadProfile(const Value: Boolean);
@@ -98,6 +104,11 @@ type TUsesPermissionsFMXDangerous = class(TUsesPermissionsFMXBase, IUsesPermissi
 end;
 
 implementation
+
+{$IFDEF ANDROID}
+uses
+  Androidapi.Helpers;
+{$ENDIF}
 
 { TUsesPermissionsFMXDangerous }
 
@@ -204,6 +215,27 @@ end;
 function TUsesPermissionsFMXDangerous.GetReadHistoryBookmarks: Boolean;
 begin
   Result := True;
+end;
+
+function TUsesPermissionsFMXDangerous.GetReadMediaAudio: Boolean;
+begin
+  Result := HasPermission({$IFDEF MSWINDOWS} '' {$ELSE}
+      {$IF CompilerVersion >= 36.0}JavaClass.READ_MEDIA_AUDIO{$ELSE} StringToJString('android.permission.READ_MEDIA_AUDIO'){$ENDIF}
+      {$ENDIF});
+end;
+
+function TUsesPermissionsFMXDangerous.GetReadMediaImages: Boolean;
+begin
+  Result := HasPermission({$IFDEF MSWINDOWS} '' {$ELSE}
+      {$IF CompilerVersion >= 36.0}JavaClass.READ_MEDIA_IMAGES{$ELSE} StringToJString('android.permission.READ_MEDIA_IMAGES'){$ENDIF}
+      {$ENDIF});
+end;
+
+function TUsesPermissionsFMXDangerous.GetReadMediaVideo: Boolean;
+begin
+  Result := HasPermission({$IFDEF MSWINDOWS} '' {$ELSE}
+      {$IF CompilerVersion >= 36.0}JavaClass.READ_MEDIA_VIDEO{$ELSE} StringToJString('android.permission.READ_MEDIA_VIDEO'){$ENDIF}
+      {$ENDIF});
 end;
 
 function TUsesPermissionsFMXDangerous.GetReadPhoneNumbers: Boolean;
@@ -413,6 +445,27 @@ end;
 
 procedure TUsesPermissionsFMXDangerous.SetReadHistoryBookmarks(const Value: Boolean);
 begin
+end;
+
+procedure TUsesPermissionsFMXDangerous.SetReadMediaAudio(const Value: Boolean);
+begin
+  AddPermission({$IFDEF MSWINDOWS} '' {$ELSE}
+      {$IF CompilerVersion >= 36.0}JavaClass.READ_MEDIA_AUDIO{$ELSE} StringToJString('android.permission.READ_MEDIA_AUDIO'){$ENDIF}
+      {$ENDIF}, Value);
+end;
+
+procedure TUsesPermissionsFMXDangerous.SetReadMediaImages(const Value: Boolean);
+begin
+  AddPermission({$IFDEF MSWINDOWS} '' {$ELSE}
+      {$IF CompilerVersion >= 36.0}JavaClass.READ_MEDIA_IMAGES{$ELSE} StringToJString('android.permission.READ_MEDIA_IMAGES'){$ENDIF}
+      {$ENDIF}, Value);
+end;
+
+procedure TUsesPermissionsFMXDangerous.SetReadMediaVideo(const Value: Boolean);
+begin
+  AddPermission({$IFDEF MSWINDOWS} '' {$ELSE}
+      {$IF CompilerVersion >= 36.0}JavaClass.READ_MEDIA_VIDEO{$ELSE} StringToJString('android.permission.READ_MEDIA_VIDEO'){$ENDIF}
+      {$ENDIF}, Value);
 end;
 
 procedure TUsesPermissionsFMXDangerous.SetReadPhoneNumbers(const Value: Boolean);

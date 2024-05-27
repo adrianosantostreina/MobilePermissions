@@ -135,6 +135,9 @@ type
     function GetReadContacts: Boolean;
     function GetReadExternalStorage: Boolean;
     function GetReadHistoryBookmarks: Boolean;
+    function GetReadMediaAudio: Boolean;
+    function GetReadMediaImages: Boolean;
+    function GetReadMediaVideo: Boolean;
     function GetReadPhoneNumbers: Boolean;
     function GetReadPhoneState: Boolean;
     function GetReadProfile: Boolean;
@@ -177,6 +180,9 @@ type
     procedure SetReadContacts(const Value: Boolean);
     procedure SetReadExternalStorage(const Value: Boolean);
     procedure SetReadHistoryBookmarks(const Value: Boolean);
+    procedure SetReadMediaAudio(const Value: Boolean);
+    procedure SetReadMediaImages(const Value: Boolean);
+    procedure SetReadMediaVideo(const Value: Boolean);
     procedure SetReadPhoneNumbers(const Value: Boolean);
     procedure SetReadPhoneState(const Value: Boolean);
     procedure SetReadProfile(const Value: Boolean);
