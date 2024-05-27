@@ -43,7 +43,7 @@ object FrmMain: TFrmMain
     DefaultItemStyles.ItemStyle = ''
     DefaultItemStyles.GroupHeaderStyle = ''
     DefaultItemStyles.GroupFooterStyle = ''
-    Viewport.Width = 380.000000000000000000
+    Viewport.Width = 375.000000000000000000
     Viewport.Height = 522.000000000000000000
     object ListBoxItem1: TListBoxItem
       TabOrder = 0
@@ -56,7 +56,7 @@ object FrmMain: TFrmMain
         Align = Right
         IsChecked = False
         Margins.Right = 8.000000000000000000
-        Position.X = 328.000000000000000000
+        Position.X = 323.000000000000000000
         Position.Y = 9.000000000000000000
         Size.Width = 44.000000000000000000
         Size.Height = 26.000000000000000000
@@ -73,7 +73,7 @@ object FrmMain: TFrmMain
         Align = Right
         IsChecked = False
         Margins.Right = 8.000000000000000000
-        Position.X = 328.000000000000000000
+        Position.X = 323.000000000000000000
         Position.Y = 9.000000000000000000
         Size.Width = 44.000000000000000000
         Size.Height = 26.000000000000000000
@@ -90,7 +90,7 @@ object FrmMain: TFrmMain
         Align = Right
         IsChecked = False
         Margins.Right = 8.000000000000000000
-        Position.X = 328.000000000000000000
+        Position.X = 323.000000000000000000
         Position.Y = 9.000000000000000000
         Size.Width = 44.000000000000000000
         Size.Height = 26.000000000000000000
@@ -107,7 +107,7 @@ object FrmMain: TFrmMain
         Align = Right
         IsChecked = False
         Margins.Right = 8.000000000000000000
-        Position.X = 328.000000000000000000
+        Position.X = 323.000000000000000000
         Position.Y = 9.000000000000000000
         Size.Width = 44.000000000000000000
         Size.Height = 26.000000000000000000
@@ -124,7 +124,7 @@ object FrmMain: TFrmMain
         Align = Right
         IsChecked = False
         Margins.Right = 8.000000000000000000
-        Position.X = 328.000000000000000000
+        Position.X = 323.000000000000000000
         Position.Y = 9.000000000000000000
         Size.Width = 44.000000000000000000
         Size.Height = 26.000000000000000000
@@ -141,7 +141,7 @@ object FrmMain: TFrmMain
         Align = Right
         IsChecked = False
         Margins.Right = 8.000000000000000000
-        Position.X = 328.000000000000000000
+        Position.X = 323.000000000000000000
         Position.Y = 9.000000000000000000
         Size.Width = 44.000000000000000000
         Size.Height = 26.000000000000000000
@@ -158,7 +158,7 @@ object FrmMain: TFrmMain
         Align = Right
         IsChecked = False
         Margins.Right = 8.000000000000000000
-        Position.X = 328.000000000000000000
+        Position.X = 323.000000000000000000
         Position.Y = 9.000000000000000000
         Size.Width = 44.000000000000000000
         Size.Height = 26.000000000000000000
@@ -175,7 +175,7 @@ object FrmMain: TFrmMain
         Align = Right
         IsChecked = False
         Margins.Right = 8.000000000000000000
-        Position.X = 328.000000000000000000
+        Position.X = 323.000000000000000000
         Position.Y = 9.000000000000000000
         Size.Width = 44.000000000000000000
         Size.Height = 26.000000000000000000
@@ -192,7 +192,7 @@ object FrmMain: TFrmMain
         Align = Right
         IsChecked = False
         Margins.Right = 8.000000000000000000
-        Position.X = 328.000000000000000000
+        Position.X = 323.000000000000000000
         Position.Y = 9.000000000000000000
         Size.Width = 44.000000000000000000
         Size.Height = 26.000000000000000000
@@ -209,13 +209,64 @@ object FrmMain: TFrmMain
         Align = Right
         IsChecked = False
         Margins.Right = 8.000000000000000000
-        Position.X = 328.000000000000000000
+        Position.X = 323.000000000000000000
         Position.Y = 9.000000000000000000
         Size.Width = 44.000000000000000000
         Size.Height = 26.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 2
         OnSwitch = Switch10Switch
+      end
+    end
+    object ListBoxItem11: TListBoxItem
+      Position.Y = 440.000000000000000000
+      TabOrder = 10
+      Text = 'Read Media Audio'
+      object Switch11: TSwitch
+        Align = Right
+        IsChecked = False
+        Margins.Right = 8.000000000000000000
+        Position.X = 323.000000000000000000
+        Position.Y = 9.000000000000000000
+        Size.Width = 44.000000000000000000
+        Size.Height = 26.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        OnSwitch = Switch11Switch
+      end
+    end
+    object ListBoxItem12: TListBoxItem
+      Position.Y = 484.000000000000000000
+      TabOrder = 11
+      Text = 'Read Media Images'
+      object Switch12: TSwitch
+        Align = Right
+        IsChecked = False
+        Margins.Right = 8.000000000000000000
+        Position.X = 323.000000000000000000
+        Position.Y = 9.000000000000000000
+        Size.Width = 44.000000000000000000
+        Size.Height = 26.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        OnSwitch = Switch12Switch
+      end
+    end
+    object ListBoxItem13: TListBoxItem
+      Position.Y = 528.000000000000000000
+      TabOrder = 12
+      Text = 'Read Media Video'
+      object Switch13: TSwitch
+        Align = Right
+        IsChecked = False
+        Margins.Right = 8.000000000000000000
+        Position.X = 323.000000000000000000
+        Position.Y = 9.000000000000000000
+        Size.Width = 44.000000000000000000
+        Size.Height = 26.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        OnSwitch = Switch13Switch
       end
     end
   end

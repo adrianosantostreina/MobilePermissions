@@ -37,6 +37,12 @@ type
     btnApply: TSpeedButton;
     MobilePermissions1: TMobilePermissions;
     Button1: TButton;
+    ListBoxItem11: TListBoxItem;
+    ListBoxItem12: TListBoxItem;
+    ListBoxItem13: TListBoxItem;
+    Switch11: TSwitch;
+    Switch12: TSwitch;
+    Switch13: TSwitch;
     procedure Switch2Switch(Sender: TObject);
     procedure Switch3Switch(Sender: TObject);
     procedure Switch4Switch(Sender: TObject);
@@ -50,6 +56,9 @@ type
     procedure btnApplyClick(Sender: TObject);
     procedure Button1Click(Sender: TObject);
     procedure MobilePermissions1Apply(Sender: TObject);
+    procedure Switch11Switch(Sender: TObject);
+    procedure Switch12Switch(Sender: TObject);
+    procedure Switch13Switch(Sender: TObject);
   private
     { Private declarations }
   public
@@ -86,6 +95,21 @@ end;
 procedure TFrmMain.Switch10Switch(Sender: TObject);
 begin
   MobilePermissions1.Dangerous.WriteExternalStorage := TSwitch(Sender).IsChecked;
+end;
+
+procedure TFrmMain.Switch11Switch(Sender: TObject);
+begin
+  MobilePermissions1.Dangerous.ReadMediaAudio := TSwitch(Sender).IsChecked;
+end;
+
+procedure TFrmMain.Switch12Switch(Sender: TObject);
+begin
+  MobilePermissions1.Dangerous.ReadMediaImages := TSwitch(Sender).IsChecked;
+end;
+
+procedure TFrmMain.Switch13Switch(Sender: TObject);
+begin
+  MobilePermissions1.Dangerous.ReadMediaVideo := TSwitch(Sender).IsChecked;
 end;
 
 procedure TFrmMain.Switch1Switch(Sender: TObject);

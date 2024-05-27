@@ -30,6 +30,9 @@ type TModelDangerousPermissions = class
     function GetReadContacts: Boolean;
     function GetReadExternalStorage: Boolean;
     function GetReadHistoryBookmarks: Boolean;
+    function GetReadMediaAudio: Boolean;
+    function GetReadMediaImages: Boolean;
+    function GetReadMediaVideo: Boolean;
     function GetReadPhoneNumbers: Boolean;
     function GetReadPhoneState: Boolean;
     function GetReadProfile: Boolean;
@@ -72,6 +75,9 @@ type TModelDangerousPermissions = class
     procedure SetReadContacts(const Value: Boolean);
     procedure SetReadExternalStorage(const Value: Boolean);
     procedure SetReadHistoryBookmarks(const Value: Boolean);
+    procedure SetReadMediaAudio(const Value: Boolean);
+    procedure SetReadMediaImages(const Value: Boolean);
+    procedure SetReadMediaVideo(const Value: Boolean);
     procedure SetReadPhoneNumbers(const Value: Boolean);
     procedure SetReadPhoneState(const Value: Boolean);
     procedure SetReadProfile(const Value: Boolean);
@@ -115,6 +121,9 @@ type TModelDangerousPermissions = class
     property ReadContacts: Boolean read GetReadContacts write SetReadContacts;
     property ReadExternalStorage: Boolean read GetReadExternalStorage write SetReadExternalStorage;
     property ReadHistoryBookmarks: Boolean read GetReadHistoryBookmarks write SetReadHistoryBookmarks;
+    property ReadMediaAudio: Boolean read GetReadMediaAudio write SetReadMediaAudio;
+    property ReadMediaImages: Boolean read GetReadMediaImages write SetReadMediaImages;
+    property ReadMediaVideo: Boolean read GetReadMediaVideo write SetReadMediaVideo;
     property ReadPhoneNumbers: Boolean read GetReadPhoneNumbers write SetReadPhoneNumbers;
     property ReadPhoneState: Boolean read GetReadPhoneState write SetReadPhoneState;
     property ReadProfile: Boolean read GetReadProfile write SetReadProfile;
@@ -267,6 +276,21 @@ end;
 function TModelDangerousPermissions.GetReadHistoryBookmarks: Boolean;
 begin
   Result := FPermissions.GetReadHistoryBookmarks;
+end;
+
+function TModelDangerousPermissions.GetReadMediaAudio: Boolean;
+begin
+  Result := FPermissions.GetReadMediaAudio;
+end;
+
+function TModelDangerousPermissions.GetReadMediaImages: Boolean;
+begin
+  Result := FPermissions.GetReadMediaImages;
+end;
+
+function TModelDangerousPermissions.GetReadMediaVideo: Boolean;
+begin
+  Result := FPermissions.GetReadMediaVideo;
 end;
 
 function TModelDangerousPermissions.GetReadPhoneNumbers: Boolean;
@@ -472,6 +496,21 @@ end;
 procedure TModelDangerousPermissions.SetReadHistoryBookmarks(const Value: Boolean);
 begin
   FPermissions.SetReadHistoryBookmarks(Value);
+end;
+
+procedure TModelDangerousPermissions.SetReadMediaAudio(const Value: Boolean);
+begin
+  FPermissions.SetReadMediaAudio(Value);
+end;
+
+procedure TModelDangerousPermissions.SetReadMediaImages(const Value: Boolean);
+begin
+  FPermissions.SetReadMediaImages(Value);
+end;
+
+procedure TModelDangerousPermissions.SetReadMediaVideo(const Value: Boolean);
+begin
+  FPermissions.SetReadMediaVideo(Value);
 end;
 
 procedure TModelDangerousPermissions.SetReadPhoneNumbers(const Value: Boolean);

@@ -28,6 +28,9 @@ type TUsesPermissionsOTADangerous = class(TUsesPermissionsOTABase, IUsesPermissi
     function GetReadContacts: Boolean;
     function GetReadExternalStorage: Boolean;
     function GetReadHistoryBookmarks: Boolean;
+    function GetReadMediaAudio: Boolean;
+    function GetReadMediaImages: Boolean;
+    function GetReadMediaVideo: Boolean;
     function GetReadPhoneNumbers: Boolean;
     function GetReadPhoneState: Boolean;
     function GetReadProfile: Boolean;
@@ -70,6 +73,9 @@ type TUsesPermissionsOTADangerous = class(TUsesPermissionsOTABase, IUsesPermissi
     procedure SetReadContacts(const Value: Boolean);
     procedure SetReadExternalStorage(const Value: Boolean);
     procedure SetReadHistoryBookmarks(const Value: Boolean);
+    procedure SetReadMediaAudio(const Value: Boolean);
+    procedure SetReadMediaImages(const Value: Boolean);
+    procedure SetReadMediaVideo(const Value: Boolean);
     procedure SetReadPhoneNumbers(const Value: Boolean);
     procedure SetReadPhoneState(const Value: Boolean);
     procedure SetReadProfile(const Value: Boolean);
@@ -207,6 +213,21 @@ end;
 function TUsesPermissionsOTADangerous.GetReadHistoryBookmarks: Boolean;
 begin
   Result := HasPermission(AUP_READ_HISTORY_BOOKMARKS);
+end;
+
+function TUsesPermissionsOTADangerous.GetReadMediaAudio: Boolean;
+begin
+  Result := HasPermission(AUP_READ_MEDIA_AUDIO);
+end;
+
+function TUsesPermissionsOTADangerous.GetReadMediaImages: Boolean;
+begin
+  Result := HasPermission(AUP_READ_MEDIA_IMAGES);
+end;
+
+function TUsesPermissionsOTADangerous.GetReadMediaVideo: Boolean;
+begin
+  Result := HasPermission(AUP_READ_MEDIA_VIDEO);
 end;
 
 function TUsesPermissionsOTADangerous.GetReadPhoneNumbers: Boolean;
@@ -422,6 +443,21 @@ end;
 procedure TUsesPermissionsOTADangerous.SetReadHistoryBookmarks(const Value: Boolean);
 begin
   RequestPermission(AUP_READ_HISTORY_BOOKMARKS, Value);
+end;
+
+procedure TUsesPermissionsOTADangerous.SetReadMediaAudio(const Value: Boolean);
+begin
+  RequestPermission(AUP_READ_MEDIA_AUDIO, Value);
+end;
+
+procedure TUsesPermissionsOTADangerous.SetReadMediaImages(const Value: Boolean);
+begin
+  RequestPermission(AUP_READ_MEDIA_IMAGES, Value);
+end;
+
+procedure TUsesPermissionsOTADangerous.SetReadMediaVideo(const Value: Boolean);
+begin
+  RequestPermission(AUP_READ_MEDIA_VIDEO, Value);
 end;
 
 procedure TUsesPermissionsOTADangerous.SetReadPhoneNumbers(const Value: Boolean);
