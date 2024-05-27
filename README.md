@@ -101,6 +101,9 @@ Add this folders path into <b>Search Path</b> field like bellow:<br>
 
 Recompile and redistrbuilt your project and e voilà<br>
 
+## 🧪 Compatible with
+Delphi 10.2+
+
 ## 🧪 Tests performed on
 Android 7.0 (This version dosen't need this component, but can you use without problem)<br>
 Android 8.x<br>
@@ -108,6 +111,8 @@ Android 9.x<br>
 Android 10<br>
 Android 11<br>
 Android 12<br>
+Android 13<br>
+Android 14<br>
 
 ## Documentation Languages
 [English (en)](https://github.com/adrianosantostreina/MobilePermissions/blob/master/README.md)<br>
