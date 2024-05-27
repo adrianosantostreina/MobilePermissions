@@ -116,7 +116,7 @@ Android 14<br>
 
 ## Documentation Languages
 [English (en)](https://github.com/adrianosantostreina/MobilePermissions/blob/master/README.md)<br>
-[Português (ptBR)](https://github.com/adrianosantostreina/MobilePermissions/blob/master/README.ptBR.md)<br>
+[Português (ptBR)](https://github.com/adrianosantostreina/MobilePermissions/blob/master/Readme.ptBR.md)<br>
 
 ## ⚠️ License
 `MobilePermissions` is free and open-source library licensed under the [MIT License](./LICENSE.md). 
