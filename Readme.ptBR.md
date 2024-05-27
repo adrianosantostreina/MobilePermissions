@@ -101,6 +101,9 @@ Adicione este caminho de pasta no campo <b>Caminho de pesquisa</b> como abaixo:<
 
 Recompile e redistrconstrua seu projeto e voilà<br>
 
+## 🧪 Compatível com
+Delphi 10.2+
+
 ## 🧪 Testes realizados em
 Android 7.0 (Esta versão não precisa deste componente, mas você pode usar sem problemas)<br>
 Android 8.x<br>
@@ -108,6 +111,8 @@ Android 9.x<br>
 Android10<br>
 Android11<br>
 Android 12<br>
+Android 13<br>
+Android 14<br>
 
 ## 💻 Contribuidores de código
 <img src="https://github.com/adrianosantostreina/MobilePermissions/blob/master/image/contributors.png" width=250px alt="Code Contributors" style="max-width:100%;">
